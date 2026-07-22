@@ -106,7 +106,10 @@ Les deux adresses vérifiées :
   sections sombres ; jauge de progression en haut, flèche de retour en bas.
 - **Filtre des techniques** : Tout / Salle / Cuisine / Pâtisserie.
 - **Étoile sur les fiches techniques** : elle marque les gestes tenus en
-  autonomie. C'est ce qui a remplacé le chapitre Compétences, dont les langues
+  autonomie. Les fiches ne portent plus que le picto, la catégorie et
+  l'intitulé&nbsp;; les phrases qui les décrivaient ont été retirées, elles
+  chargeaient trop la page. Elles restent dans l'historique du dépôt si vous
+  voulez les récupérer. C'est ce qui a remplacé le chapitre Compétences, dont les langues
   et les disponibilités ont rejoint le bas de la section Contact.
 - **Visionneuse** : un clic sur une image l'ouvre en grand. Flèches ← → pour
   passer à la suivante, Échap pour fermer.

@@ -990,17 +990,15 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .tile.is-out { opacity: 0; transform: scale(.96); transition: opacity .35s var(--ease), transform .35s var(--ease); }
 .tile[hidden] { display: none; }
 
-.tile__body .tag { margin-bottom: .4rem; font-size: .56rem; }
+.tile__body .tag { margin-bottom: .2rem; font-size: .54rem; }
 
 .tile__name {
   font-family: var(--body);
   font-weight: 900;
-  font-size: 1rem;
-  line-height: 1.3;
+  font-size: .95rem;
+  line-height: 1.25;
   color: var(--ink-strong);
-  margin-bottom: .3rem;
 }
-.tile__desc { font-size: .84rem; line-height: 1.5; }
 
 .grid__empty {
   max-width: var(--max);
@@ -1460,11 +1458,10 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .rows li.is-now .rows__date::before { background: #1c1a1a !important; animation: none !important; }
 
   /* ---- Fiches techniques : quatre colonnes serrées. */
-  .grid { grid-template-columns: repeat(5, 1fr) !important; gap: .2cm !important; }
-  .tile { padding: .26cm !important; border-radius: 7px !important; gap: .08cm .24cm !important;
-          grid-template-columns: .62cm minmax(0, 1fr) !important; }
+  .grid { grid-template-columns: repeat(5, 1fr) !important; gap: .18cm !important; }
+  .tile { padding: .22cm !important; border-radius: 6px !important; gap: .04cm .22cm !important;
+          grid-template-columns: .62cm minmax(0, 1fr) !important; align-items: center !important; }
   .tile__name { font-size: 9pt !important; margin-bottom: .07cm !important; }
-  .tile__desc { font-size: 8.2pt !important; line-height: 1.35 !important; }
   .tile__body .tag { font-size: 7pt !important; margin-bottom: .06cm !important; letter-spacing: .16em !important; }
   .tile__star { top: .14cm !important; right: .16cm !important; font-size: 6.5pt !important; }
   .grid__legend { font-size: 8.8pt !important; margin-bottom: .25cm !important; }
