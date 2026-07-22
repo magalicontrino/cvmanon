@@ -70,7 +70,7 @@ fins, ils disparaîtront. Ils vont dans `assets/pictos/`, pas dans
 |---|---|---|
 | `formation-01` | `ecole` | Un cuisinier en tenue, ou une toque |
 | `formation-02` | `hygiene` | Un distributeur de savon, ou un savon |
-| `formation-03` | `restaurant` | Un chandelier, ou une table dressée |
+| `formation-03` | `restaurant` | Une devanture de restaurant, ou une salle dressée |
 
 ## Expérience — 3 pictos
 
