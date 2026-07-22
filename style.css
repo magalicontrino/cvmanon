@@ -884,6 +884,59 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .tile:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(28, 26, 26, .07); }
 .tile__icon { width: 1.75rem; height: 1.75rem; grid-row: span 2; opacity: .85; transform: translateY(.15rem); }
 
+/* L'étoile marque les gestes tenus en autonomie. Elle est en haut à droite,
+   hors du flux : elle ne doit pas décaler le titre d'une fiche à l'autre. */
+.tile { position: relative; }
+.tile__star {
+  position: absolute;
+  top: .7rem;
+  right: .8rem;
+  font-size: .82rem;
+  line-height: 1;
+  color: var(--ink-strong);
+}
+/* Une fiche étoilée s'affirme un peu plus que les autres. */
+.tile.is-known { border-color: rgba(28, 26, 26, .28); }
+
+/* La légende, entre le filtre et la grille. */
+.grid__legend {
+  max-width: var(--max);
+  margin: 0 auto clamp(.9rem, 2vh, 1.4rem);
+  font-size: .88rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.grid__legend .tile__star { position: static; font-size: .95rem; }
+
+/* Le savoir-être : un texte, pas une liste. Il ferme le chapitre, décalé par un
+   filet à gauche pour qu'on voie tout de suite que ce n'est plus une fiche. */
+.note {
+  max-width: 52rem;
+  margin: clamp(1.75rem, 4vh, 2.75rem) auto 0;
+  padding-left: clamp(1rem, 2.5vw, 1.75rem);
+  border-left: 2px solid var(--ink-strong);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Langues et disponibilités, en pied de contact : deux colonnes d'appoint. */
+.aside {
+  max-width: var(--max);
+  margin: clamp(2rem, 5vh, 3.5rem) auto 0;
+  padding-top: clamp(1.5rem, 3.5vh, 2.5rem);
+  border-top: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+.aside .avail__title { margin-bottom: .9rem; }
+.aside .skills { display: block; }
+/* Dans une colonne étroite, l'alignement à droite des intitulés — hérité de la
+   liste pleine largeur — donnait un bord gauche en dents de scie. */
+.aside .skills li { grid-template-columns: minmax(0, 8rem) minmax(0, 1fr); }
+.aside .skills__name { text-align: left; }
+.aside .avail__list { grid-template-columns: 1fr; }
+
 /* Fiche écartée par le filtre : on la sort du flux une fois le fondu terminé,
    sinon la grille garderait des trous. `hidden` est posé par app.js. */
 .tile.is-out { opacity: 0; transform: scale(.96); transition: opacity .35s var(--ease), transform .35s var(--ease); }
@@ -1005,14 +1058,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .skills__name { text-align: center; }
 }
 
-.avail {
-  max-width: var(--max);
-  margin: clamp(1.75rem, 4vh, 2.75rem) auto 0;
-  background: var(--white);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: clamp(1.25rem, 3vw, 2rem);
-}
 .avail__title { font-size: .72rem; color: var(--ink-strong); margin-bottom: .9rem; }
 .avail__list {
   display: grid;

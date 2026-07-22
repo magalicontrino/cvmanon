@@ -41,7 +41,6 @@
     <li><a href="#formation"   data-dot><span>Formation</span></a></li>
     <li><a href="#experience"  data-dot><span>Expérience</span></a></li>
     <li><a href="#techniques"  data-dot><span>Techniques</span></a></li>
-    <li><a href="#competences" data-dot><span>Compétences</span></a></li>
     <li><a href="#contact"     data-dot><span>Contact</span></a></li>
   </ul>
 </nav>
@@ -87,8 +86,7 @@
       <li data-reveal data-delay="6"><a href="#formation">Formation</a></li>
       <li data-reveal data-delay="7"><a href="#experience">Expérience</a></li>
       <li data-reveal data-delay="8"><a href="#techniques">Techniques</a></li>
-      <li data-reveal data-delay="9"><a href="#competences">Compétences</a></li>
-      <li data-reveal data-delay="10"><a href="#contact">Contact</a></li>
+      <li data-reveal data-delay="9"><a href="#contact">Contact</a></li>
     </ul>
   </div>
 
@@ -272,6 +270,11 @@
     <button type="button" class="chip" data-filter="patisserie" aria-pressed="false">Pâtisserie</button>
   </div>
 
+  <p class="grid__legend" data-reveal>
+    <span class="tile__star" aria-hidden="true">★</span> Les gestes que je tiens seule
+    en service. Les autres, je les ai appris à l’école et je les consolide.
+  </p>
+
   <ul class="grid" id="techniques-grid">
 
     <li class="tile" data-cat="salle" data-reveal>
@@ -283,8 +286,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="salle" data-reveal data-delay="1">
+    <li class="tile is-known" data-cat="salle" data-reveal data-delay="1">
       <img class="tile__icon" src="assets/pictos/technique-11.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Service à l’assiette et au guéridon</h3>
@@ -301,8 +305,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="salle" data-reveal data-delay="3">
+    <li class="tile is-known" data-cat="salle" data-reveal data-delay="3">
       <img class="tile__icon" src="assets/pictos/technique-13.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Accueil et prise de commande</h3>
@@ -310,8 +315,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="salle" data-reveal>
+    <li class="tile is-known" data-cat="salle" data-reveal>
       <img class="tile__icon" src="assets/pictos/technique-14.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Le service des boissons</h3>
@@ -319,8 +325,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
+    <li class="tile is-known" data-cat="cuisine" data-reveal data-delay="1">
       <img class="tile__icon" src="assets/pictos/technique-01.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Les taillages</h3>
@@ -328,8 +335,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
+    <li class="tile is-known" data-cat="cuisine" data-reveal data-delay="2">
       <img class="tile__icon" src="assets/pictos/technique-02.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Fonds et sauces mères</h3>
@@ -337,8 +345,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="cuisine" data-reveal data-delay="3">
+    <li class="tile is-known" data-cat="cuisine" data-reveal data-delay="3">
       <img class="tile__icon" src="assets/pictos/technique-03.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Les modes de cuisson</h3>
@@ -364,8 +373,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
+    <li class="tile is-known" data-cat="cuisine" data-reveal data-delay="1">
       <img class="tile__icon" src="assets/pictos/technique-05.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Le dressage à l’assiette</h3>
@@ -373,8 +383,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
+    <li class="tile is-known" data-cat="cuisine" data-reveal data-delay="2">
       <img class="tile__icon" src="assets/pictos/technique-06.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">La mise en place</h3>
@@ -382,8 +393,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="patisserie" data-reveal data-delay="3">
+    <li class="tile is-known" data-cat="patisserie" data-reveal data-delay="3">
       <img class="tile__icon" src="assets/pictos/technique-07.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Les pâtes de base</h3>
@@ -391,8 +403,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="patisserie" data-reveal>
+    <li class="tile is-known" data-cat="patisserie" data-reveal>
       <img class="tile__icon" src="assets/pictos/technique-08.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Crèmes et appareils</h3>
@@ -400,8 +413,9 @@
       </div>
     </li>
 
-    <li class="tile" data-cat="patisserie" data-reveal data-delay="1">
+    <li class="tile is-known" data-cat="patisserie" data-reveal data-delay="1">
       <img class="tile__icon" src="assets/pictos/technique-09.svg" alt="" width="512" height="512" />
+      <span class="tile__star" role="img" aria-label="Compétence acquise">★</span>
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Le travail du chocolat</h3>
@@ -412,69 +426,20 @@
   </ul>
 
   <p class="grid__empty" id="techniques-empty" hidden>Aucune technique dans cette catégorie.</p>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════════════ compétences ═══ -->
-<section id="competences" class="chapter">
-  <header class="chapter__head">
-    <p class="chapter__num" data-reveal>04</p>
-    <h2 class="chapter__title" data-reveal data-delay="1">Compétences</h2>
-  </header>
-
-  <h3 class="sub" data-reveal>en salle</h3>
-  <ul class="skills">
-    <li data-reveal><span class="skills__name">Accueil</span><span class="skills__use">Placement, conseil, relation client</span></li>
-    <li data-reveal><span class="skills__name">Prise de commande</span><span class="skills__use">Carnet ou terminal, annonce des allergènes</span></li>
-    <li data-reveal><span class="skills__name">Service</span><span class="skills__use">À l’assiette, au plat, au guéridon</span></li>
-    <li data-reveal><span class="skills__name">Boissons</span><span class="skills__use">Ouverture, températures, service à la bière</span></li>
-    <li data-reveal><span class="skills__name">Encaissement</span><span class="skills__use">Addition, paiement, clôture de table</span></li>
-    <li data-reveal><span class="skills__name">Banquets et traiteur</span><span class="skills__use">Service synchronisé en brigade, en salle comme en extérieur</span></li>
-  </ul>
-
-  <h3 class="sub" data-reveal>en cuisine</h3>
-  <ul class="skills">
-    <li data-reveal><span class="skills__name">Mise en place</span><span class="skills__use">Organisation du poste avant le service</span></li>
-    <li data-reveal><span class="skills__name">Taillages</span><span class="skills__use">Maîtrise du couteau, régularité</span></li>
-    <li data-reveal><span class="skills__name">Sauces</span><span class="skills__use">Fonds, roux, sauces mères et dérivées</span></li>
-    <li data-reveal><span class="skills__name">Cuissons</span><span class="skills__use">Rôtir, braiser, pocher, sauter, griller</span></li>
-    <li data-reveal><span class="skills__name">Pâtisserie</span><span class="skills__use">Pâtes, crèmes, desserts à l’assiette</span></li>
-    <li data-reveal><span class="skills__name">Dressage</span><span class="skills__use">Envoi rapide et régulier</span></li>
-    <li data-reveal><span class="skills__name">HACCP</span><span class="skills__use">Hygiène, chaîne du froid, traçabilité</span></li>
-  </ul>
-
-  <h3 class="sub" data-reveal>langues</h3>
-  <ul class="skills skills--short">
-    <li data-reveal><span class="skills__name">Français</span><span class="skills__use">Langue maternelle</span></li>
-    <li data-reveal><span class="skills__name">Néerlandais</span><span class="skills__use">Niveau débutant</span></li>
-    <li data-reveal><span class="skills__name">Anglais</span><span class="skills__use">Niveau débutant</span></li>
-  </ul>
-
-  <h3 class="sub" data-reveal>savoir-être</h3>
-  <p class="prose" data-reveal>
+  <!-- Le savoir-être ferme le chapitre : c'est ce qui ne se met pas en liste. -->
+  <blockquote class="note" data-reveal>
     J’aime le rythme d’un service&nbsp;: on n’a pas le temps de réfléchir deux fois, il faut être prête avant.
     Je suis ponctuelle, je tiens ma place dans une brigade, et je préfère demander une fois de trop
     que de laisser passer une erreur dans l’assiette.<br />
     En salle comme en cuisine, je garde le sourire quand ça s’accélère — c’est là que le métier se joue.
-  </p>
-
-  <!-- Encadré disponibilités : l'information décisive pour un job étudiant. -->
-  <div class="avail" data-reveal>
-    <h3 class="avail__title">Disponibilités</h3>
-    <ul class="avail__list">
-      <li><span class="avail__k">Week-ends</span><span class="avail__v">Vendredi soir, samedi et dimanche, midi et soir</span></li>
-      <li><span class="avail__k">Congés scolaires</span><span class="avail__v">Toussaint, Noël, carnaval, Pâques — semaines complètes</span></li>
-      <li><span class="avail__k">Été</span><span class="avail__v">Juillet et août, temps plein</span></li>
-      <li><span class="avail__k">Déplacements</span><span class="avail__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span></li>
-      <li><span class="avail__k">Événements</span><span class="avail__v">Soirées ponctuelles, banquets, extras — même en semaine</span></li>
-      <li><span class="avail__k">Statut</span><span class="avail__v">Contrat d’occupation étudiant</span></li>
-    </ul>
-  </div>
+  </blockquote>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════════ contact ═══ -->
 <section id="contact" class="chapter chapter--soft chapter--contact">
   <header class="chapter__head">
-    <p class="chapter__num" data-reveal>05</p>
+    <p class="chapter__num" data-reveal>04</p>
     <h2 class="chapter__title" data-reveal data-delay="1">Contact</h2>
   </header>
 
@@ -502,6 +467,28 @@
       <button type="submit" class="btn"><span>Envoyer</span></button>
       <p class="form__note">Le bouton ouvre votre logiciel de courrier, message déjà rempli.</p>
     </form>
+  </div>
+
+  <div class="aside" data-reveal>
+    <div class="aside__part">
+      <h3 class="avail__title">Langues</h3>
+      <ul class="skills skills--short">
+    <li data-reveal><span class="skills__name">Français</span><span class="skills__use">Langue maternelle</span></li>
+    <li data-reveal><span class="skills__name">Néerlandais</span><span class="skills__use">Niveau débutant</span></li>
+    <li data-reveal><span class="skills__name">Anglais</span><span class="skills__use">Niveau débutant</span></li>
+  </ul>
+    </div>
+    <div class="aside__part">
+      <h3 class="avail__title">Disponibilités</h3>
+    <ul class="avail__list">
+      <li><span class="avail__k">Week-ends</span><span class="avail__v">Vendredi soir, samedi et dimanche, midi et soir</span></li>
+      <li><span class="avail__k">Congés scolaires</span><span class="avail__v">Toussaint, Noël, carnaval, Pâques — semaines complètes</span></li>
+      <li><span class="avail__k">Été</span><span class="avail__v">Juillet et août, temps plein</span></li>
+      <li><span class="avail__k">Déplacements</span><span class="avail__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span></li>
+      <li><span class="avail__k">Événements</span><span class="avail__v">Soirées ponctuelles, banquets, extras — même en semaine</span></li>
+      <li><span class="avail__k">Statut</span><span class="avail__v">Contrat d’occupation étudiant</span></li>
+    </ul>
+  </div>
   </div>
 
   <footer class="foot">

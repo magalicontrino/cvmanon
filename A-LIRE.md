@@ -104,7 +104,10 @@ Les deux adresses vérifiées :
   léger décalage des photos par rapport au texte.
 - **Navigation par points** au bord droit, qui s'inverse en blanc sur les
   sections sombres ; jauge de progression en haut, flèche de retour en bas.
-- **Filtre des techniques** : Tout / Cuisine / Pâtisserie / Salle.
+- **Filtre des techniques** : Tout / Salle / Cuisine / Pâtisserie.
+- **Étoile sur les fiches techniques** : elle marque les gestes tenus en
+  autonomie. C'est ce qui a remplacé le chapitre Compétences, dont les langues
+  et les disponibilités ont rejoint le bas de la section Contact.
 - **Visionneuse** : un clic sur une image l'ouvre en grand. Flèches ← → pour
   passer à la suivante, Échap pour fermer.
 - **Plans Google Maps** de la brasserie et de l'école, en bas de la section
