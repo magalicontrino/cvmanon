@@ -71,7 +71,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Bande de repères | **Année scolaire** | « 4ᵉ année » |
 | Formation | **Années d'études** | 2022-2023 en 3ᵉ, puis 2023 → en cours |
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
-| Expérience — Trans-Inde | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
+| Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
 | Plats préférés | **Les six plats** | Choisis pour être plausibles dans une brasserie belge |
 
 Le **stage** est décrit de façon volontairement générale : je ne savais ni où il
