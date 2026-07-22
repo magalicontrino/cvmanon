@@ -485,7 +485,16 @@ figure.media img[data-zoom] { cursor: zoom-in; }
     min-height: 90svh;
   }
   .intro__text { margin: 0; max-width: none; order: 2; }
-  .intro__portrait { order: 1; height: min(22svh, 14rem); }
+  /* Le portrait ne prend PAS toute la largeur. Un cadre pleine largeur et court
+     donne un rapport de 3 pour 1 : le recadrage n'en garde qu'une tranche, et
+     le visage se retrouve coupé au front et au menton. On fixe donc le rapport
+     de forme et on limite la largeur — la hauteur en découle. */
+  .intro__portrait {
+    order: 1;
+    width: min(44vw, 11.5rem);
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
   /* L'interlettrage large fait passer la ligne de lieu sur deux lignes pour
      une poignée de pixels de texte. On le resserre plutôt que de la couper. */
   .eyebrow { letter-spacing: .2em; }
@@ -503,7 +512,9 @@ figure.media img[data-zoom] { cursor: zoom-in; }
    sont la seule porte d'entrée du CV. */
 @media (max-width: 900px) and (max-height: 780px) {
   .mark { display: none; }
-  .intro__portrait { height: min(17svh, 10.5rem); }
+  /* Encore plus court : le carré est le recadrage le moins destructeur pour une
+     photo presque carrée. */
+  .intro__portrait { width: min(32vw, 8.5rem); aspect-ratio: 1 / 1; }
   .intro__pitch { font-size: .88rem; line-height: 1.55; }
   .intro__roles { font-size: 1.15rem; }
 }
