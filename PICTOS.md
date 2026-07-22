@@ -33,7 +33,7 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 | 03 | `technique-03` | `cuissons` | Un gril, une poêle, ou une cocotte sur le feu |
 | 04 | `technique-04` | `poisson-volaille` | Un poisson entier, ou une volaille prête à rôtir |
 | 05 | `technique-05` | `dressage` | Une assiette sous cloche, vue de côté |
-| 06 | `technique-06` | `mise-en-place` | Une balance de cuisine, ou des bacs alignés |
+| 06 | `technique-06` | `mise-en-place` | Une liste cochée, ou des bacs alignés |
 | 07 | `technique-07` | `pates` | Un rouleau à pâtisserie |
 | 08 | `technique-08` | `cremes` | Un fouet |
 | 09 | `technique-09` | `chocolat` | Une praline, un bonbon de chocolat |
