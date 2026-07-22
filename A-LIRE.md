@@ -72,6 +72,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Formation | **Années d'études** | 2022-2023 en 3ᵉ, puis 2023 → en cours |
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
 | Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
+| Expérience — All Ride | **Année, durée, commune** | « Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
 | Plats préférés | **Les six plats** | Choisis pour être plausibles dans une brasserie belge |
 
 Le **stage** est décrit de façon volontairement générale : je ne savais ni où il
