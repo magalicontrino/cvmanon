@@ -1,6 +1,7 @@
 # Liste des pictogrammes à produire
 
-28 pictos : 20 grandes images et 8 petits pictos de liste pour les plats.
+Tous les pictos sont désormais de petit format, posés au début d'une ligne
+ou d'une fiche.
 Ceux en place viennent de game-icons.net et sont provisoires.
 
 ## Comment me les donner
@@ -24,19 +25,20 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 
 ---
 
-## Techniques — 14 pictos
+## Techniques — 15 pictos
 
 | # | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|---|
 | 01 | `technique-01` | `taillages` | Un ou plusieurs couteaux de cuisine, ou un couteau sur une planche |
 | 02 | `technique-02` | `sauces` | Une casserole avec sa queue |
 | 03 | `technique-03` | `cuissons` | Un gril, une poêle, ou une cocotte sur le feu |
-| 04 | `technique-04` | `poisson-volaille` | Un poisson entier, ou une volaille prête à rôtir |
+| 04 | `technique-04` | `poisson` | Un poisson entier |
+| 15 | `technique-15` | `volaille` | Un pilon, ou une volaille prête à rôtir |
 | 05 | `technique-05` | `dressage` | Une assiette sous cloche, vue de côté |
 | 06 | `technique-06` | `mise-en-place` | Une liste cochée, ou des bacs alignés |
 | 07 | `technique-07` | `pates` | Un rouleau à pâtisserie |
 | 08 | `technique-08` | `cremes` | Un fouet |
-| 09 | `technique-09` | `chocolat` | Une praline, un bonbon de chocolat |
+| 09 | `technique-09` | `chocolat` | Des tablettes empilées, ou une praline |
 | 10 | `technique-10` | `couvert` | Un couvert dressé : fourchette, couteau, cuillère |
 | 11 | `technique-11` | `service` | Une sonnette de comptoir, ou un plateau de service |
 | 12 | `technique-12` | `flambage` | Une flamme |
