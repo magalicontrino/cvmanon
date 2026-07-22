@@ -75,7 +75,7 @@ fins, ils disparaîtront. Ils vont dans `assets/pictos/`, pas dans
 | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|
 | `experience-cuisine` | `marmite` | Une marmite, ou un piano de cuisine |
-| `experience-salle` | `enseigne` | Une enseigne de restaurant |
+| `experience-salle` | `noeud-papillon` | Un nœud papillon, ou une cravate |
 | `experience-stock` | `stock` | Un diable, une palette, ou des cartons empilés |
 
 ---
