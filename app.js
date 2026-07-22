@@ -132,11 +132,11 @@
      échoué avant qu'on ne pose le gestionnaire. On teste aussi l'état courant.
      ========================================================================== */
 
-  function placeholder(label, dark) {
-    var bg    = dark ? '#262323' : '#e9e7e4';
-    var line  = dark ? '#333030' : '#dcd8d3';
-    var text  = dark ? '#7d7671' : '#a09a94';
-    var sub   = dark ? '#5c5652' : '#b9b3ad';
+  function placeholder(label) {
+    var bg   = '#efefed';
+    var line = '#e2e1de';
+    var text = '#a09a94';
+    var sub  = '#bdb9b4';
 
     // Hachures diagonales : le même vide que sur une planche de contact.
     var hatch = '';
@@ -179,8 +179,7 @@
     // de laisser une icône de fichier cassé sur un CV.
     if (img.dataset.failed) return;
     img.dataset.failed = '1';
-    var dark = !!img.closest('.chapter--dark');
-    img.src = placeholder(img.getAttribute('data-ph') || 'photo', dark);
+    img.src = placeholder(img.getAttribute('data-ph') || 'photo');
     // Un cadre vide n'a rien à montrer en grand : on lui retire son rôle
     // cliquable plutôt que d'ouvrir une visionneuse sur rien.
     img.removeAttribute('data-zoom');
@@ -321,18 +320,9 @@
   var dots = $('.dots');
   var dotLinks = $$('.dots a');
   var sections = dotLinks.map(function (a) { return $(a.getAttribute('href')); });
-  var darkSections = $$('.chapter--dark, .strip');
   var toTop = $('.totop');
 
-  // Y a-t-il une section sombre à cette hauteur de l'écran ?
-  function darkAt(y) {
-    return darkSections.some(function (s) {
-      var r = s.getBoundingClientRect();
-      return r.top <= y && r.bottom >= y;
-    });
-  }
-
-  function frame() {
+    function frame() {
     var vh = innerHeight;
 
     if (!reduced && pending.length) sweep(vh);
@@ -365,13 +355,6 @@
       if (s && s.getBoundingClientRect().top <= line) current = i;
     });
     dotLinks.forEach(function (a, i) { a.classList.toggle('is-active', i === current); });
-
-    // Les commandes du bord droit s'inversent au-dessus des sections sombres.
-    // On teste les rectangles plutôt que elementFromPoint, qui tombe sur la
-    // barre de défilement et force un recalcul de style à chaque image. Chacune
-    // est jaugée à SA hauteur : les points sont au milieu, la flèche en bas.
-    if (dots) dots.classList.toggle('on-dark', darkAt(vh / 2));
-    if (toTop) toTop.classList.toggle('on-dark', darkAt(vh - 48));
 
     ticking = false;
   }

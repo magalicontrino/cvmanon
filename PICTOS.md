@@ -10,8 +10,8 @@ Ceux en place viennent de game-icons.net et sont provisoires.
 le fond du site, à la bonne taille et à la bonne couleur.
 
 - **Forme pleine, noire, sur fond transparent.** Pas de contour, pas de gris, pas
-  de dégradé : une silhouette. C'est moi qui l'inverse en blanc pour les
-  sections sombres.
+  de dégradé : une silhouette. Tout le site est clair, elles restent noires
+  partout.
 - **Carré**, idéalement 512 × 512.
 - Le tracé doit remplir le carré : pas de marge intérieure, je la gère.
 
@@ -45,8 +45,7 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 
 ## Plats préférés — 8 pictos
 
-*Petits pictos de liste, sur fond noir : la silhouette sera inversée en blanc.
-Les plats sont ceux de la carte de la Brasserie des Artistes.*
+*Petits pictos de liste. Les plats sont ceux de la carte de la Brasserie des Artistes.*
 
 | # | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|---|
@@ -72,8 +71,6 @@ fins, ils disparaîtront. Ils vont dans `assets/pictos/`, pas dans
 | `formation-03` | `restaurant` | Des convives autour d'une table, ou une salle dressée |
 
 ## Expérience — 3 pictos
-
-*Ces trois-là sont sur fond noir : la silhouette sera inversée en blanc.*
 
 | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|

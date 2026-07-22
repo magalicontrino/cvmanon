@@ -2,8 +2,9 @@
 
 Site en une seule page, sans dépendance et sans serveur : il suffit d'ouvrir
 `index.html` dans un navigateur. Même identité graphique que
-[cv.magalicontrino.com](https://cv.magalicontrino.com) — mêmes polices, mêmes
-couleurs, même grammaire d'animation — avec un seul accent cuivré en plus.
+[cv.magalicontrino.com](https://cv.magalicontrino.com) — mêmes polices, même
+grammaire d'animation — mais en clair de bout en bout, sans aucune section sur
+fond noir, avec des cartes très arrondies et des boutons en gélule.
 
 Dépôt : <https://github.com/magalicontrino/cvmanon>
 
