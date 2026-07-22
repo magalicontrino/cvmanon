@@ -42,13 +42,13 @@ partir avec elles — sauf le favicon, qui vient de la même banque.
 | Fichier | Sujet |
 |---|---|
 | `portrait.jpg` | ✅ déjà en place — la photo que vous avez déposée |
-| `formation-01.jpg` | Manon en tenue, à l'école |
-| `formation-02.jpg` | Hygiène : plan de travail, chambre froide, thermomètre |
-| `formation-03.jpg` | La salle ou la cuisine du restaurant didactique |
-| `experience-cuisine.jpg` | Elle au poste, en cuisine |
-| `experience-salle.jpg` | Elle en salle, plateau ou table dressée |
-| `experience-stock.jpg` | Le stock, les cartons, une palette |
 | `technique-01.jpg` → `technique-14.jpg` | Les 14 techniques, dans l'ordre des fiches |
+
+**Formation et Expérience n'attendent plus de photos.** Ces deux chapitres sont
+passés en listes compactes pour qu'on embrasse le parcours d'un regard&nbsp;: ils
+n'ont plus que de petits pictos de 2 rem, où une photo serait illisible. Si vous
+voulez y remettre des photos d'elle en tenue, dites-le — il faudra rouvrir la
+mise en page de ces sections, ce n'est pas un simple dépôt de fichier.
 
 L'ordre des techniques : 01 taillages · 02 sauces mères · 03 cuissons ·
 04 poisson et volaille · 05 dressage · 06 mise en place · 07 pâtes de base ·

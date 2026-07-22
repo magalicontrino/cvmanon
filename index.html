@@ -120,53 +120,33 @@
     <h2 class="chapter__title" data-reveal data-delay="1">Formation</h2>
   </header>
 
-  <div class="cards">
+  <!-- Trois lignes plutôt que trois cartes : on embrasse le parcours d'un
+       regard au lieu de faire défiler trois pavés. -->
+  <ul class="rows">
 
-    <article class="card" data-reveal>
-      <figure class="media media--card" data-unmask>
-        <img src="assets/images/formation-01.jpg" alt="" data-parallax="0.08" data-ph="École hôtelière" />
-      </figure>
-      <div class="card__body">
-        <p class="tag">école hôtelière</p>
-        <h3 class="card__org">Institut d’Enseignement Cardinal Mercier</h3>
-        <dl class="facts">
-          <dt>2026</dt><dd>5<sup>e</sup> année en septembre</dd>
-          <dt>Section</dt><dd>Hôtelier(ère) - Restaurateur(trice), enseignement technique de qualification</dd>
-          <dt>Braine-l’Alleud</dt><dd>Chaussée de Mont-Saint-Jean 83, 1420</dd>
-        </dl>
-        <a class="link" href="https://institut.collegecardinalmercier.be/ecolehoteliere/" target="_blank" rel="noopener">institut.collegecardinalmercier.be</a>
-      </div>
-    </article>
+    <li data-reveal>
+      <img class="rows__icon" src="assets/pictos/formation-01.svg" alt="" width="512" height="512" />
+      <span class="rows__title">Institut d’Enseignement Cardinal Mercier
+        <em class="rows__sub">Braine-l’Alleud</em></span>
+      <span class="rows__body"><b>2026</b> — 5<sup>e</sup> année en septembre. Section Hôtelier(ère) - Restaurateur(trice), enseignement technique de qualification.
+        <a class="link" href="https://institut.collegecardinalmercier.be/ecolehoteliere/" target="_blank" rel="noopener">institut.collegecardinalmercier.be</a></span>
+    </li>
 
-    <article class="card" data-reveal data-delay="1">
-      <figure class="media media--card" data-unmask>
-        <img src="assets/images/formation-02.jpg" alt="" data-parallax="0.08" data-ph="Hygiène HACCP" />
-      </figure>
-      <div class="card__body">
-        <p class="tag">hygiène</p>
-        <h3 class="card__org">Normes HACCP et sécurité alimentaire</h3>
-        <dl class="facts">
-          <dt>Intégré au cursus</dt><dd>Chaîne du froid, traçabilité, températures, nettoyage et désinfection</dd>
-          <dt>Au quotidien</dt><dd>Tenue professionnelle complète, lavage des mains, allergènes, DLC</dd>
-        </dl>
-      </div>
-    </article>
+    <li data-reveal>
+      <img class="rows__icon" src="assets/pictos/formation-02.svg" alt="" width="512" height="512" />
+      <span class="rows__title">Normes HACCP et sécurité alimentaire
+        <em class="rows__sub">Intégré au cursus</em></span>
+      <span class="rows__body">Chaîne du froid, traçabilité, températures, nettoyage et désinfection. Tenue professionnelle complète, lavage des mains, allergènes, DLC.</span>
+    </li>
 
-    <article class="card" data-reveal data-delay="2">
-      <figure class="media media--card" data-unmask>
-        <img src="assets/images/formation-03.jpg" alt="" data-parallax="0.08" data-ph="Restaurant didactique" />
-      </figure>
-      <div class="card__body">
-        <p class="tag">pratique</p>
-        <h3 class="card__org">Restaurant didactique de l’école</h3>
-        <dl class="facts">
-          <dt>Chaque semaine</dt><dd>Services complets ouverts au public&nbsp;: brigade de cuisine et brigade de salle</dd>
-          <dt>Banquets</dt><dd>Réceptions et repas de gala organisés par l’école</dd>
-        </dl>
-      </div>
-    </article>
+    <li data-reveal>
+      <img class="rows__icon" src="assets/pictos/formation-03.svg" alt="" width="512" height="512" />
+      <span class="rows__title">Restaurant didactique de l’école
+        <em class="rows__sub">Chaque semaine</em></span>
+      <span class="rows__body">Services complets ouverts au public, en brigade de cuisine et en brigade de salle. Réceptions et repas de gala organisés par l’école.</span>
+    </li>
 
-  </div>
+  </ul>
 </section>
 
 <!-- ════════════════════════════════════════════════════════════════ expérience ═══ -->
@@ -176,134 +156,64 @@
     <h2 class="chapter__title" data-reveal data-delay="1">Expérience</h2>
   </header>
 
-  <!-- Deux postes, deux familles. Sur grand écran, l'intitulé et sa photo
-       restent collés à gauche pendant que les expériences défilent à droite. -->
-  <div class="track">
+  <!-- Trois familles, une ligne par poste. La date à gauche donne la
+       chronologie sans qu'on ait à la chercher dans le texte. -->
+  <h3 class="rows__group" data-reveal>
+    <img src="assets/pictos/experience-salle.svg" alt="" width="512" height="512" />salle
+  </h3>
+  <ul class="rows rows--dated">
 
-    <div class="track__group">
-      <div class="track__aside">
-        <div class="track__sticky">
-          <figure class="media media--band" data-unmask>
-            <img src="assets/images/experience-salle.jpg" alt="" data-parallax="0.1" data-ph="En salle" />
-          </figure>
-          <h3 class="track__label">salle</h3>
-        </div>
-      </div>
-      <ol class="jobs">
-        <li class="job" data-reveal>
-          <p class="job__date">2025 - en cours</p>
-          <h4 class="job__role">Service en salle</h4>
-          <p class="job__org">Brasserie des Artistes — Ittre</p>
-          <p class="job__desc">Accueil et placement des clients, prise de commande, conseil sur la carte.<br />
-            Service à l’assiette, service des boissons, débarrassage, redressage des tables, terrasse en saison.</p>
-          <p class="job__desc">Encaissement et clôture&nbsp;; gestion des rushs du week-end sans perdre le sourire.</p>
-        </li>
-        <li class="job" data-reveal>
-          <p class="job__date">Depuis 2023</p>
-          <h4 class="job__role">Banquets, réceptions et service événementiel</h4>
-          <p class="job__org">Institut Cardinal Mercier</p>
-          <p class="job__desc">Services de banquet et réceptions organisés par l’école&nbsp;: mise en place de la salle, service synchronisé, découpe et flambage devant le client.</p>
-          <p class="job__desc">Le rythme d’un service traiteur&nbsp;: tout se prépare en amont, tout se joue en une soirée, et on ne peut rien aller rechercher en cuisine.</p>
-        </li>
-      </ol>
-    </div>
+    <li data-reveal class="is-now">
+      <span class="rows__date">2025 — en cours</span>
+      <span class="rows__title">Service en salle<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__body">Accueil et placement des clients, prise de commande, conseil sur la carte. Service à l’assiette, service des boissons, débarrassage, redressage des tables, terrasse en saison. Encaissement et clôture&nbsp;; gestion des rushs du week-end sans perdre le sourire.</span>
+    </li>
 
-    <div class="track__group">
-      <div class="track__aside">
-        <div class="track__sticky">
-          <figure class="media media--band" data-unmask>
-            <img src="assets/images/experience-cuisine.jpg" alt="" data-parallax="0.1" data-ph="En cuisine" />
-          </figure>
-          <h3 class="track__label">cuisine</h3>
-        </div>
-      </div>
-      <ol class="jobs">
-        <li class="job job--now" data-reveal>
-          <p class="job__date">2025 - en cours</p>
-          <h4 class="job__role">Commis de cuisine — job étudiant</h4>
-          <p class="job__org">Brasserie des Artistes — Ittre</p>
-          <p class="job__desc">Mise en place complète du poste avant le service&nbsp;: taillages, fonds, sauces, portionnage.<br />
-            Envoi des entrées et des desserts pendant le coup de feu, dressage à l’assiette, régularité d’une assiette à l’autre.</p>
-          <p class="job__desc">Nettoyage et rangement en fin de service, respect strict des normes HACCP.</p>
-          <a class="link" href="https://www.brasseriedesartistes.be/" target="_blank" rel="noopener">brasseriedesartistes.be</a>
-        </li>
-        <li class="job" data-reveal>
-          <p class="job__date">2025</p>
-          <h4 class="job__role">Stage en cuisine</h4>
-          <p class="job__org">Brasserie des Artistes — Ittre</p>
-          <p class="job__desc">Stage d’immersion prévu au programme de l’école.<br />
-            Découverte du rythme réel d’une brasserie&nbsp;: cadence du service, communication entre les postes, gestion des retours.</p>
-        </li>
-      </ol>
-    </div>
+    <li data-reveal>
+      <span class="rows__date">Depuis 2023</span>
+      <span class="rows__title">Banquets, réceptions et service événementiel<em class="rows__sub">Institut Cardinal Mercier</em></span>
+      <span class="rows__body">Mise en place de la salle, service synchronisé, découpe et flambage devant le client. Le rythme d’un service traiteur&nbsp;: tout se prépare en amont, tout se joue en une soirée.</span>
+    </li>
 
-    <div class="track__group">
-      <div class="track__aside">
-        <div class="track__sticky">
-          <figure class="media media--band" data-unmask>
-            <img src="assets/images/experience-stock.jpg" alt="" data-parallax="0.1" data-ph="Au stock" />
-          </figure>
-          <h3 class="track__label">stock et logistique</h3>
-        </div>
-      </div>
-      <ol class="jobs">
-        <li class="job" data-reveal>
-          <p class="job__date">Été</p>
-          <h4 class="job__role">Magasinière — job étudiant</h4>
-          <p class="job__org">Transind — Braine-le-Château</p>
-          <p class="job__desc">Grossiste en articles de sport et de camping.<br />
-            Travail au stock&nbsp;: réception et rangement des marchandises, gestion des produits, préparation et suivi des livraisons.</p>
-          <p class="job__desc">Un rythme différent de celui d’un service, mais la même exigence&nbsp;: savoir où se trouve chaque chose et tenir les délais.</p>
-        </li>
-        <li class="job" data-reveal>
-          <p class="job__date">Été</p>
-          <h4 class="job__role">Stockeuse et préparation de commandes — job étudiant</h4>
-          <p class="job__org">All Ride — skateboard</p>
-          <p class="job__desc">Tenue du stock&nbsp;: rangement et suivi des références.<br />
-            Préparation des commandes&nbsp;: prélèvement des articles, contrôle de la commande, emballage avant expédition.</p>
-          <p class="job__desc">Une commande incomplète se voit tout de suite&nbsp;: on vérifie avant de fermer le colis, jamais après.</p>
-        </li>
-      </ol>
-    </div>
+  </ul>
 
-  </div>
+  <h3 class="rows__group" data-reveal>
+    <img src="assets/pictos/experience-cuisine.svg" alt="" width="512" height="512" />cuisine
+  </h3>
+  <ul class="rows rows--dated">
 
-  <!-- Les deux adresses, avec leur plan. Le plan ne se charge qu'au clic :
-       tant que personne ne le demande, la page n'appelle aucun serveur
-       extérieur et ne dépose aucun cookie. -->
-  <div class="places">
+    <li data-reveal class="is-now">
+      <span class="rows__date">2025 — en cours</span>
+      <span class="rows__title">Commis de cuisine — job étudiant<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__body">Mise en place complète du poste avant le service&nbsp;: taillages, fonds, sauces, portionnage. Envoi des entrées et des desserts pendant le coup de feu, dressage à l’assiette, régularité d’une assiette à l’autre. Respect strict des normes HACCP. <a class="link" href="https://www.brasseriedesartistes.be/" target="_blank" rel="noopener">brasseriedesartistes.be</a></span>
+    </li>
 
-    <article class="place" data-reveal>
-      <p class="tag">où j’ai travaillé</p>
-      <h3 class="place__name">Brasserie des Artistes</h3>
-      <p class="place__addr">Rue Basse 11 — 1460 Ittre</p>
-      <div class="place__frame">
-        <span class="place__grid" aria-hidden="true"></span>
-        <span class="place__pin" aria-hidden="true"></span>
-        <button type="button" class="place__load"
-                data-query="Brasserie des Artistes, Rue Basse 11, 1460 Ittre"
-                data-title="Plan — Brasserie des Artistes, Ittre">Afficher le plan</button>
-      </div>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre"
-         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
-    </article>
+    <li data-reveal>
+      <span class="rows__date">2025</span>
+      <span class="rows__title">Stage en cuisine<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__body">Stage d’immersion prévu au programme de l’école. Découverte du rythme réel d’une brasserie&nbsp;: cadence du service, communication entre les postes, gestion des retours.</span>
+    </li>
 
-    <article class="place" data-reveal data-delay="1">
-      <p class="tag">où j’étudie</p>
-      <h3 class="place__name">Institut d’Enseignement Cardinal Mercier</h3>
-      <p class="place__addr">Chaussée de Mont-Saint-Jean 83 — 1420 Braine-l’Alleud</p>
-      <div class="place__frame">
-        <span class="place__grid" aria-hidden="true"></span>
-        <span class="place__pin" aria-hidden="true"></span>
-        <button type="button" class="place__load"
-                data-query="Institut d'Enseignement Cardinal Mercier, Chaussée de Mont-Saint-Jean 83, 1420 Braine-l'Alleud"
-                data-title="Plan — Institut Cardinal Mercier, Braine-l’Alleud">Afficher le plan</button>
-      </div>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Institut%20Cardinal%20Mercier%2C%20Chauss%C3%A9e%20de%20Mont-Saint-Jean%2083%2C%201420%20Braine-l%27Alleud"
-         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
-    </article>
+  </ul>
 
-  </div>
+  <h3 class="rows__group" data-reveal>
+    <img src="assets/pictos/experience-stock.svg" alt="" width="512" height="512" />stock et logistique
+  </h3>
+  <ul class="rows rows--dated">
+
+    <li data-reveal>
+      <span class="rows__date">Été</span>
+      <span class="rows__title">Magasinière — job étudiant<em class="rows__sub">Transind — Braine-le-Château</em></span>
+      <span class="rows__body">Grossiste en articles de sport et de camping. Réception et rangement des marchandises, gestion des produits, préparation et suivi des livraisons.</span>
+    </li>
+
+    <li data-reveal>
+      <span class="rows__date">Été</span>
+      <span class="rows__title">Stockeuse et préparation de commandes<em class="rows__sub">All Ride — skateboard</em></span>
+      <span class="rows__body">Rangement et suivi des références. Prélèvement des articles, contrôle de la commande, emballage avant expédition.</span>
+    </li>
+
+  </ul>
 </section>
 
 <!-- ════════════════════════════════════════════════════════════════ techniques ═══ -->
