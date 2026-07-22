@@ -443,6 +443,13 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   transition: transform .55s var(--ease);
 }
 .intro__nav a:hover, .intro__nav a:focus-visible { color: var(--white); border-color: var(--ink-strong); }
+
+/* Le seul bouton du menu qui ne mène pas à une section de la page : il est
+   rempli d'encre pour que la différence se voie avant le clic. */
+.intro__nav a.is-file { color: var(--white); border-color: var(--ink-strong); }
+.intro__nav a.is-file::before { transform: none; }
+.intro__nav a.is-file:hover, .intro__nav a.is-file:focus-visible { color: var(--ink-strong); }
+.intro__nav a.is-file:hover::before, .intro__nav a.is-file:focus-visible::before { transform: translateY(101%); }
 .intro__nav a:hover::before, .intro__nav a:focus-visible::before { transform: none; }
 
 .intro__portrait { height: min(70svh, 42rem); }
