@@ -76,6 +76,12 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Expérience — All Ride | **Année, durée, commune** | « Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
 | Plats signature | **Les cinq derniers** | Les trois premiers viennent de vous. Les cinq autres sont tirés de la carte de la Brasserie des Artistes et restent à confirmer |
 
+Le mot **traiteur** apparaît dans l'accroche, dans les compétences et dans les
+banquets de l'école. Elle n'a pas travaillé chez un traiteur : ce sont les
+banquets scolaires qui relèvent du même registre, et la fiche le formule comme
+une comparaison, pas comme un emploi. Si un jour elle en fait vraiment, ça
+mérite sa propre ligne dans l'expérience.
+
 Le **stage** est décrit de façon volontairement générale : je ne savais ni où il
 a eu lieu ni ce qu'elle y a fait. C'est le passage à réécrire en premier, c'est
 celui qu'un patron lira le plus attentivement.
