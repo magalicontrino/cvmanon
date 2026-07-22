@@ -356,7 +356,10 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   position: relative;
 }
 
-.intro__text { max-width: 34rem; margin-left: auto; margin-right: clamp(0rem, 2vw, 3rem); }
+/* `min-width: 0` : sans lui, un élément de grille refuse de descendre sous la
+   largeur de son contenu. Un mot long comme « VANBASTELAER » élargissait alors
+   la colonne au-delà de la page, qui se mettait à déborder latéralement. */
+.intro__text { max-width: 34rem; min-width: 0; margin-left: auto; margin-right: clamp(0rem, 2vw, 3rem); }
 
 .mark {
   display: inline-block;
@@ -527,9 +530,17 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .18em;
-  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  /* Plancher abaissé pour « TECHNIQUES APPRISES » : à 1.8rem et .18em
+     d'interlettrage, le seul mot « TECHNIQUES » dépassait la largeur d'un
+     écran de 320 px, et un mot ne se coupe pas. */
+  font-size: clamp(1.4rem, 5vw, 3.4rem);
   line-height: 1.1;
   color: var(--ink-strong);
+  /* Élément de flex : sans min-width, il refuse de descendre sous la largeur de
+     son contenu et pousse la page à déborder. Le retour à la ligne forcé est le
+     dernier filet, si un titre plus long est ajouté un jour. */
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 /* Chapeau posé sous le titre : il remonte dans la marge laissée par la tête de

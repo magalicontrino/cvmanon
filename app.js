@@ -60,6 +60,65 @@
   });
 
   /* ==========================================================================
+     1 bis. Le nom doit tenir dans sa colonne
+
+     La taille d'affichage du nom est calculée sur la largeur de l'ÉCRAN
+     (`clamp(..., 7.4vw, ...)`), alors que le nom, lui, est enfermé dans une
+     colonne de 34 rem. Tant que le patronyme était court, les deux allaient de
+     pair. « VANBASTELAER » fait douze lettres : sur grand écran le mot mesurait
+     plus large que sa colonne, et comme un mot ne se coupe pas, il passait sous
+     le portrait et s'y faisait rogner.
+
+     On mesure donc le mot le plus large et on abaisse la taille jusqu'à ce
+     qu'il tienne. Mesuré, pas deviné : la largeur dépend de la police, qui
+     n'est pas la même avant et après son chargement.
+     ========================================================================== */
+
+  var nameEl = $('.intro__name');
+
+  function fitName() {
+    if (!nameEl) return;
+
+    // On repart toujours de la taille du CSS, sinon les réductions
+    // successives s'empilent à chaque redimensionnement.
+    nameEl.style.fontSize = '';
+
+    var words = $$('.split-word', nameEl);
+    if (!words.length) return;
+
+    /* La place disponible se mesure avec un corps minuscule. Sans ça, la mesure
+       tourne en rond : un élément de grille peut s'élargir sous la poussée de
+       son propre contenu, il rend donc exactement la largeur du mot le plus
+       long — jamais celle de la colonne — et la réduction n'a jamais lieu. */
+    nameEl.style.fontSize = '1px';
+    var avail = nameEl.clientWidth;
+    nameEl.style.fontSize = '';
+    if (!avail) return;
+
+    var widest = 0;
+    words.forEach(function (w) {
+      var x = w.getBoundingClientRect().width;
+      if (x > widest) widest = x;
+    });
+
+    if (widest <= avail) return;
+
+    // L'interlettrage est exprimé en em : la largeur est donc proportionnelle à
+    // la taille, et une seule passe suffit. Le 0.995 laisse un cheveu de marge
+    // pour les arrondis de rendu.
+    var size = parseFloat(getComputedStyle(nameEl).fontSize);
+    nameEl.style.fontSize = Math.floor(size * (avail / widest) * 0.995) + 'px';
+  }
+
+  fitName();
+  addEventListener('resize', fitName);
+  addEventListener('load', fitName);
+  // La police de titrage arrive après le premier rendu : tant qu'elle n'est pas
+  // là, on mesure les lettres d'une police de substitution, aux dimensions
+  // différentes. On remesure donc une fois qu'elle est posée.
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitName);
+
+  /* ==========================================================================
      2. Photos manquantes
 
      Le CV est livré sans ses photos : elles seront déposées une à une dans
