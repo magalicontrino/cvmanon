@@ -406,6 +406,28 @@
 
   var chips = $$('.chip');
   var tiles = $$('#techniques-grid .tile');
+
+  /* Dépliant. Le compte vient de la grille elle-même : ajouter une fiche met le
+     libellé à jour tout seul. Le bouton ne fait qu'ôter et remettre `hidden` —
+     la feuille d'impression le neutralise, le PDF sort toujours complet. */
+  var unfold = $('#tech-unfold');
+  var techBody = $('#techniques-body');
+  if (unfold && techBody) {
+    var unfoldLabel = $('.unfold__label', unfold);
+    if (unfoldLabel) unfoldLabel.textContent = 'Voir les ' + tiles.length + ' techniques';
+
+    unfold.addEventListener('click', function () {
+      var open = unfold.getAttribute('aria-expanded') === 'true';
+      unfold.setAttribute('aria-expanded', open ? 'false' : 'true');
+      techBody.hidden = open;
+      if (unfoldLabel) {
+        unfoldLabel.textContent = open ? 'Voir les ' + tiles.length + ' techniques' : 'Replier';
+      }
+      // Les fiches viennent d'entrer dans le flux : elles n'ont encore ni
+      // position ni apparition. Un tour de boucle les rattrape.
+      if (!open) onScroll();
+    });
+  }
   var empty = $('#techniques-empty');
   var hideTimer = null;
 

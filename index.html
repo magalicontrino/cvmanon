@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.ico" sizes="any" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/favicon-180.png" />
-<link rel="stylesheet" href="style.css?v=20260722n" />
+<link rel="stylesheet" href="style.css?v=20260722o" />
 <noscript><style>
   .curtain, .progress, .dots { display: none !important; }
   .totop { opacity: 1 !important; visibility: visible !important; transform: none !important; }
@@ -21,6 +21,9 @@
      les boutons plutôt que d'afficher des commandes mortes. Toutes les fiches
      sont visibles de toute façon. */
   .filters { display: none !important; }
+  /* Le dépliant non plus : son contenu s'affiche en entier. */
+  .unfold { display: none !important; }
+  #techniques-body[hidden] { display: block !important; }
 </style></noscript>
 </head>
 <body>
@@ -49,6 +52,8 @@
     <path d="M20,3.2c3.1,0,5.8,1.7,7.2,4.2.7-.2,1.4-.3,2.1-.3,4.3,0,7.7,3.5,7.7,7.7,0,3.3-2.1,6.2-5.1,7.3v3.4c0,.6-.5,1-1,1H9.1c-.6,0-1-.5-1-1v-3.4c-3-1.1-5.1-4-5.1-7.3,0-4.3,3.5-7.7,7.7-7.7.7,0,1.4,0,2.1.3,1.4-2.5,4.1-4.2,7.2-4.2ZM9.1,28.6h21.8c.6,0,1,.5,1,1v5.2c0,.6-.5,1-1,1H9.1c-.6,0-1-.5-1-1v-5.2c0-.6.5-1,1-1ZM16.2,13.9v9.4M20,13.2v10.1M23.8,13.9v9.4" />
   </symbol>
   <symbol id="icon-arrow" viewBox="0 0 40 40"><path d="M19.5,7l2.3,2.3c.4.4.4,1,0,1.4l-6.7,6.7h18.4c.5,0,1,.4,1,1v3.2c0,.5-.4,1-1,1H15.1s6.8,6.8,6.8,6.8c.4.4.4,1,0,1.4l-2.3,2.3c-.4.4-1,.4-1.4,0l-12.3-12.3c-.4-.4-.4-1,0-1.4l12.3-12.3c.4-.4,1-.4,1.4,0Z" /></symbol>
+  <!-- Chevron du dépliant : épais pour se voir de loin. -->
+  <symbol id="icon-chevron" viewBox="0 0 40 40"><path d="M20,28.4c-.6,0-1.1-.2-1.5-.6L4.6,13.9c-.8-.8-.8-2.1,0-3l1.9-1.9c.8-.8,2.1-.8,3,0l10.5,10.5,10.5-10.5c.8-.8,2.1-.8,3,0l1.9,1.9c.8.8.8,2.1,0,3l-13.9,13.9c-.4.4-.9.6-1.5.6Z" /></symbol>
   <symbol id="icon-close" viewBox="0 0 40 40"><path d="M31.1,11.7l-2.8-2.8-8.3,8.3-8.3-8.3-2.8,2.8,8.3,8.3-8.3,8.3,2.8,2.8,8.3-8.3,8.3,8.3,2.8-2.8-8.3-8.3,8.3-8.3Z" /></symbol>
 </svg>
 
@@ -152,6 +157,17 @@
     <h2 class="chapter__title" data-reveal data-delay="1">Techniques apprises</h2>
   </header>
 
+  <!-- Dépliant : quinze fiches d'un coup allongeaient la page pour un chapitre
+       qui se consulte, alors que le reste du CV se lit. Le bouton porte le
+       compte, pour qu'on sache ce qu'il y a derrière avant de cliquer.
+       À l'impression et sans script, il disparaît et tout s'affiche. -->
+  <button type="button" class="unfold" id="tech-unfold"
+          aria-expanded="false" aria-controls="techniques-body">
+    <span class="unfold__label">Voir les 15 techniques</span>
+    <svg class="unfold__chevron" viewBox="0 0 40 40" aria-hidden="true"><use xlink:href="#icon-chevron"></use></svg>
+  </button>
+
+  <div id="techniques-body" hidden>
   <!-- Le filtre est piloté par app.js ; sans script il disparaît (voir noscript). -->
   <div class="filters" role="group" aria-label="Filtrer les techniques" data-reveal>
     <button type="button" class="chip is-on" data-filter="tout" aria-pressed="true">Tout</button>
@@ -301,6 +317,8 @@
   </ul>
 
   <p class="grid__empty" id="techniques-empty" hidden>Aucune technique dans cette catégorie.</p>
+  </div>
+
 </section>
 
 <!-- ════════════════════════════════════════════════════════════════ expérience ═══ -->
@@ -391,25 +409,61 @@
     <h2 class="chapter__title" data-reveal data-delay="1">Contact</h2>
   </header>
 
+  <!-- Disponibilités et langues en petites fiches : la double liste
+       étiquette-valeur qui les précédait obligeait l'œil à faire l'aller-retour
+       d'une colonne à l'autre sur toute la largeur. Une fiche, une réponse.
+       La jauge des langues dit le niveau d'un coup d'œil ; le texte le nomme,
+       elle ne le remplace pas. -->
   <div class="aside" data-reveal>
     <div class="aside__part">
       <h3 class="avail__title">Disponibilités</h3>
-    <ul class="avail__list">
-      <li><span class="avail__k">Week-ends</span><span class="avail__v">Vendredi soir, samedi et dimanche, midi et soir</span></li>
-      <li><span class="avail__k">Congés scolaires</span><span class="avail__v">Toussaint, Noël, carnaval, Pâques — semaines complètes</span></li>
-      <li><span class="avail__k">Été</span><span class="avail__v">Juillet et août, temps plein</span></li>
-      <li><span class="avail__k">Déplacements</span><span class="avail__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span></li>
-      <li><span class="avail__k">Événements</span><span class="avail__v">Soirées ponctuelles, banquets, extras — même en semaine</span></li>
-      <li><span class="avail__k">Statut</span><span class="avail__v">Contrat d’occupation étudiant</span></li>
-    </ul>
-  </div>
+      <ul class="facts">
+      <li class="fact" data-reveal data-delay="0">
+        <span class="fact__k">Week-ends</span>
+        <span class="fact__v">Vendredi soir, samedi et dimanche, midi et soir</span>
+      </li>
+      <li class="fact" data-reveal data-delay="1">
+        <span class="fact__k">Congés scolaires</span>
+        <span class="fact__v">Toussaint, Noël, carnaval, Pâques — semaines complètes</span>
+      </li>
+      <li class="fact" data-reveal data-delay="2">
+        <span class="fact__k">Été</span>
+        <span class="fact__v">Juillet et août, temps plein</span>
+      </li>
+      <li class="fact" data-reveal data-delay="3">
+        <span class="fact__k">Déplacements</span>
+        <span class="fact__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span>
+      </li>
+      <li class="fact" data-reveal data-delay="4">
+        <span class="fact__k">Événements</span>
+        <span class="fact__v">Soirées ponctuelles, banquets, extras — même en semaine</span>
+      </li>
+      <li class="fact" data-reveal data-delay="5">
+        <span class="fact__k">Statut</span>
+        <span class="fact__v">Contrat d’occupation étudiant</span>
+      </li>
+      </ul>
+    </div>
+
     <div class="aside__part">
       <h3 class="avail__title">Langues</h3>
-      <ul class="skills skills--short">
-    <li data-reveal><span class="skills__name">Français</span><span class="skills__use">Langue maternelle</span></li>
-    <li data-reveal><span class="skills__name">Néerlandais</span><span class="skills__use">Niveau débutant</span></li>
-    <li data-reveal><span class="skills__name">Anglais</span><span class="skills__use">Niveau débutant</span></li>
-  </ul>
+      <ul class="facts facts--lang">
+      <li class="fact fact--lang" data-reveal data-delay="0">
+        <span class="fact__k">Français</span>
+        <span class="fact__v">Langue maternelle</span>
+        <span class="gauge" aria-hidden="true"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i></span>
+      </li>
+      <li class="fact fact--lang" data-reveal data-delay="1">
+        <span class="fact__k">Néerlandais</span>
+        <span class="fact__v">Niveau débutant</span>
+        <span class="gauge" aria-hidden="true"><i class="is-on"></i><i></i><i></i></span>
+      </li>
+      <li class="fact fact--lang" data-reveal data-delay="2">
+        <span class="fact__k">Anglais</span>
+        <span class="fact__v">Niveau débutant</span>
+        <span class="gauge" aria-hidden="true"><i class="is-on"></i><i></i><i></i></span>
+      </li>
+      </ul>
     </div>
   </div>
 
@@ -465,6 +519,6 @@
   </figure>
 </div>
 
-<script src="app.js?v=20260722n"></script>
+<script src="app.js?v=20260722o"></script>
 </body>
 </html>

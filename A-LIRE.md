@@ -108,6 +108,12 @@ Les deux adresses vérifiées :
   léger décalage des photos par rapport au texte.
 - **Navigation par points** au bord droit, qui s'inverse en blanc sur les
   sections sombres ; jauge de progression en haut, flèche de retour en bas.
+- **Dépliant des techniques** : le chapitre s'ouvre sur un seul bouton, « Voir
+  les 15 techniques », avec un gros chevron. Les quinze fiches ouvertes d'emblée
+  allongeaient la page d'un tiers pour un chapitre qui se consulte plutôt qu'il
+  ne se lit. Le compte affiché vient de la grille&nbsp;: ajoutez une fiche, le
+  libellé suit. **Le bouton n'existe ni à l'impression ni sans JavaScript** —
+  dans les deux cas tout s'affiche, le PDF sort toujours complet.
 - **Filtre des techniques** : Tout / Salle / Cuisine / Pâtisserie.
 - **Étoile sur les fiches techniques** : elle marque les gestes tenus en
   autonomie. Les fiches ne portent plus que le picto, la catégorie et
@@ -128,6 +134,11 @@ Les deux adresses vérifiées :
   en ont un&nbsp;; All Ride non, faute d'adresse. Le bloc de cartes séparé et les
   plans encastrés ont été retirés — l'information est désormais au poste
   concerné, et la page n'appelle plus aucun serveur extérieur.
+- **Disponibilités et langues en fiches** : une fiche par réponse, trois par
+  ligne. Les deux listes étiquette-valeur qui les précédaient obligeaient l'œil
+  à traverser l'écran pour lire une seule information. Les langues portent en
+  plus une jauge de trois points — trois pleins pour le français, un seul pour
+  le néerlandais et l'anglais. Elle double le texte, elle ne le remplace pas.
 - **Formulaire de contact** : il n'envoie rien à un serveur, il ouvre le logiciel
   de courrier avec le message déjà rempli.
 - **PDF et impression** : le bouton « Le CV en PDF » ouvre `CV-Manon-Vanbastelaer.pdf`,
