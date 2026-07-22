@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.ico" sizes="any" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/favicon-180.png" />
-<link rel="stylesheet" href="style.css?v=20260722o" />
+<link rel="stylesheet" href="style.css?v=20260722p" />
 <noscript><style>
   .curtain, .progress, .dots { display: none !important; }
   .totop { opacity: 1 !important; visibility: visible !important; transform: none !important; }
@@ -428,11 +428,7 @@
       </li>
       <li class="fact" data-reveal data-delay="2">
         <span class="fact__k">Été</span>
-        <span class="fact__v">Juillet et août, temps plein</span>
-      </li>
-      <li class="fact" data-reveal data-delay="3">
-        <span class="fact__k">Déplacements</span>
-        <span class="fact__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span>
+        <span class="fact__v">Juillet et août</span>
       </li>
       <li class="fact" data-reveal data-delay="4">
         <span class="fact__k">Événements</span>
@@ -494,6 +490,18 @@
       <button type="submit" class="btn"><span>Envoyer</span></button>
       <p class="form__note">Le bouton ouvre votre logiciel de courrier, message déjà rempli.</p>
     </form>
+    <!-- Réservé au papier : le rond du site, son adresse et le QR qui y mène.
+         À l'écran il n'a aucun sens — on y est déjà. Il se loge à droite des
+         coordonnées, là où le PDF laissait du blanc, et ne coûte donc pas de
+         hauteur. Le QR a été décodé avant d'être posé ici : il mène bien à
+         https://manonvanbastelaer.magalicontrino.com/ -->
+    <div class="pdfonly" aria-hidden="true">
+      <img class="pdfonly__qr" src="assets/qr-site.png" alt="" width="1147" height="1147" />
+      <p class="pdfonly__legend">
+        <img class="pdfonly__dot" src="assets/favicon.svg" alt="" width="512" height="512" />
+        manonvanbastelaer.magalicontrino.com
+      </p>
+    </div>
   </div>
 
   <footer class="foot">
@@ -519,6 +527,6 @@
   </figure>
 </div>
 
-<script src="app.js?v=20260722o"></script>
+<script src="app.js?v=20260722p"></script>
 </body>
 </html>

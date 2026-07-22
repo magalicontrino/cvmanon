@@ -1099,6 +1099,10 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
 /* ------------------------------------------------------------ 15. Contact - */
 
+/* Le bloc du PDF — rond du site, adresse, QR — n'a aucun sens sur une page web :
+   le visiteur y est déjà. Il n'apparaît qu'à l'impression (section 18). */
+.pdfonly { display: none; }
+
 .chapter--contact { padding-bottom: clamp(2rem, 5vh, 3rem); }
 
 .contact {
@@ -1447,12 +1451,40 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
 
   /* ---- Contact : coordonnées, disponibilités, langues. */
-  .contact { grid-template-columns: 1fr !important; gap: .3cm !important; }
+  /* Coordonnées à gauche, QR à droite : le PDF laissait tout ce flanc blanc,
+     le bloc ne coûte donc pas une ligne de hauteur. */
+  .contact { grid-template-columns: minmax(0, 1fr) auto !important; align-items: end !important; gap: .3cm .8cm !important; }
+  .pdfonly {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: .2cm;
+  }
+  /* 3 cm. Ce code fait 43 modules de côté : à cette taille chaque module
+     mesure 0,63 mm, au-dessus du seuil où les lecteurs de téléphone
+     commencent à décrocher. Mesuré sur le PDF produit, pas supposé — plus
+     petit, le décodage échouait à basse résolution. La marge blanche autour
+     n'est pas de la décoration : c'est la zone de silence qu'exige la norme,
+     rien ne doit venir s'y coller. */
+  .pdfonly__qr { width: 3cm !important; height: 3cm !important; }
+  .pdfonly__legend {
+    display: flex;
+    align-items: center;
+    gap: .18cm;
+    font-family: var(--label);
+    font-weight: 700;
+    font-size: 6.2pt;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #1c1a1a !important;
+  }
+  /* Le rond du site, en vectoriel : la même icône que l'onglet du navigateur. */
+  .pdfonly__dot { width: .32cm !important; height: .32cm !important; }
   .contact__big { font-size: 15pt !important; color: #1c1a1a !important; }
-  .aside { margin: 0 0 .32cm !important; padding-bottom: .3cm !important; gap: .4cm !important; }
-  .avail__title { margin-bottom: .2cm !important; font-size: 7.5pt !important; }
+  .aside { margin: 0 0 .26cm !important; padding-bottom: .24cm !important; gap: .32cm !important; }
+  .avail__title { margin-bottom: .15cm !important; font-size: 7.5pt !important; }
   .facts { grid-template-columns: repeat(3, 1fr) !important; gap: .2cm !important; }
-  .fact { padding: .26cm .3cm !important; border-radius: 6px !important; gap: .09cm !important; }
+  .fact { padding: .22cm .28cm !important; border-radius: 6px !important; gap: .07cm !important; }
   .fact__k { font-size: 6.2pt !important; letter-spacing: .16em !important; }
   .fact__v { font-size: 8.2pt !important; line-height: 1.32 !important; }
   .fact--lang .fact__k { font-size: 7pt !important; }
@@ -1482,6 +1514,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   #techniques .grid { gap: .28cm !important; }
   #techniques .tile { padding: .26cm !important; }
 
-  .foot { margin-top: .45cm !important; padding-top: .3cm !important; font-size: 8pt !important; }
+  .foot { margin-top: .32cm !important; padding-top: .24cm !important; font-size: 8pt !important; }
   a { text-decoration: none; }
 }

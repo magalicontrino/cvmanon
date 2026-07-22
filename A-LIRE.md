@@ -134,6 +134,17 @@ Les deux adresses vérifiées :
   en ont un&nbsp;; All Ride non, faute d'adresse. Le bloc de cartes séparé et les
   plans encastrés ont été retirés — l'information est désormais au poste
   concerné, et la page n'appelle plus aucun serveur extérieur.
+- **QR code sur le PDF** : en bas de la deuxième page, à droite des
+  coordonnées — là où la page laissait du blanc, il ne coûte donc pas de
+  hauteur. Il mène à <https://manonvanbastelaer.magalicontrino.com/>&nbsp;; je
+  l'ai décodé avant de le poser, puis redécodé sur le PDF produit, à cinq
+  résolutions. À côté de lui, le rond noir du site, le même que l'onglet du
+  navigateur. Le bloc n'apparaît **que sur le papier** : sur le site il n'aurait
+  aucun sens, on y est déjà.
+  **Ne le rapetissez pas.** Ce code fait 43 modules de côté&nbsp;; à 3 cm chaque
+  module mesure 0,63 mm, ce qui est déjà le minimum confortable. En dessous, le
+  décodage échoue — c'est mesuré, pas supposé. Le fichier est
+  `assets/qr-site.png`.
 - **Disponibilités et langues en fiches** : une fiche par réponse, trois par
   ligne. Les deux listes étiquette-valeur qui les précédaient obligeaient l'œil
   à traverser l'écran pour lire une seule information. Les langues portent en
