@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="light only" />
+<title>Manon Vanbastelaer — CV</title>
+<meta name="description" content="Étudiante en hôtellerie-restauration à l'Institut Cardinal Mercier. Commis de cuisine et service en salle. Recherche un job étudiant en Brabant wallon." />
+<meta property="og:site_name" content="Manon Vanbastelaer" />
+<meta property="og:title" content="Manon Vanbastelaer — CV" />
+<meta property="og:type" content="profile" />
+<meta property="og:description" content="Étudiante en hôtellerie-restauration. Cuisine et salle. Recherche un job étudiant en Brabant wallon." />
+<link rel="stylesheet" href="style.css" />
+<noscript><style>
+  .curtain, .progress, .dots { display: none !important; }
+  .totop { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+  /* Sans script, le filtre des techniques ne peut pas fonctionner : on retire
+     les boutons plutôt que d'afficher des commandes mortes. Toutes les fiches
+     sont visibles de toute façon. */
+  .filters { display: none !important; }
+  /* Idem pour le bouton qui charge le plan : l'adresse et le lien vers Google
+     Maps, eux, restent là. */
+  .place__load { display: none !important; }
+</style></noscript>
+</head>
+<body>
+
+<!-- Rideau d'entrée : aplat nu qui se lève une fois la page prête. -->
+<div class="curtain" aria-hidden="true"></div>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+<!-- Navigation par points. Chaque point garde un intitulé lisible par les
+     lecteurs d'écran, révélé au survol pour les autres. -->
+<nav class="dots" aria-label="Sections">
+  <ul>
+    <li><a href="#intro"       data-dot><span>Accueil</span></a></li>
+    <li><a href="#formation"   data-dot><span>Formation</span></a></li>
+    <li><a href="#experience"  data-dot><span>Expérience</span></a></li>
+    <li><a href="#techniques"  data-dot><span>Techniques</span></a></li>
+    <li><a href="#plats"       data-dot><span>Plats</span></a></li>
+    <li><a href="#competences" data-dot><span>Compétences</span></a></li>
+    <li><a href="#contact"     data-dot><span>Contact</span></a></li>
+  </ul>
+</nav>
+
+<!-- Icônes dessinées pour ce CV : la toque de l'accueil, la flèche des boutons
+     de retour (pivotée vers le haut), la croix de la visionneuse. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" display="none" width="0" height="0" aria-hidden="true">
+  <symbol id="icon-toque" viewBox="0 0 40 40">
+    <path d="M20,3.2c3.1,0,5.8,1.7,7.2,4.2.7-.2,1.4-.3,2.1-.3,4.3,0,7.7,3.5,7.7,7.7,0,3.3-2.1,6.2-5.1,7.3v3.4c0,.6-.5,1-1,1H9.1c-.6,0-1-.5-1-1v-3.4c-3-1.1-5.1-4-5.1-7.3,0-4.3,3.5-7.7,7.7-7.7.7,0,1.4,0,2.1.3,1.4-2.5,4.1-4.2,7.2-4.2ZM9.1,28.6h21.8c.6,0,1,.5,1,1v5.2c0,.6-.5,1-1,1H9.1c-.6,0-1-.5-1-1v-5.2c0-.6.5-1,1-1ZM16.2,13.9v9.4M20,13.2v10.1M23.8,13.9v9.4" />
+  </symbol>
+  <symbol id="icon-arrow" viewBox="0 0 40 40"><path d="M19.5,7l2.3,2.3c.4.4.4,1,0,1.4l-6.7,6.7h18.4c.5,0,1,.4,1,1v3.2c0,.5-.4,1-1,1H15.1s6.8,6.8,6.8,6.8c.4.4.4,1,0,1.4l-2.3,2.3c-.4.4-1,.4-1.4,0l-12.3-12.3c-.4-.4-.4-1,0-1.4l12.3-12.3c.4-.4,1-.4,1.4,0Z" /></symbol>
+  <symbol id="icon-close" viewBox="0 0 40 40"><path d="M31.1,11.7l-2.8-2.8-8.3,8.3-8.3-8.3-2.8,2.8,8.3,8.3-8.3,8.3,2.8,2.8,8.3-8.3,8.3,8.3,2.8-2.8-8.3-8.3,8.3-8.3Z" /></symbol>
+</svg>
+
+<!-- Retour en haut, disponible partout dès qu'on a quitté le premier écran. -->
+<a class="totop" href="#intro" aria-label="Remonter en haut de la page">
+  <svg viewBox="0 0 40 40" aria-hidden="true"><use xlink:href="#icon-arrow"></use></svg>
+</a>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════════ accueil ═══ -->
+<section id="intro" class="intro">
+  <div class="intro__text">
+    <span class="mark" data-reveal aria-hidden="true">
+      <svg viewBox="0 0 40 40"><use xlink:href="#icon-toque"></use></svg>
+    </span>
+    <p class="eyebrow" data-reveal data-delay="1">Braine-l’Alleud — Brabant wallon</p>
+    <h1 class="intro__name" data-split>Manon Vanbastelaer</h1>
+    <ul class="intro__roles">
+      <li data-reveal data-delay="2">Commis de cuisine</li>
+      <li data-reveal data-delay="3">Service en salle</li>
+      <li data-reveal data-delay="4">Étudiante en hôtellerie</li>
+    </ul>
+
+    <p class="intro__pitch" data-reveal data-delay="5">
+      17 ans, en section hôtellerie-restauration à l’Institut Cardinal Mercier.
+      Je cherche un <strong>job étudiant</strong> en cuisine ou en salle&nbsp;:
+      week-ends, congés scolaires et vacances d’été.
+    </p>
+
+    <ul class="intro__nav">
+      <li data-reveal data-delay="6"><a href="#formation">Formation</a></li>
+      <li data-reveal data-delay="7"><a href="#experience">Expérience</a></li>
+      <li data-reveal data-delay="8"><a href="#techniques">Techniques</a></li>
+      <li data-reveal data-delay="9"><a href="#plats">Plats préférés</a></li>
+      <li data-reveal data-delay="10"><a href="#competences">Compétences</a></li>
+      <li data-reveal data-delay="11"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="intro__portrait">
+    <figure class="media media--tall" data-unmask>
+      <img src="assets/images/portrait.jpg" alt="Portrait de Manon Vanbastelaer"
+           data-parallax="0.10" data-ph="Portrait" />
+    </figure>
+  </div>
+
+  <a class="scroll-cue" href="#formation" aria-label="Descendre"><span class="scroll-cue__line"></span></a>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════════════ repères ═══ -->
+<!-- Bande d'accroche : les quatre réponses qu'un patron cherche en premier. -->
+<section class="strip" aria-label="En bref">
+  <ul class="strip__list">
+    <li data-reveal><span class="strip__k">17 ans</span><span class="strip__v">Contrat étudiant</span></li>
+    <li data-reveal data-delay="1"><span class="strip__k">4<sup>e</sup> année</span><span class="strip__v">Hôtelier-Restaurateur</span></li>
+    <li data-reveal data-delay="2"><span class="strip__k">Cuisine &amp; salle</span><span class="strip__v">Les deux postes</span></li>
+    <li data-reveal data-delay="3"><span class="strip__k">Week-ends</span><span class="strip__v">+ tous les congés</span></li>
+  </ul>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════════════ formation ═══ -->
+<section id="formation" class="chapter">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>01</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Formation</h2>
+  </header>
+
+  <div class="cards">
+
+    <article class="card" data-reveal>
+      <figure class="media media--card" data-unmask>
+        <img src="assets/images/formation-01.jpg" alt="" data-parallax="0.08" data-ph="École hôtelière" />
+      </figure>
+      <div class="card__body">
+        <p class="tag">école hôtelière</p>
+        <h3 class="card__org">Institut d’Enseignement Cardinal Mercier</h3>
+        <dl class="facts">
+          <dt>2022 - 2023</dt><dd>3<sup>e</sup> année — option Restauration</dd>
+          <dt>2023 - en cours</dt><dd>Hôtelier(ère) - Restaurateur(trice), enseignement technique de qualification</dd>
+          <dt>Braine-l’Alleud</dt><dd>Chaussée de Mont-Saint-Jean 83, 1420</dd>
+        </dl>
+        <a class="link" href="https://institut.collegecardinalmercier.be/ecolehoteliere/" target="_blank" rel="noopener">institut.collegecardinalmercier.be</a>
+      </div>
+    </article>
+
+    <article class="card" data-reveal data-delay="1">
+      <figure class="media media--card" data-unmask>
+        <img src="assets/images/formation-02.jpg" alt="" data-parallax="0.08" data-ph="Hygiène HACCP" />
+      </figure>
+      <div class="card__body">
+        <p class="tag">hygiène</p>
+        <h3 class="card__org">Normes HACCP et sécurité alimentaire</h3>
+        <dl class="facts">
+          <dt>Intégré au cursus</dt><dd>Chaîne du froid, traçabilité, températures, nettoyage et désinfection</dd>
+          <dt>Au quotidien</dt><dd>Tenue professionnelle complète, lavage des mains, allergènes, DLC</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card" data-reveal data-delay="2">
+      <figure class="media media--card" data-unmask>
+        <img src="assets/images/formation-03.jpg" alt="" data-parallax="0.08" data-ph="Restaurant didactique" />
+      </figure>
+      <div class="card__body">
+        <p class="tag">pratique</p>
+        <h3 class="card__org">Restaurant didactique de l’école</h3>
+        <dl class="facts">
+          <dt>Chaque semaine</dt><dd>Services complets ouverts au public&nbsp;: brigade de cuisine et brigade de salle</dd>
+          <dt>Banquets</dt><dd>Réceptions et repas de gala organisés par l’école</dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════ expérience ═══ -->
+<section id="experience" class="chapter chapter--dark">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>02</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Expérience</h2>
+  </header>
+
+  <!-- Deux postes, deux familles. Sur grand écran, l'intitulé et sa photo
+       restent collés à gauche pendant que les expériences défilent à droite. -->
+  <div class="track">
+
+    <div class="track__group">
+      <div class="track__aside">
+        <div class="track__sticky">
+          <figure class="media media--band" data-unmask>
+            <img src="assets/images/experience-cuisine.jpg" alt="" data-parallax="0.1" data-ph="En cuisine" />
+          </figure>
+          <h3 class="track__label">cuisine</h3>
+        </div>
+      </div>
+      <ol class="jobs">
+        <li class="job job--now" data-reveal>
+          <p class="job__date">2025 - en cours</p>
+          <h4 class="job__role">Commis de cuisine — job étudiant</h4>
+          <p class="job__org">Brasserie des Artistes — Ittre</p>
+          <p class="job__desc">Mise en place complète du poste avant le service&nbsp;: taillages, fonds, sauces, portionnage.<br />
+            Envoi des entrées et des desserts pendant le coup de feu, dressage à l’assiette, régularité d’une assiette à l’autre.</p>
+          <p class="job__desc">Nettoyage et rangement en fin de service, respect strict des normes HACCP.</p>
+          <a class="link" href="https://www.brasseriedesartistes.be/" target="_blank" rel="noopener">brasseriedesartistes.be</a>
+        </li>
+        <li class="job" data-reveal>
+          <p class="job__date">2025</p>
+          <h4 class="job__role">Stage en cuisine</h4>
+          <p class="job__org">Brasserie des Artistes — Ittre</p>
+          <p class="job__desc">Stage d’immersion prévu au programme de l’école.<br />
+            Découverte du rythme réel d’une brasserie&nbsp;: cadence du service, communication entre les postes, gestion des retours.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="track__group">
+      <div class="track__aside">
+        <div class="track__sticky">
+          <figure class="media media--band" data-unmask>
+            <img src="assets/images/experience-salle.jpg" alt="" data-parallax="0.1" data-ph="En salle" />
+          </figure>
+          <h3 class="track__label">salle</h3>
+        </div>
+      </div>
+      <ol class="jobs">
+        <li class="job" data-reveal>
+          <p class="job__date">2025 - en cours</p>
+          <h4 class="job__role">Service en salle</h4>
+          <p class="job__org">Brasserie des Artistes — Ittre</p>
+          <p class="job__desc">Accueil et placement des clients, prise de commande, conseil sur la carte.<br />
+            Service à l’assiette, service des boissons, débarrassage, redressage des tables, terrasse en saison.</p>
+          <p class="job__desc">Encaissement et clôture&nbsp;; gestion des rushs du week-end sans perdre le sourire.</p>
+        </li>
+        <li class="job" data-reveal>
+          <p class="job__date">Depuis 2023</p>
+          <h4 class="job__role">Banquets et réceptions</h4>
+          <p class="job__org">Institut Cardinal Mercier</p>
+          <p class="job__desc">Services de banquet et réceptions organisés par l’école&nbsp;: mise en place de la salle, service synchronisé, découpe et flambage devant le client.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="track__group">
+      <div class="track__aside">
+        <div class="track__sticky">
+          <figure class="media media--band" data-unmask>
+            <img src="assets/images/experience-stock.jpg" alt="" data-parallax="0.1" data-ph="Au stock" />
+          </figure>
+          <h3 class="track__label">stock et logistique</h3>
+        </div>
+      </div>
+      <ol class="jobs">
+        <li class="job" data-reveal>
+          <p class="job__date">Été</p>
+          <h4 class="job__role">Magasinière — job étudiant</h4>
+          <p class="job__org">Trans-Inde</p>
+          <p class="job__desc">Travail au stock&nbsp;: réception et rangement des marchandises, gestion des produits, préparation et suivi des livraisons.</p>
+          <p class="job__desc">Un rythme différent de celui d’un service, mais la même exigence&nbsp;: savoir où se trouve chaque chose et tenir les délais.</p>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+
+  <!-- Les deux adresses, avec leur plan. Le plan ne se charge qu'au clic :
+       tant que personne ne le demande, la page n'appelle aucun serveur
+       extérieur et ne dépose aucun cookie. -->
+  <div class="places">
+
+    <article class="place" data-reveal>
+      <p class="tag">où j’ai travaillé</p>
+      <h3 class="place__name">Brasserie des Artistes</h3>
+      <p class="place__addr">Rue Basse 11 — 1460 Ittre</p>
+      <div class="place__frame">
+        <span class="place__grid" aria-hidden="true"></span>
+        <span class="place__pin" aria-hidden="true"></span>
+        <button type="button" class="place__load"
+                data-query="Brasserie des Artistes, Rue Basse 11, 1460 Ittre"
+                data-title="Plan — Brasserie des Artistes, Ittre">Afficher le plan</button>
+      </div>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre"
+         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
+    </article>
+
+    <article class="place" data-reveal data-delay="1">
+      <p class="tag">où j’étudie</p>
+      <h3 class="place__name">Institut d’Enseignement Cardinal Mercier</h3>
+      <p class="place__addr">Chaussée de Mont-Saint-Jean 83 — 1420 Braine-l’Alleud</p>
+      <div class="place__frame">
+        <span class="place__grid" aria-hidden="true"></span>
+        <span class="place__pin" aria-hidden="true"></span>
+        <button type="button" class="place__load"
+                data-query="Institut d'Enseignement Cardinal Mercier, Chaussée de Mont-Saint-Jean 83, 1420 Braine-l'Alleud"
+                data-title="Plan — Institut Cardinal Mercier, Braine-l’Alleud">Afficher le plan</button>
+      </div>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Institut%20Cardinal%20Mercier%2C%20Chauss%C3%A9e%20de%20Mont-Saint-Jean%2083%2C%201420%20Braine-l%27Alleud"
+         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════════ techniques ═══ -->
+<section id="techniques" class="chapter">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>03</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Techniques apprises</h2>
+  </header>
+
+  <p class="chapter__lead prose" data-reveal>
+    Ce que l’école et le service m’ont appris à faire, geste par geste.
+    Cliquez sur une photo pour l’agrandir.
+  </p>
+
+  <!-- Le filtre est piloté par app.js ; sans script il disparaît (voir noscript). -->
+  <div class="filters" role="group" aria-label="Filtrer les techniques" data-reveal>
+    <button type="button" class="chip is-on" data-filter="tout" aria-pressed="true">Tout</button>
+    <button type="button" class="chip" data-filter="cuisine" aria-pressed="false">Cuisine</button>
+    <button type="button" class="chip" data-filter="patisserie" aria-pressed="false">Pâtisserie</button>
+    <button type="button" class="chip" data-filter="salle" aria-pressed="false">Salle</button>
+  </div>
+
+  <ul class="grid" id="techniques-grid">
+
+    <li class="tile" data-cat="cuisine" data-reveal>
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-01.jpg" alt="Taillage des légumes en julienne et en brunoise"
+             data-parallax="0.06" data-ph="Taillages" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">Les taillages</h3>
+        <p class="tile__desc">Julienne, brunoise, mirepoix, paysanne, jardinière. La régularité du couteau décide de la cuisson et du dressage.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-02.jpg" alt="Réalisation d'une sauce mère"
+             data-parallax="0.06" data-ph="Sauces mères" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">Fonds et sauces mères</h3>
+        <p class="tile__desc">Fond blanc, fond brun, roux. Béchamel, velouté, espagnole, tomate, hollandaise — et les dérivées qui en sortent.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-03.jpg" alt="Cuisson d'une pièce de viande à la poêle"
+             data-parallax="0.06" data-ph="Cuissons" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">Les modes de cuisson</h3>
+        <p class="tile__desc">Rôtir, sauter, griller, pocher, braiser, glacer. Reconnaître une cuisson à l’œil et au toucher plutôt qu’à la montre.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="cuisine" data-reveal>
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-04.jpg" alt="Levée des filets d'un poisson"
+             data-parallax="0.06" data-ph="Poisson" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">Poisson et volaille</h3>
+        <p class="tile__desc">Habiller, écailler, vider, lever les filets, désarêter. Découper une volaille en huit morceaux sans rien perdre.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-05.jpg" alt="Dressage d'une assiette"
+             data-parallax="0.06" data-ph="Dressage" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">Le dressage à l’assiette</h3>
+        <p class="tile__desc">Équilibre, hauteur, couleurs, bord d’assiette impeccable. Et surtout&nbsp;: la vingtième assiette identique à la première.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-06.jpg" alt="Mise en place d'un poste de cuisine"
+             data-parallax="0.06" data-ph="Mise en place" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">cuisine</p>
+        <h3 class="tile__name">La mise en place</h3>
+        <p class="tile__desc">Organiser son poste, anticiper les quantités, tout avoir à portée de main avant le premier bon. Le service se gagne avant le service.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="patisserie" data-reveal>
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-07.jpg" alt="Abaisse d'une pâte au rouleau"
+             data-parallax="0.06" data-ph="Pâtes de base" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">pâtisserie</p>
+        <h3 class="tile__name">Les pâtes de base</h3>
+        <p class="tile__desc">Brisée, sablée, sucrée, feuilletée, à choux, levée. Fonçage, abaisse, tourage et cuisson à blanc.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="patisserie" data-reveal data-delay="1">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-08.jpg" alt="Réalisation d'une crème pâtissière"
+             data-parallax="0.06" data-ph="Crèmes" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">pâtisserie</p>
+        <h3 class="tile__name">Crèmes et appareils</h3>
+        <p class="tile__desc">Crème pâtissière, anglaise, chantilly, mousseline. Monter des blancs, réussir une meringue, rattraper une ganache.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="patisserie" data-reveal data-delay="2">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-09.jpg" alt="Travail du chocolat tempéré"
+             data-parallax="0.06" data-ph="Chocolat" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">pâtisserie</p>
+        <h3 class="tile__name">Le travail du chocolat</h3>
+        <p class="tile__desc">Tempérage à la courbe, moulage, copeaux et décors. La brillance et le craquant ne pardonnent aucun degré d’écart.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="salle" data-reveal>
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-10.jpg" alt="Mise en place d'une table de restaurant"
+             data-parallax="0.06" data-ph="Mise en place salle" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">salle</p>
+        <h3 class="tile__name">Mise en place de la salle</h3>
+        <p class="tile__desc">Nappage, dressage du couvert, alignement au millimètre, pliage des serviettes, vérification de la verrerie.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="salle" data-reveal data-delay="1">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-11.jpg" alt="Service à l'assiette en salle"
+             data-parallax="0.06" data-ph="Service" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">salle</p>
+        <h3 class="tile__name">Service à l’assiette et au guéridon</h3>
+        <p class="tile__desc">Sens du service, pince, plateau, synchronisation de la brigade pour que toute la table soit servie en même temps.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="salle" data-reveal data-delay="2">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-12.jpg" alt="Découpe devant le client"
+             data-parallax="0.06" data-ph="Découpe en salle" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">salle</p>
+        <h3 class="tile__name">Découpe et flambage</h3>
+        <p class="tile__desc">Travailler devant le client&nbsp;: découper une volaille, lever une sole, flamber un dessert. Le geste fait partie du plat.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="salle" data-reveal>
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-13.jpg" alt="Accueil des clients au restaurant"
+             data-parallax="0.06" data-ph="Accueil" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">salle</p>
+        <h3 class="tile__name">Accueil et prise de commande</h3>
+        <p class="tile__desc">Recevoir, placer, conseiller, noter sans se tromper, annoncer les allergènes, gérer une réclamation avec calme.</p>
+      </div>
+    </li>
+
+    <li class="tile" data-cat="salle" data-reveal data-delay="1">
+      <figure class="media media--tile" data-unmask>
+        <img src="assets/images/technique-14.jpg" alt="Service des boissons"
+             data-parallax="0.06" data-ph="Boissons" data-zoom />
+      </figure>
+      <div class="tile__body">
+        <p class="tag">salle</p>
+        <h3 class="tile__name">Le service des boissons</h3>
+        <p class="tile__desc">Ouvrir une bouteille dans les règles, servir une bière belge dans son verre, températures, accords simples avec la carte.</p>
+      </div>
+    </li>
+
+  </ul>
+
+  <p class="grid__empty" id="techniques-empty" hidden>Aucune technique dans cette catégorie.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ plats préférés ═══ -->
+<section id="plats" class="chapter chapter--dark">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>04</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Plats préférés</h2>
+  </header>
+
+  <p class="chapter__lead prose" data-reveal>
+    Ceux que j’aime préparer, et pourquoi.
+  </p>
+
+  <ul class="menu">
+
+    <li class="dish" data-reveal>
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-01.jpg" alt="Croquettes aux crevettes grises"
+             data-parallax="0.08" data-ph="Croquettes crevettes" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Croquettes aux crevettes grises</h3>
+        <p class="dish__note">Le classique belge qui ne pardonne rien&nbsp;: une béchamel serrée, un décorticage patient, une panure qui doit rester croustillante à cœur fondant.</p>
+      </div>
+    </li>
+
+    <li class="dish" data-reveal data-delay="1">
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-02.jpg" alt="Vol-au-vent"
+             data-parallax="0.08" data-ph="Vol-au-vent" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Vol-au-vent</h3>
+        <p class="dish__note">Feuilletage maison, volaille pochée, quenelles et champignons. Tout le plat tient dans la liaison de la sauce.</p>
+      </div>
+    </li>
+
+    <li class="dish" data-reveal data-delay="2">
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-03.jpg" alt="Carbonnades flamandes"
+             data-parallax="0.08" data-ph="Carbonnades" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Carbonnades flamandes</h3>
+        <p class="dish__note">Un braisage long à la bière brune, le pain d’épices moutardé qui lie la sauce. Le plat qui m’a appris la patience.</p>
+      </div>
+    </li>
+
+    <li class="dish" data-reveal>
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-04.jpg" alt="Waterzooi de volaille"
+             data-parallax="0.08" data-ph="Waterzooi" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Waterzooi de volaille</h3>
+        <p class="dish__note">Taillage régulier des légumes, bouillon crémé au dernier moment. Ici, le taillage se voit dans l’assiette.</p>
+      </div>
+    </li>
+
+    <li class="dish" data-reveal data-delay="1">
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-05.jpg" alt="Sole meunière"
+             data-parallax="0.08" data-ph="Sole meunière" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Sole meunière</h3>
+        <p class="dish__note">Trois ingrédients, aucune cachette&nbsp;: un beurre noisette parfait et une cuisson à la seconde. Mon plat d’examen préféré.</p>
+      </div>
+    </li>
+
+    <li class="dish" data-reveal data-delay="2">
+      <figure class="media media--dish" data-unmask>
+        <img src="assets/images/plat-06.jpg" alt="Mousse au chocolat"
+             data-parallax="0.08" data-ph="Mousse au chocolat" data-zoom />
+      </figure>
+      <div class="dish__body">
+        <h3 class="dish__name">Mousse au chocolat</h3>
+        <p class="dish__note">Un chocolat noir tempéré, des blancs montés juste à point. Le dessert le plus simple à rater et le plus satisfaisant à réussir.</p>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ compétences ═══ -->
+<section id="competences" class="chapter">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>05</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Compétences</h2>
+  </header>
+
+  <h3 class="sub" data-reveal>en cuisine</h3>
+  <ul class="skills">
+    <li data-reveal><span class="skills__name">Mise en place</span><span class="skills__use">Organisation du poste avant le service</span></li>
+    <li data-reveal><span class="skills__name">Taillages</span><span class="skills__use">Maîtrise du couteau, régularité</span></li>
+    <li data-reveal><span class="skills__name">Sauces</span><span class="skills__use">Fonds, roux, sauces mères et dérivées</span></li>
+    <li data-reveal><span class="skills__name">Cuissons</span><span class="skills__use">Rôtir, braiser, pocher, sauter, griller</span></li>
+    <li data-reveal><span class="skills__name">Pâtisserie</span><span class="skills__use">Pâtes, crèmes, desserts à l’assiette</span></li>
+    <li data-reveal><span class="skills__name">Dressage</span><span class="skills__use">Envoi rapide et régulier</span></li>
+    <li data-reveal><span class="skills__name">HACCP</span><span class="skills__use">Hygiène, chaîne du froid, traçabilité</span></li>
+  </ul>
+
+  <h3 class="sub" data-reveal>en salle</h3>
+  <ul class="skills">
+    <li data-reveal><span class="skills__name">Accueil</span><span class="skills__use">Placement, conseil, relation client</span></li>
+    <li data-reveal><span class="skills__name">Prise de commande</span><span class="skills__use">Carnet ou terminal, annonce des allergènes</span></li>
+    <li data-reveal><span class="skills__name">Service</span><span class="skills__use">À l’assiette, au plat, au guéridon</span></li>
+    <li data-reveal><span class="skills__name">Boissons</span><span class="skills__use">Ouverture, températures, service à la bière</span></li>
+    <li data-reveal><span class="skills__name">Encaissement</span><span class="skills__use">Addition, paiement, clôture de table</span></li>
+    <li data-reveal><span class="skills__name">Banquets</span><span class="skills__use">Service synchronisé en brigade</span></li>
+  </ul>
+
+  <h3 class="sub" data-reveal>langues</h3>
+  <ul class="skills skills--short">
+    <li data-reveal><span class="skills__name">Français</span><span class="skills__use">Langue maternelle</span></li>
+    <li data-reveal><span class="skills__name">Néerlandais</span><span class="skills__use">Niveau scolaire, à l’aise à l’oral en service</span></li>
+    <li data-reveal><span class="skills__name">Anglais</span><span class="skills__use">Niveau scolaire, suffisant pour accueillir un client</span></li>
+  </ul>
+
+  <h3 class="sub" data-reveal>savoir-être</h3>
+  <p class="prose" data-reveal>
+    J’aime le rythme d’un service&nbsp;: on n’a pas le temps de réfléchir deux fois, il faut être prête avant.
+    Je suis ponctuelle, je tiens ma place dans une brigade, et je préfère demander une fois de trop
+    que de laisser passer une erreur dans l’assiette.<br />
+    En salle comme en cuisine, je garde le sourire quand ça s’accélère — c’est là que le métier se joue.
+  </p>
+
+  <!-- Encadré disponibilités : l'information décisive pour un job étudiant. -->
+  <div class="avail" data-reveal>
+    <h3 class="avail__title">Disponibilités</h3>
+    <ul class="avail__list">
+      <li><span class="avail__k">Week-ends</span><span class="avail__v">Vendredi soir, samedi et dimanche, midi et soir</span></li>
+      <li><span class="avail__k">Congés scolaires</span><span class="avail__v">Toussaint, Noël, carnaval, Pâques — semaines complètes</span></li>
+      <li><span class="avail__k">Été</span><span class="avail__v">Juillet et août, temps plein</span></li>
+      <li><span class="avail__k">Déplacements</span><span class="avail__v">Brabant wallon et Bruxelles&nbsp;; transports en commun ou accompagnée</span></li>
+      <li><span class="avail__k">Statut</span><span class="avail__v">Contrat d’occupation étudiant</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════ contact ═══ -->
+<section id="contact" class="chapter chapter--dark chapter--contact">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>06</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Contact</h2>
+  </header>
+
+  <div class="contact">
+    <div class="contact__direct">
+      <a class="contact__big" href="tel:+32000000000" data-reveal>0000 00 00 00</a>
+      <a class="contact__big" href="mailto:prenom.nom@exemple.be" data-reveal data-delay="1">prenom.nom@exemple.be</a>
+      <p class="contact__where" data-reveal data-delay="2">Braine-l’Alleud — Brabant wallon</p>
+      <button type="button" class="btn btn--ghost" id="print-cv" data-reveal data-delay="3"><span>Imprimer le CV</span></button>
+    </div>
+
+    <form id="contact-form" class="form" data-reveal data-delay="2">
+      <div class="field">
+        <input type="text" name="name" id="f-name" required placeholder=" " maxlength="128" />
+        <label for="f-name">Nom</label>
+      </div>
+      <div class="field">
+        <input type="email" name="email" id="f-email" required placeholder=" " maxlength="128" />
+        <label for="f-email">Email</label>
+      </div>
+      <div class="field">
+        <textarea name="message" id="f-message" required placeholder=" " rows="5" maxlength="16384"></textarea>
+        <label for="f-message">Message</label>
+      </div>
+      <button type="submit" class="btn"><span>Envoyer</span></button>
+      <p class="form__note">Le bouton ouvre votre logiciel de courrier, message déjà rempli.</p>
+    </form>
+  </div>
+
+  <footer class="foot">
+    <span>© Manon Vanbastelaer</span>
+    <span>CV mis à jour en 2026</span>
+  </footer>
+</section>
+
+</main>
+
+<!-- Visionneuse d'image. Vide au repos, remplie par app.js au clic. -->
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox__close" aria-label="Fermer">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><use xlink:href="#icon-close"></use></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" src="" alt="" />
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
