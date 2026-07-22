@@ -619,12 +619,21 @@
   }
 
   /* Formulaire : rien n'est envoyé à un serveur, donc rien ne prétend avoir été
-     reçu. Le bouton prépare un courriel dans le logiciel de messagerie. */
+     reçu. Le bouton prépare un courriel dans le logiciel de messagerie, avec
+     l'objet et le corps déjà remplis.
 
-  var CONTACT_EMAIL = 'prenom.nom@exemple.be';
+     L'adresse n'est PAS recopiée ici : elle est lue sur le lien « mailto » de
+     la section Contact. Une adresse écrite à deux endroits finit toujours par
+     être corrigée à un seul — et le formulaire enverrait alors sagement les
+     messages à l'ancienne. Une seule source, dans index.html. */
+
+  var mailLink = $('.contact__big[href^="mailto:"]');
+  var CONTACT_EMAIL = mailLink
+    ? decodeURIComponent(mailLink.getAttribute('href').slice(7).split('?')[0])
+    : '';
 
   var form = $('#contact-form');
-  if (form) {
+  if (form && CONTACT_EMAIL) {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;

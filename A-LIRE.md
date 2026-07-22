@@ -67,7 +67,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Où | Quoi | Actuellement |
 |---|---|---|
 | Contact | **Téléphone** | `0000 00 00 00` (et `tel:+32000000000`) |
-| Contact | **Email** | `prenom.nom@exemple.be` — à changer **aussi** dans `app.js`, tout en bas (`CONTACT_EMAIL`) |
+| Contact | **Email** | `prenom.nom@exemple.be` — **un seul endroit à changer** : le lien `mailto:` de la section Contact dans `index.html`. Le formulaire lit cette adresse, il n'y a plus rien à toucher dans `app.js` |
 | Bande de repères | **Année scolaire** | « 4ᵉ année » |
 | Formation | **Années d'études** | 2022-2023 en 3ᵉ, puis 2023 → en cours |
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
