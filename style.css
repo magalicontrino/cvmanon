@@ -74,12 +74,8 @@
   --muted:      #919191;
   --rule:       rgba(28, 26, 26, .11);
 
-  /* Une seule couleur, en deux doses. `--tint` habille le fond d'une section
-     sur deux : c'est elle qui rend les chapitres distinguables d'un coup d'œil.
-     `--accent` est sa version encrée, réservée aux petites étiquettes. */
-  --tint:      #e8edf9;
-  --accent:    #4f5a85;
-
+  /* Noir et blanc, sans exception. Le seul contraste fort de la page est la
+     bande de repères, en aplat d'encre. */
   --mark:      #1c1a1a;
 
   /* Formes : cartes très arrondies, boutons en gélule. C'est ce qui adoucit
@@ -193,7 +189,7 @@ body.is-open .curtain { transform: translateY(-101%); visibility: hidden; }
   display: block;
   height: 100%;
   width: 100%;
-  background: var(--accent);
+  background: var(--mark);
   transform: scaleX(0);
   transform-origin: left;
   will-change: transform;
@@ -370,7 +366,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   display: inline-block;
   width: clamp(1.6rem, 4vh, 2.1rem);
   margin-bottom: clamp(.6rem, 1.8vh, 1.5rem);
-  color: var(--accent);
+  color: var(--mark);
 }
 .mark svg { width: 100%; height: auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
 
@@ -515,13 +511,14 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 /* -------------------------------------------------- 8. Bande de repères - */
 
 .strip {
-  background: var(--tint);
-  border-block: 1px solid var(--rule);
-  padding: clamp(2rem, 5vh, 3.25rem) var(--gut);
+  padding: clamp(1.5rem, 4vh, 2.75rem) var(--gut);
 }
 .strip__list {
   max-width: var(--max);
   margin: 0 auto;
+  background: var(--ink-strong);
+  border-radius: var(--radius);
+  padding: clamp(1.75rem, 4.5vh, 2.75rem) clamp(1.5rem, 4vw, 3rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
   gap: clamp(1.5rem, 4vw, 3rem);
@@ -532,7 +529,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-weight: 700;
   font-size: clamp(1.15rem, 2.4vw, 1.6rem);
   line-height: 1.15;
-  color: var(--ink-strong);
+  color: var(--white);
 }
 .strip__k sup { font-size: .55em; }
 .strip__v {
@@ -541,7 +538,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .58rem;
   text-transform: uppercase;
   letter-spacing: .26em;
-  color: var(--muted);
+  color: rgba(255, 255, 255, .55);
 }
 
 /* --------------------------------------------------------- 9. Chapitres - */
@@ -550,9 +547,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   padding: clamp(5rem, 14vh, 10rem) var(--gut);
   position: relative;
 }
-/* L'alternance se joue entre le papier et une teinte très pâle. Deux valeurs
-   suffisent : ce n'est pas une couleur par chapitre, c'est un rythme. */
-.chapter--soft { background: var(--tint); }
+/* L'alternance se joue entre le papier légèrement chaud et le blanc franc. */
+.chapter--soft { background: var(--white); }
 
 .chapter__head {
   max-width: var(--max);
@@ -561,7 +557,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   align-items: baseline;
   gap: clamp(1rem, 3vw, 2.5rem);
 }
-.chapter__num { font-size: .68rem; color: var(--accent); }
+.chapter__num { font-size: .68rem; color: var(--muted); }
 .chapter__title {
   font-family: var(--label);
   font-weight: 700;
@@ -621,7 +617,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .media--card { height: clamp(15rem, 26vh, 21rem); }
 .card__body { padding: clamp(1.5rem, 3vw, 2.25rem); }
 
-.tag { font-size: .62rem; color: var(--accent); margin-bottom: 1.1rem; }
+.tag { font-size: .62rem; color: var(--muted); margin-bottom: 1.1rem; }
 
 .card__org {
   font-family: var(--body);
@@ -1008,7 +1004,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .6rem;
   text-transform: uppercase;
   letter-spacing: .22em;
-  color: var(--accent);
+  color: var(--ink-strong);
 }
 .avail__v { font-size: .98rem; line-height: 1.6; }
 
@@ -1266,8 +1262,9 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   [data-reveal], [data-unmask] img, .split-char { opacity: 1 !important; transform: none !important; clip-path: none !important; }
 
   .chapter, .intro, .strip { padding: .5cm 0 !important; min-height: 0 !important; page-break-inside: auto; }
-  .chapter--soft, .strip, .card, .tile, .avail { background: #fff !important; color: #000 !important; border-color: #ccc !important; }
-  .tag, .chapter__num, .avail__k { color: #555 !important; }
+  .chapter--soft, .strip, .strip__list, .card, .tile, .avail { background: #fff !important; color: #000 !important; border-color: #ccc !important; padding-inline: 0 !important; }
+  .tag, .chapter__num, .avail__k, .strip__v { color: #555 !important; }
+  .strip__k { color: #000 !important; }
   .chapter--soft .chapter__title, .chapter--soft .job__role, .chapter--soft .dishes__name,
   .chapter--soft .track__label, .strip__k, .contact__big { color: #000 !important; }
   .tag, .chapter__num, .job__org, .strip__v, .avail__k, .job__date { color: #555 !important; }
