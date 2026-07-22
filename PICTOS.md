@@ -29,10 +29,10 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 |---|---|---|---|
 | 01 | `technique-01` | `taillages` | Un ou plusieurs couteaux de cuisine, ou un couteau sur une planche |
 | 02 | `technique-02` | `sauces` | Une casserole avec sa queue |
-| 03 | `technique-03` | `cuissons` | Une poêle, ou une cocotte sur le feu |
-| 04 | `technique-04` | `poisson-volaille` | Une volaille prête à rôtir, ou un poisson entier |
+| 03 | `technique-03` | `cuissons` | Un gril, une poêle, ou une cocotte sur le feu |
+| 04 | `technique-04` | `poisson-volaille` | Un poisson entier, ou une volaille prête à rôtir |
 | 05 | `technique-05` | `dressage` | Une assiette sous cloche, vue de côté |
-| 06 | `technique-06` | `mise-en-place` | Des bacs ou bocaux alignés, ou une salière |
+| 06 | `technique-06` | `mise-en-place` | Une balance de cuisine, ou des bacs alignés |
 | 07 | `technique-07` | `pates` | Un rouleau à pâtisserie |
 | 08 | `technique-08` | `cremes` | Un fouet |
 | 09 | `technique-09` | `chocolat` | Une tablette de chocolat |
