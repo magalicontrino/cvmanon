@@ -619,7 +619,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
 .rows li {
   display: grid;
-  grid-template-columns: 2.6rem minmax(0, 17rem) minmax(0, 1.6fr);
+  grid-template-columns: 3.5rem minmax(0, 17rem) minmax(0, 1.6fr);
   gap: clamp(.9rem, 2.5vw, 2rem);
   align-items: baseline;
   padding: clamp(.7rem, 1.6vh, 1.05rem) 0;
@@ -632,8 +632,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .rows--dated li { grid-template-columns: minmax(0, 8rem) minmax(0, 17rem) minmax(0, 1.6fr); }
 
 .rows__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
   align-self: start;
   transform: translateY(.1em);
   opacity: .85;
@@ -702,12 +702,12 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   letter-spacing: .3em;
   color: var(--ink-strong);
 }
-.rows__group img { width: 1.4rem; height: 1.4rem; opacity: .85; }
+.rows__group img { width: 1.9rem; height: 1.9rem; opacity: .85; }
 .rows__group:first-of-type { margin-top: 0; }
 
 @media (max-width: 820px) {
   .rows li, .rows--dated li {
-    grid-template-columns: 2.4rem minmax(0, 1fr);
+    grid-template-columns: 3.2rem minmax(0, 1fr);
     gap: .45rem .9rem;
   }
   .rows--dated li { grid-template-columns: 1fr; }
@@ -875,14 +875,14 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   /* Une ligne à picto plutôt qu'une vignette à photo : quatorze fiches en
      images occupaient trois écrans à elles seules. */
   display: grid;
-  grid-template-columns: 1.75rem minmax(0, 1fr);
+  grid-template-columns: 2.3rem minmax(0, 1fr);
   align-items: start;
   gap: .2rem .75rem;
   padding: clamp(.8rem, 1.6vw, 1rem);
   transition: transform .55s var(--ease), box-shadow .55s var(--ease);
 }
 .tile:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(28, 26, 26, .07); }
-.tile__icon { width: 1.75rem; height: 1.75rem; grid-row: span 2; opacity: .85; transform: translateY(.15rem); }
+.tile__icon { width: 2.3rem; height: 2.3rem; grid-row: span 2; opacity: .85; transform: translateY(.15rem); }
 
 /* L'étoile marque les gestes tenus en autonomie. Elle est en haut à droite,
    hors du flux : elle ne doit pas décaler le titre d'une fiche à l'autre. */
@@ -970,7 +970,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
 .dishes li {
   display: grid;
-  grid-template-columns: 2.6rem minmax(0, 17.5rem) minmax(0, 1.5fr);
+  grid-template-columns: 3.4rem minmax(0, 17.5rem) minmax(0, 1.5fr);
   gap: clamp(.9rem, 2.5vw, 2rem);
   align-items: baseline;
   padding: clamp(1rem, 2.2vh, 1.5rem) 0;
@@ -981,8 +981,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 /* Le picto est décoratif : il double le nom, il ne le remplace pas. Aligné sur
    la première ligne de texte, pas sur la ligne de base du bloc. */
 .dishes__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.6rem;
+  height: 2.6rem;
   align-self: start;
   transform: translateY(.1em);
   opacity: .85;
@@ -1001,7 +1001,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
 @media (max-width: 760px) {
   .dishes li {
-    grid-template-columns: 2.2rem minmax(0, 1fr);
+    grid-template-columns: 3rem minmax(0, 1fr);
     gap: .5rem .9rem;
   }
   /* La note passe sous le nom, alignée avec lui et non avec le picto. */
