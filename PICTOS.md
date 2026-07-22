@@ -1,0 +1,83 @@
+# Liste des pictogrammes à produire
+
+26 images. Celles en place viennent de game-icons.net et sont provisoires.
+
+## Comment me les donner
+
+**Le plus simple** : un fichier par ligne du tableau, **en SVG**, déposé dans
+`assets/pictos/` sous le nom indiqué en 3ᵉ colonne. Je m'occupe de les poser sur
+le fond du site, à la bonne taille et à la bonne couleur.
+
+- **Forme pleine, noire, sur fond transparent.** Pas de contour, pas de gris, pas
+  de dégradé : une silhouette. C'est moi qui l'inverse en blanc pour les
+  sections sombres.
+- **Carré**, idéalement 512 × 512.
+- Le tracé doit remplir le carré : pas de marge intérieure, je la gère.
+
+Si vous préférez livrer des images finies plutôt que des pictos nus, déposez-les
+directement dans `assets/images/` sous le nom de la 2ᵉ colonne, au format
+1600 × 1067.
+
+Dès qu'un picto game-icons est remplacé, dites-le moi. Quand ils seront tous
+partis, le crédit CC BY en pied de page pourra disparaître avec eux.
+
+---
+
+## Techniques — 14 pictos
+
+| # | Fichier | Nom du picto | Sujet à dessiner |
+|---|---|---|---|
+| 01 | `technique-01` | `taillages` | Un ou plusieurs couteaux de cuisine, ou un couteau sur une planche |
+| 02 | `technique-02` | `sauces` | Une casserole avec sa queue |
+| 03 | `technique-03` | `cuissons` | Une poêle, ou une cocotte sur le feu |
+| 04 | `technique-04` | `poisson-volaille` | Une volaille prête à rôtir, ou un poisson entier |
+| 05 | `technique-05` | `dressage` | Une assiette sous cloche, vue de côté |
+| 06 | `technique-06` | `mise-en-place` | Des bacs ou bocaux alignés, ou une salière |
+| 07 | `technique-07` | `pates` | Un rouleau à pâtisserie |
+| 08 | `technique-08` | `cremes` | Un fouet |
+| 09 | `technique-09` | `chocolat` | Une tablette de chocolat |
+| 10 | `technique-10` | `couvert` | Un couvert dressé : fourchette, couteau, cuillère |
+| 11 | `technique-11` | `gueridon` | Un guéridon, ou une table ronde dressée |
+| 12 | `technique-12` | `flambage` | Une flamme |
+| 13 | `technique-13` | `commande` | Un carnet de commande, ou un bloc et un crayon |
+| 14 | `technique-14` | `boissons` | Un verre à vin, ou une bouteille et un verre |
+
+## Plats préférés — 6 pictos
+
+*Ces six-là sont sur fond noir : la silhouette sera inversée en blanc.*
+
+| # | Fichier | Nom du picto | Sujet à dessiner |
+|---|---|---|---|
+| 01 | `plat-01` | `crevette` | Une crevette grise |
+| 02 | `plat-02` | `vol-au-vent` | Une bouchée feuilletée, ou un feuilletage |
+| 03 | `plat-03` | `viande` | Une pièce de viande braisée |
+| 04 | `plat-04` | `waterzooi` | Une cocotte, ou un bol fumant |
+| 05 | `plat-05` | `sole` | Un poisson plat, entier |
+| 06 | `plat-06` | `mousse` | Une verrine, ou une coupe de dessert |
+
+## Formation — 3 pictos
+
+| Fichier | Nom du picto | Sujet à dessiner |
+|---|---|---|
+| `formation-01` | `ecole` | Un cuisinier en tenue, ou une toque |
+| `formation-02` | `hygiene` | Un thermomètre, ou un flocon pour la chaîne du froid |
+| `formation-03` | `restaurant` | Une enseigne de restaurant, ou une salle dressée |
+
+## Expérience — 3 pictos
+
+*Ces trois-là sont sur fond noir : la silhouette sera inversée en blanc.*
+
+| Fichier | Nom du picto | Sujet à dessiner |
+|---|---|---|
+| `experience-cuisine` | `marmite` | Une marmite, ou un piano de cuisine |
+| `experience-salle` | `sonnette` | Une sonnette de comptoir, ou un plateau de service |
+| `experience-stock` | `stock` | Un diable, une palette, ou des cartons empilés |
+
+---
+
+## Et les photos ?
+
+Les pictos ne sont qu'une étape. Les vraies photos de Manon en tenue restent ce
+qui fera la différence auprès d'un patron. La cascade est prévue pour ça : dès
+qu'un `technique-01.jpg` existe dans `assets/images/`, il passe devant le picto,
+sans qu'on touche à quoi que ce soit d'autre. Voir `A-LIRE.md`.

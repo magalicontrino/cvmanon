@@ -1,11 +1,10 @@
 /* ============================================================================
-   Manon Contrino — CV, version onepage
+   Manon Vanbastelaer — CV, version onepage
    ----------------------------------------------------------------------------
    Même grammaire typographique et chromatique que cv.magalicontrino.com :
    papier gris clair, capitales très espacées, photos qui se dévoilent par le
-   bas, une seule courbe d'assouplissement pour tout le site. S'y ajoute un seul
-   accent cuivré, réservé aux marqueurs (étiquettes, filtre actif, poste en
-   cours) — le reste reste monochrome.
+   bas, une seule courbe d'assouplissement pour tout le site. Strictement
+   monochrome : noir, blanc et deux gris, aucune couleur d'accent.
 
    Sommaire
      1.  Jetons et polices
@@ -76,10 +75,12 @@
   --rule:       rgba(71, 71, 71, .16);
   --rule-dark:  rgba(255, 255, 255, .16);
 
-  /* Le seul écart au monochrome : un cuivre de cuisine, employé au compte-
-     gouttes. Assez sombre pour rester lisible sur le papier gris. */
-  --accent:      #9a6134;
-  --accent-soft: #c08a55;
+  /* Le site est strictement monochrome. `--mark` est l'encre des marqueurs sur
+     fond clair, `--mark-dark` son équivalent sur fond sombre : deux valeurs, pas
+     une couleur. */
+  --mark:      #1c1a1a;
+  --mark-dark: #ffffff;
+  --muted-dark: rgba(255, 255, 255, .52);
 
   --display: 'Bai Jamjuree', sans-serif;
   --label:   'Raleway', sans-serif;
@@ -186,7 +187,7 @@ body.is-open .curtain { transform: translateY(-101%); visibility: hidden; }
   display: block;
   height: 100%;
   width: 100%;
-  background: var(--accent);
+  background: var(--mark);
   transform: scaleX(0);
   transform-origin: left;
   will-change: transform;
@@ -365,7 +366,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   display: inline-block;
   width: 2.1rem;
   margin-bottom: 1.5rem;
-  color: var(--accent);
+  color: var(--mark);
 }
 .mark svg { width: 100%; height: auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
 
@@ -503,7 +504,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .58rem;
   text-transform: uppercase;
   letter-spacing: .26em;
-  color: var(--accent-soft);
+  color: var(--muted-dark);
 }
 
 /* --------------------------------------------------------- 9. Chapitres - */
@@ -515,7 +516,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .chapter--dark { background: var(--ink-strong); color: rgba(255, 255, 255, .82); }
 .chapter--dark .chapter__title, .chapter--dark .track__label { color: var(--white); }
 .chapter--dark .chapter__num { color: rgba(255, 255, 255, .38); }
-.chapter--dark .tag { color: var(--accent-soft); }
+.chapter--dark .tag { color: var(--muted-dark); }
 
 .chapter__head {
   max-width: var(--max);
@@ -524,7 +525,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   align-items: baseline;
   gap: clamp(1rem, 3vw, 2.5rem);
 }
-.chapter__num { font-size: .68rem; color: var(--accent); }
+.chapter__num { font-size: .68rem; color: var(--muted); }
 .chapter__title {
   font-family: var(--label);
   font-weight: 700;
@@ -576,7 +577,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .media--card { height: clamp(15rem, 26vh, 21rem); }
 .card__body { padding: clamp(1.5rem, 3vw, 2.25rem); }
 
-.tag { font-size: .62rem; color: var(--accent); margin-bottom: 1.1rem; }
+.tag { font-size: .62rem; color: var(--muted); margin-bottom: 1.1rem; }
 
 .card__org {
   font-family: var(--body);
@@ -641,7 +642,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-weight: 600;
   font-size: .92rem;
   letter-spacing: .12em;
-  color: var(--accent-soft);
+  color: var(--muted-dark);
   margin-bottom: .9rem;
 }
 .job__desc { font-size: .98rem; line-height: 1.7; }
@@ -653,7 +654,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   content: '';
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: var(--accent-soft);
+  background: var(--mark-dark);
   animation: pulse 2.6s var(--ease-soft) infinite;
 }
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
@@ -705,7 +706,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   background-image:
     linear-gradient(var(--rule-dark) 1px, transparent 1px),
     linear-gradient(90deg, var(--rule-dark) 1px, transparent 1px),
-    linear-gradient(rgba(192, 138, 85, .22) 2px, transparent 2px);
+    linear-gradient(rgba(255, 255, 255, .22) 2px, transparent 2px);
   background-size: 34px 34px, 34px 34px, 100% 118px;
   transform: rotate(-11deg);
   transition: transform 1.2s var(--ease);
@@ -720,14 +721,14 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   width: 14px; height: 14px;
   margin: -7px 0 0 -7px;
   border-radius: 50%;
-  background: var(--accent-soft);
+  background: var(--mark-dark);
 }
 .place__pin::after {
   content: '';
   position: absolute;
   inset: -13px;
   border-radius: 50%;
-  border: 1px solid var(--accent-soft);
+  border: 1px solid var(--mark-dark);
   opacity: .5;
   animation: ping 3s var(--ease-soft) infinite;
 }
@@ -763,7 +764,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .place__frame iframe { width: 100%; height: 100%; border: 0; display: block; }
 .place__frame.is-loaded { display: block; }
 
-.places .link { color: var(--accent-soft); }
+.places .link { color: var(--white); }
 
 /* --------------------------------------- 12. Filtres et grille — techniques - */
 
@@ -803,8 +804,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .chip:hover, .chip:focus-visible { color: var(--white); border-color: var(--ink-strong); }
 .chip:hover::before, .chip:focus-visible::before { transform: none; }
 
-.chip.is-on { color: var(--white); border-color: var(--accent); }
-.chip.is-on::before { background: var(--accent); transform: none; }
+.chip.is-on { color: var(--white); border-color: var(--mark); }
+.chip.is-on::before { background: var(--mark); transform: none; }
 
 .grid {
   max-width: var(--max);
@@ -881,7 +882,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   position: absolute;
   left: 0; bottom: -1px;
   height: 1px; width: 100%;
-  background: var(--accent-soft);
+  background: var(--mark-dark);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .7s var(--ease);
@@ -935,7 +936,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   max-width: var(--max);
   margin: clamp(3.5rem, 8vh, 6rem) auto 0;
   background: var(--white);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--mark);
   padding: clamp(1.75rem, 4vw, 2.75rem);
 }
 .avail__title { font-size: .72rem; color: var(--ink-strong); margin-bottom: 1.5rem; }
@@ -952,7 +953,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .6rem;
   text-transform: uppercase;
   letter-spacing: .22em;
-  color: var(--accent);
+  color: var(--ink-strong);
 }
 .avail__v { font-size: .98rem; line-height: 1.6; }
 
