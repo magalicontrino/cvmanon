@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.ico" sizes="any" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/favicon-180.png" />
-<link rel="stylesheet" href="style.css?v=20260722a" />
+<link rel="stylesheet" href="style.css?v=20260722b" />
 <noscript><style>
   .curtain, .progress, .dots { display: none !important; }
   .totop { opacity: 1 !important; visibility: visible !important; transform: none !important; }
@@ -443,32 +443,6 @@
     <h2 class="chapter__title" data-reveal data-delay="1">Contact</h2>
   </header>
 
-  <div class="contact">
-    <div class="contact__direct">
-      <a class="contact__big" href="tel:+32471805734" data-reveal>0471 80 57 34</a>
-      <a class="contact__big" href="mailto:manonvanbastelaer@icloud.com" data-reveal data-delay="1">manonvanbastelaer@icloud.com</a>
-      <p class="contact__where" data-reveal data-delay="2">Braine-l’Alleud — Brabant wallon</p>
-      <button type="button" class="btn btn--ghost" id="print-cv" data-reveal data-delay="3"><span>Imprimer le CV</span></button>
-    </div>
-
-    <form id="contact-form" class="form" data-reveal data-delay="2">
-      <div class="field">
-        <input type="text" name="name" id="f-name" required placeholder=" " maxlength="128" />
-        <label for="f-name">Nom</label>
-      </div>
-      <div class="field">
-        <input type="email" name="email" id="f-email" required placeholder=" " maxlength="128" />
-        <label for="f-email">Email</label>
-      </div>
-      <div class="field">
-        <textarea name="message" id="f-message" required placeholder=" " rows="5" maxlength="16384"></textarea>
-        <label for="f-message">Message</label>
-      </div>
-      <button type="submit" class="btn"><span>Envoyer</span></button>
-      <p class="form__note">Le bouton ouvre votre logiciel de courrier, message déjà rempli.</p>
-    </form>
-  </div>
-
   <div class="aside" data-reveal>
     <div class="aside__part">
       <h3 class="avail__title">Disponibilités</h3>
@@ -489,6 +463,35 @@
     <li data-reveal><span class="skills__name">Anglais</span><span class="skills__use">Niveau débutant</span></li>
   </ul>
     </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact__direct">
+      <a class="contact__big" href="tel:+32471805734" data-reveal>0471 80 57 34</a>
+      <a class="contact__big" href="mailto:manonvanbastelaer@icloud.com" data-reveal data-delay="1">manonvanbastelaer@icloud.com</a>
+      <p class="contact__where" data-reveal data-delay="2">Braine-l’Alleud — Brabant wallon</p>
+      <div class="contact__actions" data-reveal data-delay="3">
+        <a class="btn btn--ghost" href="CV-Manon-Vanbastelaer.pdf" target="_blank" rel="noopener"><span>Le CV en PDF</span></a>
+        <button type="button" class="btn btn--ghost" id="print-cv"><span>Imprimer</span></button>
+      </div>
+    </div>
+
+    <form id="contact-form" class="form" data-reveal data-delay="2">
+      <div class="field">
+        <input type="text" name="name" id="f-name" required placeholder=" " maxlength="128" />
+        <label for="f-name">Nom</label>
+      </div>
+      <div class="field">
+        <input type="email" name="email" id="f-email" required placeholder=" " maxlength="128" />
+        <label for="f-email">Email</label>
+      </div>
+      <div class="field">
+        <textarea name="message" id="f-message" required placeholder=" " rows="5" maxlength="16384"></textarea>
+        <label for="f-message">Message</label>
+      </div>
+      <button type="submit" class="btn"><span>Envoyer</span></button>
+      <p class="form__note">Le bouton ouvre votre logiciel de courrier, message déjà rempli.</p>
+    </form>
   </div>
 
   <footer class="foot">
@@ -514,6 +517,6 @@
   </figure>
 </div>
 
-<script src="app.js?v=20260722a"></script>
+<script src="app.js?v=20260722b"></script>
 </body>
 </html>

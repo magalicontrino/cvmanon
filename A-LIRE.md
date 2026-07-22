@@ -116,8 +116,12 @@ Les deux adresses vérifiées :
   Avant le clic, le cadre affiche un plan schématique dessiné en CSS.
 - **Formulaire de contact** : il n'envoie rien à un serveur, il ouvre le logiciel
   de courrier avec le message déjà rempli.
-- **Impression** : le bouton « Imprimer le CV » sort une version papier propre —
-  noir sur blanc, sans les images des grilles, sur trois colonnes, en cinq pages.
+- **PDF et impression** : le bouton « Le CV en PDF » ouvre `CV-Manon-Vanbastelaer.pdf`,
+  quatre pages qui gardent l'identité du site — carrés de couleur, étoiles,
+  bandeau d'encre. Le bouton « Imprimer » produit exactement la même chose depuis
+  le navigateur : c'est la même feuille de style.
+  **Le PDF n'est pas régénéré tout seul.** Après une modification du contenu,
+  refaites-le, sinon il dira autre chose que la page.
 - **Sans JavaScript**, tout le contenu reste lisible : aucune information n'est
   cachée derrière une animation.
 - **Mouvement réduit** : si le système le demande, plus rien ne bouge.
