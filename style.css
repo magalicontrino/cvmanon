@@ -769,8 +769,19 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   padding-top: clamp(1.5rem, 3.5vh, 2.5rem);
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  gap: clamp(1.75rem, 4vw, 3rem);
+  /* Deux colonnes fixes : à quatre cartes, un `auto-fit` en aurait mis trois
+     puis une seule sur la ligne suivante, ce qui se lit mal. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* Chaque lieu est une carte, comme les fiches techniques : le cadre dit où
+   commence et où finit une adresse. */
+.place {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: clamp(1rem, 2.2vw, 1.4rem);
 }
 
 .place__name {
@@ -781,14 +792,22 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   color: var(--ink-strong);
   margin-bottom: .35rem;
 }
-.place__addr { font-size: .95rem; color: var(--muted); margin-bottom: 1.25rem; }
+.place__addr { font-size: .92rem; color: var(--muted); margin-bottom: .9rem; }
+.place__todo {
+  font-size: .85rem;
+  color: var(--muted);
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius-sm);
+  padding: .8rem 1rem;
+  text-align: center;
+}
 
 /* Avant le clic, le cadre montre un plan schématique dessiné en CSS : un
    quadrillage de rues et une épingle. Il tient exactement la place que prendra
    la carte, donc rien ne saute au chargement. */
 .place__frame {
   position: relative;
-  height: clamp(7rem, 14vh, 9.5rem);
+  height: clamp(6rem, 12vh, 8rem);
   overflow: hidden;
   background: var(--paper);
   border: 1px solid var(--rule);
@@ -1457,7 +1476,9 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .grid__legend { font-size: 8.8pt !important; margin-bottom: .25cm !important; }
 
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
-  .places { margin-top: .4cm !important; padding-top: .3cm !important; gap: .5cm !important; }
+  .places { margin-top: .4cm !important; padding-top: .3cm !important; gap: .3cm !important; }
+  .place { padding: .25cm !important; border-radius: 6px !important; }
+  .place__todo { display: none !important; }
   .place__addr { margin-bottom: .1cm !important; }
 
   /* ---- Contact : coordonnées, disponibilités, langues. */

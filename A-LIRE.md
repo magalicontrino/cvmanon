@@ -77,7 +77,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Formation | **Années antérieures** | Seuls la 4ᵉ terminée en juin 2026 et l'entrée en 5ᵉ en septembre sont notées. Les années d'avant ne sont pas indiquées, faute d'information |
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
 | Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
-| Expérience — All Ride | **Année, durée, commune** | « Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
+| Expérience — All Ride | **Année, durée, adresse** | Sa carte de lieu affiche « Adresse à compléter » : donnez-la-moi et j'ajoute le plan comme pour les trois autres.<br>« Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
 | Plats signature | **Les cinq derniers** | Les trois premiers viennent de vous. Les cinq autres sont tirés de la carte de la Brasserie des Artistes et restent à confirmer |
 
 Le mot **traiteur** apparaît dans l'accroche, dans les compétences et dans les
