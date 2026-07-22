@@ -45,16 +45,16 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 
 ## Plats signature — 8 pictos
 
-*Petits pictos de liste. Les plats sont ceux de la carte de la Brasserie des Artistes.*
+*Petits pictos de liste.*
 
 | # | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|---|
-| 01 | `plat-01` | `crevette` | Une crevette grise |
-| 02 | `plat-02` | `fromage` | Une pointe de fromage |
-| 03 | `plat-03` | `pates` | Un bol de pâtes, ou des tagliatelles |
-| 04 | `plat-04` | `entrecote` | Une pièce de bœuf, vue de côté |
-| 05 | `plat-05` | `jambonneau` | Un jambonneau, ou un jarret |
-| 06 | `plat-06` | `burger` | Un hamburger |
+| 01 | `plat-01` | `pates` | Un bol de pâtes, ou des tagliatelles |
+| 02 | `plat-02` | `feuilletage` | Une bouchée feuilletée, ou un feuilletage |
+| 03 | `plat-03` | `gratin` | Une pomme de terre, ou un plat à gratin |
+| 04 | `plat-04` | `crevette` | Une crevette grise |
+| 05 | `plat-05` | `fromage` | Une pointe de fromage |
+| 06 | `plat-06` | `entrecote` | Une pièce de bœuf, vue de côté |
 | 07 | `plat-07` | `mousse` | Une coupe de dessert, ou une verrine |
 | 08 | `plat-08` | `dame-blanche` | Une glace, ou une coupe glacée |
 

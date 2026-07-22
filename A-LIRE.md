@@ -76,7 +76,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
 | Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
 | Expérience — All Ride | **Année, durée, commune** | « Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
-| Plats signature | **Les huit plats** | Tirés de la carte de la Brasserie des Artistes. À confirmer : ce sont ceux qu'elle aime préparer ? |
+| Plats signature | **Les cinq derniers** | Les trois premiers viennent de vous. Les cinq autres sont tirés de la carte de la Brasserie des Artistes et restent à confirmer |
 
 Le **stage** est décrit de façon volontairement générale : je ne savais ni où il
 a eu lieu ni ce qu'elle y a fait. C'est le passage à réécrire en premier, c'est
