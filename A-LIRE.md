@@ -171,7 +171,7 @@ modification de ces deux fichiers** — n'importe quelle valeur différente suff
 index.html   le contenu — c'est ici qu'on modifie les textes
 style.css    la mise en forme, commentée section par section
 app.js       animations, filtre, visionneuse, plans, impression
-favicon.ico  l'icône d'onglet — toque crème sur disque noir
+favicon.ico  l'icône d'onglet — le disque noir de magalicontrino.com
 assets/
   favicon.svg      la même icône, en vectoriel
   favicon-180.png  la même, pour l'écran d'accueil d'un iPhone
