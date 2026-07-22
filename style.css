@@ -74,8 +74,12 @@
   --muted:      #919191;
   --rule:       rgba(28, 26, 26, .11);
 
-  /* Monochrome, et clair de bout en bout : plus aucune section n'est sur fond
-     noir, il n'y a donc plus qu'une encre de marqueur. */
+  /* Une seule couleur, en deux doses. `--tint` habille le fond d'une section
+     sur deux : c'est elle qui rend les chapitres distinguables d'un coup d'œil.
+     `--accent` est sa version encrée, réservée aux petites étiquettes. */
+  --tint:      #e8edf9;
+  --accent:    #4f5a85;
+
   --mark:      #1c1a1a;
 
   /* Formes : cartes très arrondies, boutons en gélule. C'est ce qui adoucit
@@ -189,7 +193,7 @@ body.is-open .curtain { transform: translateY(-101%); visibility: hidden; }
   display: block;
   height: 100%;
   width: 100%;
-  background: var(--mark);
+  background: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
   will-change: transform;
@@ -327,7 +331,9 @@ body.is-open .dots { opacity: 1; }
 
 /* Aplat que l'on aperçoit sous la photo pendant qu'elle se dévoile, et qui
    tient sa place avant qu'elle n'arrive. */
-figure.media { overflow: hidden; background: var(--white); position: relative; }
+/* Une encre très diluée plutôt qu'un gris fixe : le cadre s'assombrit
+   légèrement quelle que soit la couleur de la section qui le porte. */
+figure.media { overflow: hidden; background: rgba(28, 26, 26, .035); position: relative; }
 
 /* Les cadres autonomes s'arrondissent comme les cartes. Ceux qui sont DANS une
    carte n'y touchent pas : la carte les découpe déjà, et arrondir les quatre
@@ -359,7 +365,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   display: inline-block;
   width: 2.1rem;
   margin-bottom: 1.5rem;
-  color: var(--mark);
+  color: var(--accent);
 }
 .mark svg { width: 100%; height: auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
 
@@ -472,7 +478,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 /* -------------------------------------------------- 8. Bande de repères - */
 
 .strip {
-  background: var(--white);
+  background: var(--tint);
   border-block: 1px solid var(--rule);
   padding: clamp(2rem, 5vh, 3.25rem) var(--gut);
 }
@@ -507,10 +513,9 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   padding: clamp(5rem, 14vh, 10rem) var(--gut);
   position: relative;
 }
-/* L'alternance ne se joue plus entre clair et sombre mais entre deux blancs :
-   le papier légèrement chaud, et le blanc franc. Suffisant pour marquer le
-   changement de chapitre, sans assombrir la page. */
-.chapter--soft { background: var(--white); }
+/* L'alternance se joue entre le papier et une teinte très pâle. Deux valeurs
+   suffisent : ce n'est pas une couleur par chapitre, c'est un rythme. */
+.chapter--soft { background: var(--tint); }
 
 .chapter__head {
   max-width: var(--max);
@@ -519,7 +524,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   align-items: baseline;
   gap: clamp(1rem, 3vw, 2.5rem);
 }
-.chapter__num { font-size: .68rem; color: var(--muted); }
+.chapter__num { font-size: .68rem; color: var(--accent); }
 .chapter__title {
   font-family: var(--label);
   font-weight: 700;
@@ -575,11 +580,11 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   display: flex;
   flex-direction: column;
 }
-.chapter--soft .card { background: var(--paper); }
+.chapter--soft .card { background: var(--white); }
 .media--card { height: clamp(15rem, 26vh, 21rem); }
 .card__body { padding: clamp(1.5rem, 3vw, 2.25rem); }
 
-.tag { font-size: .62rem; color: var(--muted); margin-bottom: 1.1rem; }
+.tag { font-size: .62rem; color: var(--accent); margin-bottom: 1.1rem; }
 
 .card__org {
   font-family: var(--body);
@@ -966,7 +971,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .6rem;
   text-transform: uppercase;
   letter-spacing: .22em;
-  color: var(--ink-strong);
+  color: var(--accent);
 }
 .avail__v { font-size: .98rem; line-height: 1.6; }
 
@@ -1225,6 +1230,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
   .chapter, .intro, .strip { padding: .5cm 0 !important; min-height: 0 !important; page-break-inside: auto; }
   .chapter--soft, .strip, .card, .tile, .avail { background: #fff !important; color: #000 !important; border-color: #ccc !important; }
+  .tag, .chapter__num, .avail__k { color: #555 !important; }
   .chapter--soft .chapter__title, .chapter--soft .job__role, .chapter--soft .dishes__name,
   .chapter--soft .track__label, .strip__k, .contact__big { color: #000 !important; }
   .tag, .chapter__num, .job__org, .strip__v, .avail__k, .job__date { color: #555 !important; }

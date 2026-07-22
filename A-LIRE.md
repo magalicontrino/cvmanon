@@ -3,8 +3,9 @@
 Site en une seule page, sans dépendance et sans serveur : il suffit d'ouvrir
 `index.html` dans un navigateur. Même identité graphique que
 [cv.magalicontrino.com](https://cv.magalicontrino.com) — mêmes polices, même
-grammaire d'animation — mais en clair de bout en bout, sans aucune section sur
-fond noir, avec des cartes très arrondies et des boutons en gélule.
+grammaire d'animation — mais en clair de bout en bout, avec des cartes très
+arrondies, des boutons en gélule, et une teinte bleutée très pâle sur une
+section sur deux pour qu'on repère les chapitres d'un coup d'œil.
 
 Dépôt : <https://github.com/magalicontrino/cvmanon>
 
