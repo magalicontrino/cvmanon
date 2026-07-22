@@ -44,11 +44,12 @@ partir avec elles — sauf le favicon, qui vient de la même banque.
 | `portrait.jpg` | ✅ déjà en place — la photo que vous avez déposée |
 | `technique-01.jpg` → `technique-14.jpg` | Les 14 techniques, dans l'ordre des fiches |
 
-**Formation et Expérience n'attendent plus de photos.** Ces deux chapitres sont
-passés en listes compactes pour qu'on embrasse le parcours d'un regard&nbsp;: ils
-n'ont plus que de petits pictos de 2 rem, où une photo serait illisible. Si vous
-voulez y remettre des photos d'elle en tenue, dites-le — il faudra rouvrir la
-mise en page de ces sections, ce n'est pas un simple dépôt de fichier.
+**Formation et Expérience n'attendent plus de photos.** La formation est une
+liste compacte, l'expérience une grille de fiches — deux par ligne, une par
+poste. Ni l'une ni l'autre n'a de place pour une photo&nbsp;: leurs pictos font
+2 rem. Si vous voulez y remettre des photos d'elle en tenue, dites-le — il
+faudra rouvrir la mise en page de ces sections, ce n'est pas un simple dépôt de
+fichier.
 
 L'ordre des chapitres, sur le site comme dans le PDF&nbsp;: 01 Formation,
 02 Techniques apprises, 03 Expérience, 04 Contact.
@@ -116,8 +117,14 @@ Les deux adresses vérifiées :
   et les disponibilités ont rejoint le bas de la section Contact.
 - **Visionneuse** : un clic sur une image l'ouvre en grand. Flèches ← → pour
   passer à la suivante, Échap pour fermer.
-- **Adresses** : dans la section Expérience, le nom de l'employeur sous chaque
-  poste est un lien vers son plan Google Maps. La brasserie, l'école et Transind
+- **Fiches d'expérience** : un poste par fiche, deux fiches par ligne, une
+  ligne par famille — salle, cuisine, stock. Chaque fiche porte au même endroit
+  la famille, la date, l'intitulé, le lieu et les missions. Sous 760 px, elles
+  passent en une colonne. C'est ce qui a remplacé la liste à trois colonnes&nbsp;:
+  celle-ci obligeait à balayer toute la largeur pour rassembler un seul emploi,
+  et se répartissait mal sur une page A4.
+- **Adresses** : dans la section Expérience, le nom de l'employeur sur chaque
+  fiche est un lien vers son plan Google Maps. La brasserie, l'école et Transind
   en ont un&nbsp;; All Ride non, faute d'adresse. Le bloc de cartes séparé et les
   plans encastrés ont été retirés — l'information est désormais au poste
   concerné, et la page n'appelle plus aucun serveur extérieur.

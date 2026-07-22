@@ -16,7 +16,8 @@
      7.  Accueil
      8.  Bande de repères
      9.  Chapitres
-     10. Lignes — formation et expérience
+     10. Lignes — formation
+     11. Fiches — expérience
      12. Filtres et grille — techniques
      13. Menu — plats signature
      14. Compétences et disponibilités
@@ -639,10 +640,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 }
 .rows li:first-child { border-top: 1px solid var(--rule); }
 
-/* Variante datée : la date remplace le picto en première colonne. Elle est à
-   gauche pour qu'on suive la chronologie sans la chercher dans le texte. */
-.rows--dated li { grid-template-columns: minmax(0, 8rem) minmax(0, 17rem) minmax(0, 1.6fr); }
-
 /* Tous les pictos du site sont posés dans un carré d'encre à coins arrondis.
    Le fond est porté par l'enveloppe et non par l'image : `invert` s'applique à
    tout l'élément, il retournerait aussi le noir du carré.
@@ -679,34 +676,10 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .badge--lg .badge__img { width: 1.85rem; height: 1.85rem; }
 .rows li:hover .badge--lg { transform: translateY(.1em) scale(1.06); }
 
-.badge--md { width: 2.6rem; height: 2.6rem; border-radius: 11px; }
-.badge--md .badge__img { width: 1.65rem; height: 1.65rem; }
-
 .badge--sm { width: 2.3rem; height: 2.3rem; border-radius: 9px; grid-row: span 2; align-self: start; transform: translateY(.15rem); }
 .badge--sm .badge__img { width: 1.45rem; height: 1.45rem; }
 .tile:hover .badge--sm { transform: translateY(.15rem) scale(1.06); }
 
-.rows__date {
-  font-weight: 600;
-  font-size: .8rem;
-  letter-spacing: .08em;
-  color: var(--muted);
-}
-
-/* Poste en cours : la pastille qui bat, reprise de l'ancienne piste. */
-.rows li.is-now .rows__date {
-  color: var(--ink-strong);
-  display: flex;
-  align-items: baseline;
-  gap: .5rem;
-}
-.rows li.is-now .rows__date::before {
-  content: '';
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--ink-strong);
-  animation: pulse 2.6s var(--ease-soft) infinite;
-}
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
 
 .rows__title {
@@ -738,32 +711,108 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .rows__body sup { font-size: .7em; }
 .rows__body .link { margin-top: .5rem; display: block; }
 
-/* Intitulé de famille, aligné sur la colonne des dates. */
-.rows__group {
-  max-width: var(--max);
-  margin: clamp(1.5rem, 3.5vh, 2.25rem) auto clamp(.5rem, 1.2vh, .8rem);
-  display: flex;
-  align-items: center;
-  gap: .7rem;
-  font-family: var(--label);
-  font-weight: 700;
-  font-size: .68rem;
-  text-transform: uppercase;
-  letter-spacing: .3em;
-  color: var(--ink-strong);
-}
-
-.rows__group:first-of-type { margin-top: 0; }
-
 @media (max-width: 820px) {
-  .rows li, .rows--dated li {
+  .rows li {
     grid-template-columns: 2.9rem minmax(0, 1fr);
     gap: .45rem .9rem;
   }
-  .rows--dated li { grid-template-columns: 1fr; }
   .rows__body { grid-column: 2; }
-  .rows--dated .rows__body { grid-column: 1; }
-  .rows__date { margin-bottom: .1rem; }
+}
+
+/* ------------------------------------------------ 11. Fiches — expérience - */
+
+/* Un poste, une fiche : famille, date, intitulé, lieu, missions, toujours au
+   même endroit. La liste à trois colonnes qui la précédait obligeait à balayer
+   la largeur de l'écran pour rassembler un seul emploi, et se répartissait mal
+   sur une page A4. Deux fiches par ligne, six postes en trois lignes : chaque
+   ligne est une famille — salle, cuisine, stock. */
+
+.cards {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.6rem, 1.2vw, .9rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: clamp(1rem, 2vw, 1.4rem);
+  transition: transform .55s var(--ease), box-shadow .55s var(--ease);
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(28, 26, 26, .07); }
+
+/* En-tête : le carré de couleur, la famille, et la date poussée à droite. */
+.card__head { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; }
+.card__head .badge--sm { align-self: center; transform: none; }
+.card:hover .card__head .badge--sm { transform: scale(1.06); }
+
+.card__fam {
+  font-family: var(--label);
+  font-weight: 700;
+  font-size: .56rem;
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  color: var(--ink-strong);
+}
+
+.card__date {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: .74rem;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+/* Poste en cours : la pastille qui bat. */
+.card.is-now .card__date { color: var(--ink-strong); }
+.card.is-now .card__date::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--ink-strong);
+  animation: pulse 2.6s var(--ease-soft) infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
+
+.card__title {
+  font-family: var(--body);
+  font-weight: 900;
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  line-height: 1.3;
+  color: var(--ink-strong);
+}
+
+/* Le lieu ferme l'identité du poste ; le trait le sépare des missions. */
+.card__where {
+  margin-top: .4rem;
+  padding-bottom: .85rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--label);
+  font-weight: 700;
+  font-size: .56rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: var(--muted);
+}
+.card__where a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .35s var(--ease); }
+.card__where a:hover, .card__where a:focus-visible { border-bottom-color: var(--muted); }
+
+.card__body { margin-top: .85rem; font-size: .88rem; line-height: 1.55; }
+.card__body .link { display: block; margin-top: .5rem; }
+
+/* Sous 760 px, deux fiches côte à côte ne laissent plus assez de mesure au
+   texte : on passe à une colonne. */
+@media (max-width: 760px) {
+  .cards { grid-template-columns: 1fr; }
+  .card__head { flex-wrap: wrap; }
 }
 
 /* --------------------------------------- 12. Filtres et grille — techniques - */
@@ -1332,23 +1381,29 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   /* ---- Les carrés de couleur sont conservés, en plus petit. */
   .badge--lg { width: .95cm !important; height: .95cm !important; border-radius: 5px !important; }
   .badge--lg .badge__img { width: .6cm !important; height: .6cm !important; }
-  .badge--md { width: .8cm !important; height: .8cm !important; border-radius: 4px !important; }
-  .badge--md .badge__img { width: .5cm !important; height: .5cm !important; }
   .badge--sm { width: .62cm !important; height: .62cm !important; border-radius: 4px !important; }
   .badge--sm .badge__img { width: .39cm !important; height: .39cm !important; }
 
   /* ---- Lignes de formation et d'expérience. */
   .rows li { grid-template-columns: 1.2cm minmax(0, 5.5cm) minmax(0, 1fr) !important; gap: .25cm .4cm !important; padding: .13cm 0 !important; }
-  .rows--dated li { grid-template-columns: 2.1cm minmax(0, 5.5cm) minmax(0, 1fr) !important; }
   /* Une page A4 fait 794 px CSS : la règle mobile (max-width: 820px) s'applique
      donc à l'impression et replie la description sous le titre. On lui rend sa
      troisième colonne. */
-  .rows__body, .rows--dated .rows__body { grid-column: 3 !important; }
-  .rows__group { margin: .26cm 0 .1cm !important; gap: .3cm !important; }
+  .rows__body { grid-column: 3 !important; }
   .rows__body { font-size: 9.2pt !important; line-height: 1.4 !important; }
   .rows__body .link { display: inline !important; margin: 0 !important; }
-  .rows li.is-now .rows__date { color: #1c1a1a !important; }
-  .rows li.is-now .rows__date::before { background: #1c1a1a !important; animation: none !important; }
+
+  /* ---- Fiches d'expérience : deux par ligne, jamais coupées en deux. */
+  .cards { grid-template-columns: 1fr 1fr !important; gap: .2cm !important; }
+  .card { padding: .24cm .28cm !important; border-radius: 7px !important; }
+  .card__head { margin-bottom: .12cm !important; gap: .2cm !important; }
+  .card__fam { font-size: 6.5pt !important; letter-spacing: .18em !important; }
+  .card__date { font-size: 7.5pt !important; }
+  .card.is-now .card__date::before { animation: none !important; background: #1c1a1a !important; }
+  .card__title { font-size: 10pt !important; line-height: 1.22 !important; }
+  .card__where { margin-top: .07cm !important; padding-bottom: .1cm !important; font-size: 6.4pt !important; }
+  .card__body { margin-top: .12cm !important; font-size: 8.3pt !important; line-height: 1.34 !important; }
+  .card__body .link { display: inline !important; margin: 0 !important; }
 
   /* ---- Fiches techniques : quatre colonnes serrées. */
   .grid { grid-template-columns: repeat(5, 1fr) !important; gap: .18cm !important; }
@@ -1370,8 +1425,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .anim .skills li::after { display: none !important; }
 
   /* ---- Rien ne doit se couper en deux au changement de page. */
-  .tile, .rows li, .strip__list, .aside, .aside__part, .contact__direct { break-inside: avoid; }
-  .chapter__head, .rows__group { break-after: avoid; }
+  .tile, .card, .rows li, .strip__list, .aside, .aside__part, .contact__direct { break-inside: avoid; }
+  .chapter__head { break-after: avoid; }
   .foot { break-before: avoid; }
   /* Chrome n'honore `break-after: avoid` qu'à moitié : le titre d'Expérience
      restait seul en pied de première page, ses postes renvoyés à la suivante.
@@ -1382,7 +1437,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
      techniques — a de la place devant elle&nbsp;; on la lui rend en respirations
      plutôt que de la laisser s'arrêter sur un tiers de page blanc. La seconde,
      qui doit tenir expérience et contact d'un seul tenant, reste serrée. */
-  .intro, .strip, #formation, #techniques { padding: .46cm 0 !important; }
+  .intro, .strip, #formation, #techniques { padding: .42cm 0 !important; }
   .intro { padding-top: 0 !important; }
   .intro__portrait { height: 5.8cm !important; }
   .intro__name { font-size: 30pt !important; }
