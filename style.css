@@ -1295,7 +1295,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
     print-color-adjust: exact !important;
   }
 
-  .chapter, .intro, .strip { padding: .45cm 0 !important; min-height: 0 !important; }
+  .chapter, .intro, .strip { padding: .3cm 0 !important; min-height: 0 !important; }
   .chapter--soft { background: #fff !important; }
 
   /* ---- Identité : portrait à droite, nom à gauche. Une page A4 fait environ
@@ -1338,13 +1338,13 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .badge--sm .badge__img { width: .39cm !important; height: .39cm !important; }
 
   /* ---- Lignes de formation et d'expérience. */
-  .rows li { grid-template-columns: 1.2cm minmax(0, 5.5cm) minmax(0, 1fr) !important; gap: .25cm .4cm !important; padding: .16cm 0 !important; }
+  .rows li { grid-template-columns: 1.2cm minmax(0, 5.5cm) minmax(0, 1fr) !important; gap: .25cm .4cm !important; padding: .13cm 0 !important; }
   .rows--dated li { grid-template-columns: 2.1cm minmax(0, 5.5cm) minmax(0, 1fr) !important; }
   /* Une page A4 fait 794 px CSS : la règle mobile (max-width: 820px) s'applique
      donc à l'impression et replie la description sous le titre. On lui rend sa
      troisième colonne. */
   .rows__body, .rows--dated .rows__body { grid-column: 3 !important; }
-  .rows__group { margin: .35cm 0 .12cm !important; gap: .3cm !important; }
+  .rows__group { margin: .26cm 0 .1cm !important; gap: .3cm !important; }
   .rows__body { font-size: 9.2pt !important; line-height: 1.4 !important; }
   .rows__body .link { display: inline !important; margin: 0 !important; }
   .rows li.is-now .rows__date { color: #1c1a1a !important; }
@@ -1362,17 +1362,37 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
 
   /* ---- Contact : coordonnées, disponibilités, langues. */
-  .contact { grid-template-columns: 1fr !important; gap: .3cm !important; }
+  .contact { grid-template-columns: 1fr !important; gap: .22cm !important; }
   .contact__big { font-size: 15pt !important; color: #1c1a1a !important; }
-  .aside { margin: 0 0 .35cm !important; padding-bottom: .3cm !important; gap: .5cm !important; }
+  .aside { margin: 0 0 .22cm !important; padding-bottom: .18cm !important; gap: .5cm !important; }
   .avail__list { gap: .12cm !important; }
-  .skills li { padding: .12cm 0 !important; }
+  .skills li { padding: .09cm 0 !important; }
   .anim .skills li::after { display: none !important; }
 
   /* ---- Rien ne doit se couper en deux au changement de page. */
   .tile, .rows li, .strip__list, .aside, .aside__part, .contact__direct { break-inside: avoid; }
-  .chapter__head { break-after: avoid; }
+  .chapter__head, .rows__group { break-after: avoid; }
+  .foot { break-before: avoid; }
+  /* Chrome n'honore `break-after: avoid` qu'à moitié : le titre d'Expérience
+     restait seul en pied de première page, ses postes renvoyés à la suivante.
+     Un saut franc vaut mieux qu'un titre orphelin. */
+  #experience { break-before: page !important; padding-top: 0 !important; }
 
-  .foot { margin-top: .4cm !important; padding-top: .25cm !important; font-size: 8pt !important; }
+  /* ---- Équilibre des deux pages. La première — identité, formation,
+     techniques — a de la place devant elle&nbsp;; on la lui rend en respirations
+     plutôt que de la laisser s'arrêter sur un tiers de page blanc. La seconde,
+     qui doit tenir expérience et contact d'un seul tenant, reste serrée. */
+  .intro, .strip, #formation, #techniques { padding: .46cm 0 !important; }
+  .intro { padding-top: 0 !important; }
+  .intro__portrait { height: 5.8cm !important; }
+  .intro__name { font-size: 30pt !important; }
+  .intro__roles { font-size: 12pt !important; }
+  .intro__pitch { font-size: 10pt !important; }
+  #formation .chapter__title, #techniques .chapter__title { font-size: 16pt !important; }
+  #formation .rows li { padding: .22cm 0 !important; }
+  #techniques .grid { gap: .28cm !important; }
+  #techniques .tile { padding: .26cm !important; }
+
+  .foot { margin-top: .25cm !important; padding-top: .18cm !important; font-size: 8pt !important; }
   a { text-decoration: none; }
 }

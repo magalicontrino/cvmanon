@@ -50,6 +50,9 @@ n'ont plus que de petits pictos de 2 rem, où une photo serait illisible. Si vou
 voulez y remettre des photos d'elle en tenue, dites-le — il faudra rouvrir la
 mise en page de ces sections, ce n'est pas un simple dépôt de fichier.
 
+L'ordre des chapitres, sur le site comme dans le PDF&nbsp;: 01 Formation,
+02 Techniques apprises, 03 Expérience, 04 Contact.
+
 L'ordre des techniques : 01 taillages · 02 sauces mères · 03 cuissons ·
 04 poisson et volaille · 05 dressage · 06 mise en place · 07 pâtes de base ·
 08 crèmes · 09 chocolat · 10 mise en place salle · 11 service à l'assiette ·
@@ -121,8 +124,12 @@ Les deux adresses vérifiées :
 - **Formulaire de contact** : il n'envoie rien à un serveur, il ouvre le logiciel
   de courrier avec le message déjà rempli.
 - **PDF et impression** : le bouton « Le CV en PDF » ouvre `CV-Manon-Vanbastelaer.pdf`,
-  trois pages A4 qui gardent l'identité du site — carrés de couleur, étoiles,
-  bandeau d'encre. Le bouton « Imprimer » produit exactement la même chose depuis
+  deux pages A4 qui gardent l'identité du site — carrés de couleur, étoiles,
+  bandeau d'encre. La coupure est franche&nbsp;: page 1 l'identité, la formation
+  et les techniques, page 2 l'expérience et le contact. Aucun chapitre n'est
+  coupé en deux. Le contenu tient en 1,8 page&nbsp;; le reste est de l'air réparti
+  entre les deux, réglé dans le bloc « équilibre des deux pages » de `style.css`.
+  Si vous ajoutez du texte, revérifiez que le PDF fait toujours deux pages. Le bouton « Imprimer » produit exactement la même chose depuis
   le navigateur : c'est la même feuille de style.
   **Le PDF n'est pas régénéré tout seul.** Après une modification du contenu,
   refaites-le, sinon il dira autre chose que la page. La commande&nbsp;:
