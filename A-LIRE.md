@@ -117,7 +117,7 @@ Les deux adresses vérifiées :
 - **Formulaire de contact** : il n'envoie rien à un serveur, il ouvre le logiciel
   de courrier avec le message déjà rempli.
 - **PDF et impression** : le bouton « Le CV en PDF » ouvre `CV-Manon-Vanbastelaer.pdf`,
-  quatre pages qui gardent l'identité du site — carrés de couleur, étoiles,
+  trois pages A4 qui gardent l'identité du site — carrés de couleur, étoiles,
   bandeau d'encre. Le bouton « Imprimer » produit exactement la même chose depuis
   le navigateur : c'est la même feuille de style.
   **Le PDF n'est pas régénéré tout seul.** Après une modification du contenu,
