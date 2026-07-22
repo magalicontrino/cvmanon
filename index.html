@@ -13,7 +13,7 @@
 <link rel="icon" href="favicon.ico" sizes="any" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="assets/favicon-180.png" />
-<link rel="stylesheet" href="style.css?v=20260722j" />
+<link rel="stylesheet" href="style.css?v=20260722k" />
 <noscript><style>
   .curtain, .progress, .dots { display: none !important; }
   .totop { opacity: 1 !important; visibility: visible !important; transform: none !important; }
@@ -21,9 +21,6 @@
      les boutons plutôt que d'afficher des commandes mortes. Toutes les fiches
      sont visibles de toute façon. */
   .filters { display: none !important; }
-  /* Idem pour le bouton qui charge le plan : l'adresse et le lien vers Google
-     Maps, eux, restent là. */
-  .place__load { display: none !important; }
 </style></noscript>
 </head>
 <body>
@@ -164,13 +161,13 @@
 
     <li data-reveal class="is-now">
       <span class="rows__date">2025 — en cours</span>
-      <span class="rows__title">Service en salle<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__title">Service en salle<em class="rows__sub"><a href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre" target="_blank" rel="noopener" title="Rue Basse 11, 1460 Ittre">Brasserie des Artistes — Ittre</a></em></span>
       <span class="rows__body">Accueil et placement des clients, prise de commande, conseil sur la carte. Service à l’assiette, service des boissons, débarrassage, redressage des tables, terrasse en saison. Encaissement et clôture&nbsp;; gestion des rushs du week-end sans perdre le sourire.</span>
     </li>
 
     <li data-reveal>
       <span class="rows__date">Depuis 2023</span>
-      <span class="rows__title">Banquets, réceptions et service événementiel<em class="rows__sub">Institut Cardinal Mercier</em></span>
+      <span class="rows__title">Banquets, réceptions et service événementiel<em class="rows__sub"><a href="https://www.google.com/maps/search/?api=1&amp;query=Institut%20d%27Enseignement%20Cardinal%20Mercier%2C%20Chauss%C3%A9e%20de%20Mont-Saint-Jean%2083%2C%201420%20Braine-l%27Alleud" target="_blank" rel="noopener" title="Chaussée de Mont-Saint-Jean 83, 1420 Braine-l’Alleud">Institut Cardinal Mercier</a></em></span>
       <span class="rows__body">Mise en place de la salle, service synchronisé, découpe et flambage devant le client. Le rythme d’un service traiteur&nbsp;: tout se prépare en amont, tout se joue en une soirée.</span>
     </li>
 
@@ -183,13 +180,13 @@
 
     <li data-reveal class="is-now">
       <span class="rows__date">2025 — en cours</span>
-      <span class="rows__title">Commis de cuisine — job étudiant<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__title">Commis de cuisine — job étudiant<em class="rows__sub"><a href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre" target="_blank" rel="noopener" title="Rue Basse 11, 1460 Ittre">Brasserie des Artistes — Ittre</a></em></span>
       <span class="rows__body">Mise en place complète du poste avant le service&nbsp;: taillages, fonds, sauces, portionnage. Envoi des entrées et des desserts pendant le coup de feu, dressage à l’assiette, régularité d’une assiette à l’autre. Respect strict des normes HACCP. <a class="link" href="https://www.brasseriedesartistes.be/" target="_blank" rel="noopener">brasseriedesartistes.be</a></span>
     </li>
 
     <li data-reveal>
       <span class="rows__date">2025</span>
-      <span class="rows__title">Stage en cuisine<em class="rows__sub">Brasserie des Artistes — Ittre</em></span>
+      <span class="rows__title">Stage en cuisine<em class="rows__sub"><a href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre" target="_blank" rel="noopener" title="Rue Basse 11, 1460 Ittre">Brasserie des Artistes — Ittre</a></em></span>
       <span class="rows__body">Stage d’immersion prévu au programme de l’école. Découverte du rythme réel d’une brasserie&nbsp;: cadence du service, communication entre les postes, gestion des retours.</span>
     </li>
 
@@ -202,7 +199,7 @@
 
     <li data-reveal>
       <span class="rows__date">Été</span>
-      <span class="rows__title">Magasinière — job étudiant<em class="rows__sub">Transind — Braine-le-Château</em></span>
+      <span class="rows__title">Magasinière — job étudiant<em class="rows__sub"><a href="https://www.google.com/maps/search/?api=1&amp;query=Transind%2C%20Rue%20Castiaux%2057%2C%201440%20Braine-le-Ch%C3%A2teau" target="_blank" rel="noopener" title="Rue Castiaux 57, 1440 Braine-le-Château">Transind — Braine-le-Château</a></em></span>
       <span class="rows__body">Grossiste en articles de sport et de camping. Réception et rangement des marchandises, gestion des produits, préparation et suivi des livraisons.</span>
     </li>
 
@@ -214,64 +211,6 @@
 
   </ul>
 
-  <!-- Les quatre adresses, en deux colonnes. Le plan ne se charge qu'au clic :
-       tant que personne ne le demande, la page n'appelle aucun serveur
-       extérieur et ne dépose aucun cookie. -->
-  <div class="places">
-
-    <article class="place" data-reveal>
-      <p class="tag">où j’ai travaillé</p>
-      <h3 class="place__name">Brasserie des Artistes</h3>
-      <p class="place__addr">Rue Basse 11 — 1460 Ittre</p>
-      <div class="place__frame">
-        <span class="place__grid" aria-hidden="true"></span>
-        <span class="place__pin" aria-hidden="true"></span>
-        <button type="button" class="place__load"
-                data-query="Brasserie des Artistes, Rue Basse 11, 1460 Ittre"
-                data-title="Plan — Brasserie des Artistes">Afficher le plan</button>
-      </div>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre"
-         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
-    </article>
-
-    <article class="place" data-reveal data-delay="1">
-      <p class="tag">où j’étudie</p>
-      <h3 class="place__name">Institut d’Enseignement Cardinal Mercier</h3>
-      <p class="place__addr">Chaussée de Mont-Saint-Jean 83 — 1420 Braine-l’Alleud</p>
-      <div class="place__frame">
-        <span class="place__grid" aria-hidden="true"></span>
-        <span class="place__pin" aria-hidden="true"></span>
-        <button type="button" class="place__load"
-                data-query="Institut d'Enseignement Cardinal Mercier, Chaussée de Mont-Saint-Jean 83, 1420 Braine-l'Alleud"
-                data-title="Plan — Institut d’Enseignement Cardinal Mercier">Afficher le plan</button>
-      </div>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Institut%20d%27Enseignement%20Cardinal%20Mercier%2C%20Chauss%C3%A9e%20de%20Mont-Saint-Jean%2083%2C%201420%20Braine-l%27Alleud"
-         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
-    </article>
-
-    <article class="place" data-reveal data-delay="2">
-      <p class="tag">job d’été</p>
-      <h3 class="place__name">Transind</h3>
-      <p class="place__addr">Rue Castiaux 57 — 1440 Braine-le-Château</p>
-      <div class="place__frame">
-        <span class="place__grid" aria-hidden="true"></span>
-        <span class="place__pin" aria-hidden="true"></span>
-        <button type="button" class="place__load"
-                data-query="Transind, Rue Castiaux 57, 1440 Braine-le-Château"
-                data-title="Plan — Transind">Afficher le plan</button>
-      </div>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Transind%2C%20Rue%20Castiaux%2057%2C%201440%20Braine-le-Ch%C3%A2teau"
-         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
-    </article>
-
-    <article class="place" data-reveal data-delay="3">
-      <p class="tag">job d’été</p>
-      <h3 class="place__name">All Ride</h3>
-      <p class="place__addr">Skateboard</p>
-      <p class="place__todo">Adresse à compléter</p>
-    </article>
-
-  </div>
 </section>
 
 <!-- ════════════════════════════════════════════════════════════════ techniques ═══ -->
@@ -513,6 +452,6 @@
   </figure>
 </div>
 
-<script src="app.js?v=20260722j"></script>
+<script src="app.js?v=20260722k"></script>
 </body>
 </html>

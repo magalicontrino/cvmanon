@@ -450,34 +450,6 @@
   });
 
   /* ==========================================================================
-     7 bis. Plans
-
-     Le plan Google n'est chargé qu'au clic. Deux raisons : la page n'appelle
-     alors aucun serveur extérieur tant que personne ne le demande — donc aucun
-     cookie tiers déposé à l'insu du visiteur — et le CV reste entièrement
-     lisible hors ligne. Avant le clic, le cadre affiche un plan schématique
-     dessiné en CSS, exactement à la taille de la carte : rien ne saute.
-     ========================================================================== */
-
-  $$('.place__load').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var frame = btn.parentElement;
-      var query = btn.getAttribute('data-query') || '';
-
-      var map = document.createElement('iframe');
-      map.src = 'https://www.google.com/maps?q=' + encodeURIComponent(query) + '&output=embed';
-      map.title = btn.getAttribute('data-title') || 'Plan';
-      map.loading = 'lazy';
-      map.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
-      map.setAttribute('allowfullscreen', '');
-
-      frame.textContent = '';
-      frame.classList.add('is-loaded');
-      frame.appendChild(map);
-    });
-  });
-
-  /* ==========================================================================
      8. Visionneuse
      Ouvre la photo cliquée en grand. Flèches pour passer d'une photo à l'autre
      parmi celles actuellement visibles, Échap pour fermer, et le focus revient

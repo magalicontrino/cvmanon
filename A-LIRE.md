@@ -113,10 +113,11 @@ Les deux adresses vérifiées :
   et les disponibilités ont rejoint le bas de la section Contact.
 - **Visionneuse** : un clic sur une image l'ouvre en grand. Flèches ← → pour
   passer à la suivante, Échap pour fermer.
-- **Plans Google Maps** de la brasserie et de l'école, en bas de la section
-  Expérience. Ils ne se chargent **qu'au clic** : tant que personne ne le
-  demande, la page n'appelle aucun serveur extérieur et ne dépose aucun cookie.
-  Avant le clic, le cadre affiche un plan schématique dessiné en CSS.
+- **Adresses** : dans la section Expérience, le nom de l'employeur sous chaque
+  poste est un lien vers son plan Google Maps. La brasserie, l'école et Transind
+  en ont un&nbsp;; All Ride non, faute d'adresse. Le bloc de cartes séparé et les
+  plans encastrés ont été retirés — l'information est désormais au poste
+  concerné, et la page n'appelle plus aucun serveur extérieur.
 - **Formulaire de contact** : il n'envoie rien à un serveur, il ouvre le logiciel
   de courrier avec le message déjà rempli.
 - **PDF et impression** : le bouton « Le CV en PDF » ouvre `CV-Manon-Vanbastelaer.pdf`,

@@ -728,6 +728,11 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   color: var(--muted);
   margin-top: .35rem;
 }
+/* L'employeur mène à son plan. Le trait n'apparaît qu'au survol : souligner en
+   permanence cinq lignes de petites capitales les rendrait illisibles. */
+.rows__sub a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .35s var(--ease); }
+.rows__sub a:hover, .rows__sub a:focus-visible { border-bottom-color: var(--muted); }
+
 .rows__body { font-size: .9rem; line-height: 1.55; }
 .rows__body b { font-weight: 600; color: var(--ink-strong); }
 .rows__body sup { font-size: .7em; }
@@ -760,127 +765,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .rows--dated .rows__body { grid-column: 1; }
   .rows__date { margin-bottom: .1rem; }
 }
-
-/* ------------------------------------------- 11 bis. Lieux et plans - */
-
-.places {
-  max-width: var(--max);
-  margin: clamp(1.75rem, 4vh, 3rem) auto 0;
-  padding-top: clamp(1.5rem, 3.5vh, 2.5rem);
-  border-top: 1px solid var(--rule);
-  display: grid;
-  /* Deux colonnes fixes : à quatre cartes, un `auto-fit` en aurait mis trois
-     puis une seule sur la ligne suivante, ce qui se lit mal. */
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2.5vw, 1.5rem);
-}
-
-/* Chaque lieu est une carte, comme les fiches techniques : le cadre dit où
-   commence et où finit une adresse. */
-.place {
-  background: var(--white);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: clamp(1rem, 2.2vw, 1.4rem);
-}
-
-.place__name {
-  font-family: var(--body);
-  font-weight: 900;
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
-  line-height: 1.3;
-  color: var(--ink-strong);
-  margin-bottom: .35rem;
-}
-.place__addr { font-size: .92rem; color: var(--muted); margin-bottom: .9rem; }
-.place__todo {
-  font-size: .85rem;
-  color: var(--muted);
-  border: 1px dashed var(--rule);
-  border-radius: var(--radius-sm);
-  padding: .8rem 1rem;
-  text-align: center;
-}
-
-/* Avant le clic, le cadre montre un plan schématique dessiné en CSS : un
-   quadrillage de rues et une épingle. Il tient exactement la place que prendra
-   la carte, donc rien ne saute au chargement. */
-.place__frame {
-  position: relative;
-  height: clamp(6rem, 12vh, 8rem);
-  overflow: hidden;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-sm);
-  display: grid;
-  place-items: center;
-}
-
-.place__grid {
-  position: absolute;
-  inset: -20%;
-  background-image:
-    linear-gradient(var(--rule) 1px, transparent 1px),
-    linear-gradient(90deg, var(--rule) 1px, transparent 1px),
-    linear-gradient(rgba(28, 26, 26, .14) 2px, transparent 2px);
-  background-size: 34px 34px, 34px 34px, 100% 118px;
-  transform: rotate(-11deg);
-  transition: transform 1.2s var(--ease);
-}
-.place:hover .place__grid { transform: rotate(-11deg) scale(1.06); }
-
-/* L'épingle : un disque plein surmontant son halo, qui bat comme le poste en
-   cours. */
-.place__pin {
-  position: absolute;
-  top: 42%; left: 50%;
-  width: 14px; height: 14px;
-  margin: -7px 0 0 -7px;
-  border-radius: 50%;
-  background: var(--ink-strong);
-}
-.place__pin::after {
-  content: '';
-  position: absolute;
-  inset: -13px;
-  border-radius: 50%;
-  border: 1px solid var(--ink-strong);
-  opacity: .5;
-  animation: ping 3s var(--ease-soft) infinite;
-}
-@keyframes ping {
-  0%   { transform: scale(.6); opacity: .7; }
-  70%  { transform: scale(1.5); opacity: 0; }
-  100% { transform: scale(1.5); opacity: 0; }
-}
-
-.place__load {
-  position: relative;
-  z-index: 1;
-  font-family: var(--label);
-  font-weight: 700;
-  font-size: .6rem;
-  text-transform: uppercase;
-  letter-spacing: .24em;
-  color: var(--ink-strong);
-  background: rgba(255, 255, 255, .92);
-  border: 1px solid var(--rule);
-  border-radius: var(--pill);
-  padding: .9rem 1.7rem;
-  cursor: pointer;
-  backdrop-filter: blur(2px);
-  transition: background .45s var(--ease), color .45s var(--ease), border-color .45s var(--ease);
-}
-.place__load:hover, .place__load:focus-visible {
-  background: var(--ink-strong);
-  color: var(--white);
-  border-color: var(--ink-strong);
-}
-
-/* Une fois la carte chargée, elle remplace le contenu du cadre. */
-.place__frame iframe { width: 100%; height: 100%; border: 0; display: block; }
-.place__frame.is-loaded { display: block; }
-
 
 /* --------------------------------------- 12. Filtres et grille — techniques - */
 
@@ -1389,7 +1273,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   @page { size: A4; margin: 1.2cm 1.1cm; }
 
   .curtain, .progress, .dots, .totop, .scroll-cue, .lightbox,
-  .filters, .form, .place__frame, .btn, .contact__actions, .mark { display: none !important; }
+  .filters, .form, .btn, .contact__actions, .mark { display: none !important; }
 
   html, body {
     background: #fff !important;
@@ -1476,10 +1360,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .grid__legend { font-size: 8.8pt !important; margin-bottom: .25cm !important; }
 
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
-  .places { margin-top: .4cm !important; padding-top: .3cm !important; gap: .3cm !important; }
-  .place { padding: .25cm !important; border-radius: 6px !important; }
-  .place__todo { display: none !important; }
-  .place__addr { margin-bottom: .1cm !important; }
 
   /* ---- Contact : coordonnées, disponibilités, langues. */
   .contact { grid-template-columns: 1fr !important; gap: .3cm !important; }
@@ -1490,7 +1370,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .anim .skills li::after { display: none !important; }
 
   /* ---- Rien ne doit se couper en deux au changement de page. */
-  .tile, .rows li, .strip__list, .aside, .aside__part, .place, .contact__direct { break-inside: avoid; }
+  .tile, .rows li, .strip__list, .aside, .aside__part, .contact__direct { break-inside: avoid; }
   .chapter__head { break-after: avoid; }
 
   .foot { margin-top: .4cm !important; padding-top: .25cm !important; font-size: 8pt !important; }
