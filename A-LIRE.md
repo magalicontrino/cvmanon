@@ -23,11 +23,17 @@ Chaque emplacement d'image suit **trois niveaux**, dans cet ordre :
 `.jpg` au même nom, dans le même dossier. Rien d'autre à modifier.** Ne
 supprimez pas le `.svg` : il reprend la main si vous retirez la photo.
 
-Les 26 illustrations sont des dessins au trait, faits pour le site : couteau et
-planche pour les taillages, casserole et fouet pour les sauces, plateau et
-verres pour le service, etc. Elles tiennent la page en attendant, mais elles ne
-remplacent pas des photos d'elle en tenue — c'est ça qui fera la différence
-auprès d'un patron.
+Les 26 images d'attente sont des **pictogrammes de [game-icons.net](https://game-icons.net)**
+posés sur un fond à la charte du site : couteaux pour les taillages, casserole
+pour les sauces, fouet pour les crèmes, crevette pour les croquettes. Elles
+tiennent la page en attendant, mais elles ne remplacent pas des photos d'elle en
+tenue — c'est ça qui fera la différence auprès d'un patron.
+
+Ces pictogrammes sont sous licence **CC BY 3.0** : le crédit en pied de page
+(auteurs + lien vers game-icons.net) n'est pas décoratif, c'est la condition
+d'utilisation. Ne le retirez pas tant qu'il reste une seule de ces images sur le
+site. Quand toutes seront remplacées par de vraies photos, le crédit pourra
+partir avec elles — sauf le favicon, qui vient de la même banque.
 
 **Noms attendus**
 
@@ -131,7 +137,10 @@ votre décision, mais elle se prend avant la mise en ligne, pas après.
 index.html   le contenu — c'est ici qu'on modifie les textes
 style.css    la mise en forme, commentée section par section
 app.js       animations, filtre, visionneuse, plans, impression
+favicon.ico  l'icône d'onglet — toque crème sur disque noir
 assets/
-  fonts/     les trois polices (Bai Jamjuree, Raleway, Source Sans Pro)
-  images/    le portrait, et les 26 illustrations à remplacer par des photos
+  favicon.svg      la même icône, en vectoriel
+  favicon-180.png  la même, pour l'écran d'accueil d'un iPhone
+  fonts/           les trois polices (Bai Jamjuree, Raleway, Source Sans Pro)
+  images/          le portrait, et les 26 images à remplacer par des photos
 ```
