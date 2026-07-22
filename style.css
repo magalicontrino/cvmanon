@@ -964,11 +964,15 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 }
 
 /* Langues et disponibilités, en pied de contact : deux colonnes d'appoint. */
+/* Disponibilités et langues ouvrent le chapitre ; les coordonnées viennent
+   ensuite. Le filet est donc EN DESSOUS : il sépare les deux blocs, alors qu'un
+   filet au-dessus n'aurait fait que doubler le titre du chapitre — et les
+   disponibilités se lisaient collées au numéro de téléphone. */
 .aside {
   max-width: var(--max);
-  margin: clamp(2rem, 5vh, 3.5rem) auto 0;
-  padding-top: clamp(1.5rem, 3.5vh, 2.5rem);
-  border-top: 1px solid var(--rule);
+  margin: 0 auto clamp(2rem, 5vh, 3.25rem);
+  padding-bottom: clamp(1.75rem, 4vh, 2.75rem);
+  border-bottom: 1px solid var(--rule);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: clamp(1.5rem, 4vw, 3.5rem);
@@ -1471,7 +1475,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   /* ---- Contact : coordonnées, disponibilités, langues. */
   .contact { grid-template-columns: 1fr !important; gap: .3cm !important; }
   .contact__big { font-size: 15pt !important; color: #1c1a1a !important; }
-  .aside { margin-top: .35cm !important; padding-top: .3cm !important; gap: .5cm !important; }
+  .aside { margin: 0 0 .35cm !important; padding-bottom: .3cm !important; gap: .5cm !important; }
   .avail__list { gap: .12cm !important; }
   .skills li { padding: .12cm 0 !important; }
   .anim .skills li::after { display: none !important; }
