@@ -67,8 +67,8 @@ fins, ils disparaîtront. Ils vont dans `assets/pictos/`, pas dans
 | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|
 | `formation-01` | `ecole` | Un cuisinier en tenue, ou une toque |
-| `formation-02` | `hygiene` | Un thermomètre, ou un flocon pour la chaîne du froid |
-| `formation-03` | `restaurant` | Des convives autour d'une table, ou une salle dressée |
+| `formation-02` | `hygiene` | Un distributeur de savon, ou un savon |
+| `formation-03` | `restaurant` | Un chandelier, ou une table dressée |
 
 ## Expérience — 3 pictos
 
