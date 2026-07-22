@@ -1,6 +1,7 @@
 # Liste des pictogrammes à produire
 
-26 images. Celles en place viennent de game-icons.net et sont provisoires.
+28 pictos : 20 grandes images et 8 petits pictos de liste pour les plats.
+Ceux en place viennent de game-icons.net et sont provisoires.
 
 ## Comment me les donner
 
@@ -35,25 +36,32 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 | 06 | `technique-06` | `mise-en-place` | Une balance de cuisine, ou des bacs alignés |
 | 07 | `technique-07` | `pates` | Un rouleau à pâtisserie |
 | 08 | `technique-08` | `cremes` | Un fouet |
-| 09 | `technique-09` | `chocolat` | Une tablette de chocolat |
+| 09 | `technique-09` | `chocolat` | Une praline, un bonbon de chocolat |
 | 10 | `technique-10` | `couvert` | Un couvert dressé : fourchette, couteau, cuillère |
-| 11 | `technique-11` | `gueridon` | Un guéridon, ou une table ronde dressée |
+| 11 | `technique-11` | `service` | Une sonnette de comptoir, ou un plateau de service |
 | 12 | `technique-12` | `flambage` | Une flamme |
 | 13 | `technique-13` | `commande` | Un carnet de commande, ou un bloc et un crayon |
 | 14 | `technique-14` | `boissons` | Un verre à vin, ou une bouteille et un verre |
 
-## Plats préférés — 6 pictos
+## Plats préférés — 8 pictos
 
-*Ces six-là sont sur fond noir : la silhouette sera inversée en blanc.*
+*Petits pictos de liste, sur fond noir : la silhouette sera inversée en blanc.
+Les plats sont ceux de la carte de la Brasserie des Artistes.*
 
 | # | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|---|
 | 01 | `plat-01` | `crevette` | Une crevette grise |
-| 02 | `plat-02` | `vol-au-vent` | Une bouchée feuilletée, ou un feuilletage |
-| 03 | `plat-03` | `viande` | Une pièce de viande braisée |
-| 04 | `plat-04` | `waterzooi` | Une cocotte, ou un bol fumant |
-| 05 | `plat-05` | `sole` | Un poisson plat, entier |
-| 06 | `plat-06` | `mousse` | Une verrine, ou une coupe de dessert |
+| 02 | `plat-02` | `fromage` | Une pointe de fromage |
+| 03 | `plat-03` | `pates` | Un bol de pâtes, ou des tagliatelles |
+| 04 | `plat-04` | `entrecote` | Une pièce de bœuf, vue de côté |
+| 05 | `plat-05` | `jambonneau` | Un jambonneau, ou un jarret |
+| 06 | `plat-06` | `burger` | Un hamburger |
+| 07 | `plat-07` | `mousse` | Une coupe de dessert, ou une verrine |
+| 08 | `plat-08` | `dame-blanche` | Une glace, ou une coupe glacée |
+
+Ceux-là sont plus petits que les autres à l'écran (2 rem) : évitez les détails
+fins, ils disparaîtront. Ils vont dans `assets/pictos/`, pas dans
+`assets/images/`.
 
 ## Formation — 3 pictos
 
@@ -61,7 +69,7 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 |---|---|---|
 | `formation-01` | `ecole` | Un cuisinier en tenue, ou une toque |
 | `formation-02` | `hygiene` | Un thermomètre, ou un flocon pour la chaîne du froid |
-| `formation-03` | `restaurant` | Une enseigne de restaurant, ou une salle dressée |
+| `formation-03` | `restaurant` | Des convives autour d'une table, ou une salle dressée |
 
 ## Expérience — 3 pictos
 
@@ -70,7 +78,7 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 | Fichier | Nom du picto | Sujet à dessiner |
 |---|---|---|
 | `experience-cuisine` | `marmite` | Une marmite, ou un piano de cuisine |
-| `experience-salle` | `sonnette` | Une sonnette de comptoir, ou un plateau de service |
+| `experience-salle` | `enseigne` | Une enseigne de restaurant |
 | `experience-stock` | `stock` | Un diable, une palette, ou des cartons empilés |
 
 ---

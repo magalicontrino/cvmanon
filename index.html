@@ -510,75 +510,59 @@
   </header>
 
   <p class="chapter__lead prose" data-reveal>
-    Ceux que j’aime préparer, et pourquoi.
+    Ceux que j’aime préparer, tirés de la carte de la maison.
   </p>
 
-  <ul class="menu">
+  <!-- Une liste, pas des vignettes : le plat se lit d'un trait, le picto ne
+       fait que le signaler. -->
+  <ul class="dishes">
 
-    <li class="dish" data-reveal>
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-01.jpg" alt="Croquettes aux crevettes grises"
-             data-parallax="0.08" data-ph="Croquettes crevettes" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Croquettes aux crevettes grises</h3>
-        <p class="dish__note">Le classique belge qui ne pardonne rien&nbsp;: une béchamel serrée, un décorticage patient, une panure qui doit rester croustillante à cœur fondant.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-01.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Croquettes aux crevettes grises</span>
+      <span class="dishes__note">Le classique de la maison. Une béchamel serrée, un décorticage patient, une panure qui doit rester croustillante à cœur fondant.</span>
     </li>
 
-    <li class="dish" data-reveal data-delay="1">
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-02.jpg" alt="Vol-au-vent"
-             data-parallax="0.08" data-ph="Vol-au-vent" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Vol-au-vent</h3>
-        <p class="dish__note">Feuilletage maison, volaille pochée, quenelles et champignons. Tout le plat tient dans la liaison de la sauce.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-02.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Croquettes au fromage</span>
+      <span class="dishes__note">La sœur de la précédente, et le duo des deux à la carte. Même appareil, autre équilibre&nbsp;: le fromage veut moins de sel et plus de froid.</span>
     </li>
 
-    <li class="dish" data-reveal data-delay="2">
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-03.jpg" alt="Carbonnades flamandes"
-             data-parallax="0.08" data-ph="Carbonnades" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Carbonnades flamandes</h3>
-        <p class="dish__note">Un braisage long à la bière brune, le pain d’épices moutardé qui lie la sauce. Le plat qui m’a appris la patience.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-03.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Tagliatelles carbonara</span>
+      <span class="dishes__note">Aucune crème, un jaune d’œuf et le lard&nbsp;: la sauce se lie hors du feu ou elle tourne. Le plat qui apprend à sentir la température.</span>
     </li>
 
-    <li class="dish" data-reveal>
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-04.jpg" alt="Waterzooi de volaille"
-             data-parallax="0.08" data-ph="Waterzooi" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Waterzooi de volaille</h3>
-        <p class="dish__note">Taillage régulier des légumes, bouillon crémé au dernier moment. Ici, le taillage se voit dans l’assiette.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-04.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Entrecôte minute et ses sauces</span>
+      <span class="dishes__note">Poivre vert, archiduc, béarnaise, roquefort, estragon, diabolique. Six sauces à tenir prêtes, et une cuisson annoncée à respecter au degré près.</span>
     </li>
 
-    <li class="dish" data-reveal data-delay="1">
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-05.jpg" alt="Sole meunière"
-             data-parallax="0.08" data-ph="Sole meunière" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Sole meunière</h3>
-        <p class="dish__note">Trois ingrédients, aucune cachette&nbsp;: un beurre noisette parfait et une cuisson à la seconde. Mon plat d’examen préféré.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-05.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Jambonneau façon du chef</span>
+      <span class="dishes__note">Six cents grammes qui demandent des heures. Le plat qui m’a appris la patience et le contrôle d’une cuisson longue.</span>
     </li>
 
-    <li class="dish" data-reveal data-delay="2">
-      <figure class="media media--dish" data-unmask>
-        <img src="assets/images/plat-06.jpg" alt="Mousse au chocolat"
-             data-parallax="0.08" data-ph="Mousse au chocolat" data-zoom />
-      </figure>
-      <div class="dish__body">
-        <h3 class="dish__name">Mousse au chocolat</h3>
-        <p class="dish__note">Un chocolat noir tempéré, des blancs montés juste à point. Le dessert le plus simple à rater et le plus satisfaisant à réussir.</p>
-      </div>
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-06.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Burger Wagyu</span>
+      <span class="dishes__note">Le plat le plus demandé le week-end. Tout se joue sur la régularité&nbsp;: le vingtième doit sortir comme le premier, à la même cuisson.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-07.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Mousse au chocolat</span>
+      <span class="dishes__note">Un chocolat noir tempéré, des blancs montés juste à point. Le dessert le plus simple à rater et le plus satisfaisant à réussir.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-08.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Dame blanche</span>
+      <span class="dishes__note">Trois boules, un chocolat chaud, une chantilly montée à la commande. Rien à cacher, donc rien à négliger.</span>
     </li>
 
   </ul>

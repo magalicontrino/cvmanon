@@ -23,7 +23,7 @@ Chaque emplacement d'image suit **trois niveaux**, dans cet ordre :
 `.jpg` au même nom, dans le même dossier. Rien d'autre à modifier.** Ne
 supprimez pas le `.svg` : il reprend la main si vous retirez la photo.
 
-Les 26 images d'attente sont des **pictogrammes de [game-icons.net](https://game-icons.net)**
+Les images d'attente sont des **pictogrammes de [game-icons.net](https://game-icons.net)**
 posés sur un fond à la charte du site : couteaux pour les taillages, casserole
 pour les sauces, fouet pour les crèmes, crevette pour les croquettes. Elles
 tiennent la page en attendant, mais elles ne remplacent pas des photos d'elle en
@@ -47,12 +47,14 @@ partir avec elles — sauf le favicon, qui vient de la même banque.
 | `experience-salle.jpg` | Elle en salle, plateau ou table dressée |
 | `experience-stock.jpg` | Le stock, les cartons, une palette |
 | `technique-01.jpg` → `technique-14.jpg` | Les 14 techniques, dans l'ordre des fiches |
-| `plat-01.jpg` → `plat-06.jpg` | Croquettes, vol-au-vent, carbonnades, waterzooi, sole, mousse |
 
 L'ordre des techniques : 01 taillages · 02 sauces mères · 03 cuissons ·
 04 poisson et volaille · 05 dressage · 06 mise en place · 07 pâtes de base ·
 08 crèmes · 09 chocolat · 10 mise en place salle · 11 service à l'assiette ·
 12 découpe et flambage · 13 accueil · 14 boissons.
+
+La section **Plats préférés** est une liste, pas une grille : elle n'attend pas
+de photos, seulement les petits pictos de `assets/pictos/`.
 
 **Prise de vue** — cadrez à l'horizontale, largeur 1600 px environ, lumière du
 jour. Les vignettes sont recadrées au centre : laissez de l'air autour du sujet.
@@ -143,5 +145,6 @@ assets/
   favicon.svg      la même icône, en vectoriel
   favicon-180.png  la même, pour l'écran d'accueil d'un iPhone
   fonts/           les trois polices (Bai Jamjuree, Raleway, Source Sans Pro)
-  images/          le portrait, et les 26 images à remplacer par des photos
+  images/          le portrait, et les 20 images à remplacer par des photos
+  pictos/          les 8 petits pictos de la liste des plats
 ```
