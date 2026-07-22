@@ -214,6 +214,43 @@
     </li>
 
   </ul>
+
+  <!-- Les deux adresses, avec leur plan. Le plan ne se charge qu'au clic :
+       tant que personne ne le demande, la page n'appelle aucun serveur
+       extérieur et ne dépose aucun cookie. -->
+  <div class="places">
+
+    <article class="place" data-reveal>
+      <p class="tag">où j’ai travaillé</p>
+      <h3 class="place__name">Brasserie des Artistes</h3>
+      <p class="place__addr">Rue Basse 11 — 1460 Ittre</p>
+      <div class="place__frame">
+        <span class="place__grid" aria-hidden="true"></span>
+        <span class="place__pin" aria-hidden="true"></span>
+        <button type="button" class="place__load"
+                data-query="Brasserie des Artistes, Rue Basse 11, 1460 Ittre"
+                data-title="Plan — Brasserie des Artistes, Ittre">Afficher le plan</button>
+      </div>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Brasserie%20des%20Artistes%2C%20Rue%20Basse%2011%2C%201460%20Ittre"
+         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
+    </article>
+
+    <article class="place" data-reveal data-delay="1">
+      <p class="tag">où j’étudie</p>
+      <h3 class="place__name">Institut d’Enseignement Cardinal Mercier</h3>
+      <p class="place__addr">Chaussée de Mont-Saint-Jean 83 — 1420 Braine-l’Alleud</p>
+      <div class="place__frame">
+        <span class="place__grid" aria-hidden="true"></span>
+        <span class="place__pin" aria-hidden="true"></span>
+        <button type="button" class="place__load"
+                data-query="Institut d'Enseignement Cardinal Mercier, Chaussée de Mont-Saint-Jean 83, 1420 Braine-l'Alleud"
+                data-title="Plan — Institut Cardinal Mercier, Braine-l’Alleud">Afficher le plan</button>
+      </div>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Institut%20Cardinal%20Mercier%2C%20Chauss%C3%A9e%20de%20Mont-Saint-Jean%2083%2C%201420%20Braine-l%27Alleud"
+         target="_blank" rel="noopener">Ouvrir dans Google&nbsp;Maps</a>
+    </article>
+
+  </div>
 </section>
 
 <!-- ════════════════════════════════════════════════════════════════ techniques ═══ -->
@@ -239,10 +276,7 @@
   <ul class="grid" id="techniques-grid">
 
     <li class="tile" data-cat="salle" data-reveal>
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-10.jpg" alt="Mise en place d'une table de restaurant"
-             data-parallax="0.06" data-ph="Mise en place salle" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-10.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Mise en place de la salle</h3>
@@ -251,10 +285,7 @@
     </li>
 
     <li class="tile" data-cat="salle" data-reveal data-delay="1">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-11.jpg" alt="Service à l'assiette en salle"
-             data-parallax="0.06" data-ph="Service" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-11.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Service à l’assiette et au guéridon</h3>
@@ -263,10 +294,7 @@
     </li>
 
     <li class="tile" data-cat="salle" data-reveal data-delay="2">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-12.jpg" alt="Découpe devant le client"
-             data-parallax="0.06" data-ph="Découpe en salle" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-12.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Découpe et flambage</h3>
@@ -275,10 +303,7 @@
     </li>
 
     <li class="tile" data-cat="salle" data-reveal data-delay="3">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-13.jpg" alt="Accueil des clients au restaurant"
-             data-parallax="0.06" data-ph="Accueil" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-13.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Accueil et prise de commande</h3>
@@ -287,10 +312,7 @@
     </li>
 
     <li class="tile" data-cat="salle" data-reveal>
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-14.jpg" alt="Service des boissons"
-             data-parallax="0.06" data-ph="Boissons" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-14.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">salle</p>
         <h3 class="tile__name">Le service des boissons</h3>
@@ -299,10 +321,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-01.jpg" alt="Taillage des légumes en julienne et en brunoise"
-             data-parallax="0.06" data-ph="Taillages" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-01.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Les taillages</h3>
@@ -311,10 +330,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-02.jpg" alt="Réalisation d'une sauce mère"
-             data-parallax="0.06" data-ph="Sauces mères" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-02.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Fonds et sauces mères</h3>
@@ -323,10 +339,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal data-delay="3">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-03.jpg" alt="Cuisson d'une pièce de viande à la poêle"
-             data-parallax="0.06" data-ph="Cuissons" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-03.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Les modes de cuisson</h3>
@@ -335,10 +348,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal>
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-04.jpg" alt="Levée des filets d'un poisson"
-             data-parallax="0.06" data-ph="Poisson" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-04.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Poisson et volaille</h3>
@@ -347,10 +357,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal data-delay="1">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-05.jpg" alt="Dressage d'une assiette"
-             data-parallax="0.06" data-ph="Dressage" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-05.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">Le dressage à l’assiette</h3>
@@ -359,10 +366,7 @@
     </li>
 
     <li class="tile" data-cat="cuisine" data-reveal data-delay="2">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-06.jpg" alt="Mise en place d'un poste de cuisine"
-             data-parallax="0.06" data-ph="Mise en place" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-06.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">cuisine</p>
         <h3 class="tile__name">La mise en place</h3>
@@ -371,10 +375,7 @@
     </li>
 
     <li class="tile" data-cat="patisserie" data-reveal data-delay="3">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-07.jpg" alt="Abaisse d'une pâte au rouleau"
-             data-parallax="0.06" data-ph="Pâtes de base" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-07.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Les pâtes de base</h3>
@@ -383,10 +384,7 @@
     </li>
 
     <li class="tile" data-cat="patisserie" data-reveal>
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-08.jpg" alt="Réalisation d'une crème pâtissière"
-             data-parallax="0.06" data-ph="Crèmes" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-08.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Crèmes et appareils</h3>
@@ -395,10 +393,7 @@
     </li>
 
     <li class="tile" data-cat="patisserie" data-reveal data-delay="1">
-      <figure class="media media--tile" data-unmask>
-        <img src="assets/images/technique-09.jpg" alt="Travail du chocolat tempéré"
-             data-parallax="0.06" data-ph="Chocolat" data-zoom />
-      </figure>
+      <img class="tile__icon" src="assets/pictos/technique-09.svg" alt="" width="512" height="512" />
       <div class="tile__body">
         <p class="tag">pâtisserie</p>
         <h3 class="tile__name">Le travail du chocolat</h3>
