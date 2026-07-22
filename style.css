@@ -952,16 +952,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 }
 .grid__legend .tile__star { position: static; font-size: .95rem; }
 
-/* Le savoir-être : un texte, pas une liste. Il ferme le chapitre, décalé par un
-   filet à gauche pour qu'on voie tout de suite que ce n'est plus une fiche. */
-.note {
-  max-width: 52rem;
-  margin: clamp(1.75rem, 4vh, 2.75rem) auto 0;
-  padding-left: clamp(1rem, 2.5vw, 1.75rem);
-  border-left: 2px solid var(--ink-strong);
-  font-size: 1rem;
-  line-height: 1.7;
-}
 
 /* Langues et disponibilités, en pied de contact : deux colonnes d'appoint. */
 /* Disponibilités et langues ouvrent le chapitre ; les coordonnées viennent
@@ -1465,7 +1455,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .tile__body .tag { font-size: 7pt !important; margin-bottom: .06cm !important; letter-spacing: .16em !important; }
   .tile__star { top: .14cm !important; right: .16cm !important; font-size: 6.5pt !important; }
   .grid__legend { font-size: 8.8pt !important; margin-bottom: .25cm !important; }
-  .note { font-size: 9pt !important; margin-top: .35cm !important; padding-left: .4cm !important; }
 
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
   .places { margin-top: .4cm !important; padding-top: .3cm !important; gap: .5cm !important; }
@@ -1480,7 +1469,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .anim .skills li::after { display: none !important; }
 
   /* ---- Rien ne doit se couper en deux au changement de page. */
-  .tile, .rows li, .strip__list, .aside, .aside__part, .place, .note, .contact__direct { break-inside: avoid; }
+  .tile, .rows li, .strip__list, .aside, .aside__part, .place, .contact__direct { break-inside: avoid; }
   .chapter__head { break-after: avoid; }
 
   .foot { margin-top: .4cm !important; padding-top: .25cm !important; font-size: 8pt !important; }
