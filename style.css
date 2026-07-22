@@ -351,8 +351,13 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   display: grid;
   grid-template-columns: 1fr minmax(0, 42%);
   align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
-  padding: clamp(5rem, 12vh, 9rem) var(--gut) clamp(4rem, 10vh, 7rem);
+  /* `align-content` centre la rangée dans la hauteur restante ; sans lui, la
+     grille cale son contenu en haut et le blanc s'accumule sous les boutons. */
+  align-content: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  /* Marges haute et basse identiques : un centrage optique se fait avec des
+     valeurs symétriques, pas avec un haut deux fois plus grand que le bas. */
+  padding: clamp(2.5rem, 7vh, 6rem) var(--gut);
   position: relative;
 }
 
@@ -363,8 +368,8 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 
 .mark {
   display: inline-block;
-  width: 2.1rem;
-  margin-bottom: 1.5rem;
+  width: clamp(1.6rem, 4vh, 2.1rem);
+  margin-bottom: clamp(.6rem, 1.8vh, 1.5rem);
   color: var(--accent);
 }
 .mark svg { width: 100%; height: auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; }
@@ -379,7 +384,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   white-space: nowrap;
 }
 
-.eyebrow { font-size: .68rem; color: var(--ink); margin-bottom: 1.6rem; }
+.eyebrow { font-size: .68rem; color: var(--ink); margin-bottom: clamp(.7rem, 2.1vh, 1.6rem); }
 
 .intro__name {
   font-family: var(--display);
@@ -389,7 +394,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   letter-spacing: -.02em;
   color: var(--ink-strong);
   text-transform: uppercase;
-  margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
+  margin-bottom: clamp(.8rem, 2.5vh, 2.4rem);
 }
 
 .intro__roles {
@@ -398,14 +403,14 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   line-height: 1.15;
   color: var(--ink);
-  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: clamp(.7rem, 2.1vh, 2rem);
 }
 
 .intro__pitch {
   max-width: 30rem;
-  font-size: .98rem;
-  line-height: 1.7;
-  margin-bottom: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-size: clamp(.92rem, .88rem + .2vh, .98rem);
+  line-height: 1.65;
+  margin-bottom: clamp(.9rem, 2.6vh, 2.5rem);
 }
 .intro__pitch strong { font-weight: 600; color: var(--ink-strong); }
 
@@ -440,7 +445,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 .intro__nav a:hover, .intro__nav a:focus-visible { color: var(--white); border-color: var(--ink-strong); }
 .intro__nav a:hover::before, .intro__nav a:focus-visible::before { transform: none; }
 
-.intro__portrait { height: min(78svh, 44rem); }
+.intro__portrait { height: min(70svh, 42rem); }
 .media--tall { height: 100%; }
 /* Le cadre du portrait est nettement plus haut que large : un recadrage centré
    couperait le visage au niveau du front. On remonte le point d'ancrage. */
@@ -469,10 +474,42 @@ figure.media img[data-zoom] { cursor: zoom-in; }
 }
 
 @media (max-width: 900px) {
-  .intro { grid-template-columns: 1fr; align-content: center; }
+  /* Sur téléphone, tout est calculé pour que les six boutons de navigation
+     restent au-dessus de la ligne de flottaison : c'est par eux qu'on entre
+     dans le CV, les laisser sous le pli revient à les cacher. La photo cède
+     donc de la hauteur, et les marges se resserrent. */
+  .intro {
+    grid-template-columns: 1fr;
+    gap: clamp(.75rem, 1.8vh, 1.5rem);
+    padding-block: clamp(1rem, 3vh, 3rem);
+    /* Volontairement un peu moins que l'écran : la bande teintée du chapitre
+       suivant dépasse alors de quelques dizaines de pixels en bas. C'est le
+       signal le plus honnête qu'il y a une suite — plus qu'une flèche, qu'on
+       peut prendre pour une décoration. */
+    min-height: 90svh;
+  }
   .intro__text { margin: 0; max-width: none; order: 2; }
-  .intro__portrait { order: 1; height: min(42svh, 22rem); }
+  .intro__portrait { order: 1; height: min(22svh, 14rem); }
+  /* L'interlettrage large fait passer la ligne de lieu sur deux lignes pour
+     une poignée de pixels de texte. On le resserre plutôt que de la couper. */
+  .eyebrow { letter-spacing: .2em; }
+  .intro__roles { font-size: clamp(1.25rem, 5vw, 1.6rem); }
+  /* Boutons plus compacts : ils tiennent alors sur deux rangs au lieu de trois,
+     ce qui vaut une quarantaine de pixels. */
+  .intro__nav { gap: .4rem; }
+  .intro__nav a { padding: .72rem 1.1rem; font-size: .58rem; letter-spacing: .2em; }
   .scroll-cue { display: none; }
+}
+
+/* Écran court — un petit téléphone, ou un grand en paysage. Là, même resserré,
+   l'accueil ne tient plus : la toque et une part de la photo cèdent la place.
+   La toque est décorative et reste visible dans l'onglet ; les boutons, eux,
+   sont la seule porte d'entrée du CV. */
+@media (max-width: 900px) and (max-height: 780px) {
+  .mark { display: none; }
+  .intro__portrait { height: min(17svh, 10.5rem); }
+  .intro__pitch { font-size: .88rem; line-height: 1.55; }
+  .intro__roles { font-size: 1.15rem; }
 }
 
 /* -------------------------------------------------- 8. Bande de repères - */
