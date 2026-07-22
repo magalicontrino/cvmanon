@@ -43,7 +43,7 @@ partis, le crédit CC BY en pied de page pourra disparaître avec eux.
 | 13 | `technique-13` | `commande` | Un carnet de commande, ou un bloc et un crayon |
 | 14 | `technique-14` | `boissons` | Un verre à vin, ou une bouteille et un verre |
 
-## Plats préférés — 8 pictos
+## Plats signature — 8 pictos
 
 *Petits pictos de liste. Les plats sont ceux de la carte de la Brasserie des Artistes.*
 

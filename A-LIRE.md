@@ -55,7 +55,7 @@ L'ordre des techniques : 01 taillages · 02 sauces mères · 03 cuissons ·
 08 crèmes · 09 chocolat · 10 mise en place salle · 11 service à l'assiette ·
 12 découpe et flambage · 13 accueil · 14 boissons.
 
-La section **Plats préférés** est une liste, pas une grille : elle n'attend pas
+La section **Plats signature** est une liste, pas une grille : elle n'attend pas
 de photos, seulement les petits pictos de `assets/pictos/`.
 
 **Prise de vue** — cadrez à l'horizontale, largeur 1600 px environ, lumière du
@@ -76,7 +76,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
 | Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
 | Expérience — All Ride | **Année, durée, commune** | « Été ». Je n'ai trouvé aucune société belge de ce nom&nbsp;: ni commune ni secteur ne sont affirmés, seulement « skateboard » |
-| Plats préférés | **Les six plats** | Choisis pour être plausibles dans une brasserie belge |
+| Plats signature | **Les huit plats** | Tirés de la carte de la Brasserie des Artistes. À confirmer : ce sont ceux qu'elle aime préparer ? |
 
 Le **stage** est décrit de façon volontairement générale : je ne savais ni où il
 a eu lieu ni ce qu'elle y a fait. C'est le passage à réécrire en premier, c'est

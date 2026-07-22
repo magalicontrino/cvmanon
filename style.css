@@ -19,7 +19,7 @@
      10. Cartes — formation
      11. Piste — expérience
      12. Filtres et grille — techniques
-     13. Menu — plats préférés
+     13. Menu — plats signature
      14. Compétences et disponibilités
      15. Contact
      16. Visionneuse
@@ -905,7 +905,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   font-size: .95rem;
 }
 
-/* --------------------------------------------- 13. Liste — plats préférés - */
+/* --------------------------------------------- 13. Liste — plats signature - */
 
 /* Une liste, pas une grille de vignettes : chaque plat tient sur une ligne, le
    picto ne fait que le signaler. Trois colonnes — picto, nom, note — qui se
