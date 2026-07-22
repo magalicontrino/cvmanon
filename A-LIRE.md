@@ -70,8 +70,7 @@ Le nom et l'âge sont maintenant exacts. Le reste, je l'ai déduit ou inventé :
 
 | Où | Quoi | Actuellement |
 |---|---|---|
-| Contact | **Téléphone** | `0000 00 00 00` (et `tel:+32000000000`) |
-| Contact | **Email** | `prenom.nom@exemple.be` — **un seul endroit à changer** : le lien `mailto:` de la section Contact dans `index.html`. Le formulaire lit cette adresse, il n'y a plus rien à toucher dans `app.js` |
+| Contact | **Téléphone** | `0000 00 00 00` (et `tel:+32000000000`) — le seul champ encore fictif. L'email, lui, est en place |
 | Formation | **Années antérieures** | Seuls la 4ᵉ terminée en juin 2026 et l'entrée en 5ᵉ en septembre sont notées. Les années d'avant ne sont pas indiquées, faute d'information |
 | Expérience | **Dates des postes** | 2025 → en cours à la Brasserie, stage en 2025 |
 | Expérience — Transind | **Année, durée, intitulé** | « Été », « Magasinière ». Vous m'avez donné l'entreprise et les tâches, pas les dates |
