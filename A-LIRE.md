@@ -148,6 +148,13 @@ votre décision, mais elle se prend avant la mise en ligne, pas après.
 
 ## 5. Les fichiers
 
+**Un détail à connaître si vous modifiez `style.css` ou `app.js`** : leurs liens
+dans `index.html` portent un numéro de version (`?v=20260722a`). GitHub Pages dit
+aux navigateurs de garder ces fichiers dix minutes en cache&nbsp;; sans ce numéro,
+un visiteur peut se retrouver avec le nouveau HTML et l'ancienne feuille de
+style, ce qui donne une page désarticulée. **Changez le numéro à chaque
+modification de ces deux fichiers** — n'importe quelle valeur différente suffit.
+
 ```
 index.html   le contenu — c'est ici qu'on modifie les textes
 style.css    la mise en forme, commentée section par section
