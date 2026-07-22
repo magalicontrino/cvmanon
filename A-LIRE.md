@@ -121,7 +121,11 @@ Les deux adresses vérifiées :
   bandeau d'encre. Le bouton « Imprimer » produit exactement la même chose depuis
   le navigateur : c'est la même feuille de style.
   **Le PDF n'est pas régénéré tout seul.** Après une modification du contenu,
-  refaites-le, sinon il dira autre chose que la page.
+  refaites-le, sinon il dira autre chose que la page. La commande&nbsp;:
+  `chrome --headless --no-pdf-header-footer --export-tagged-pdf --print-to-pdf=CV-Manon-Vanbastelaer.pdf <adresse>`.
+  `--export-tagged-pdf` n'est pas décoratif&nbsp;: c'est lui qui inscrit la
+  structure du document, celle que les liseuses de téléphone utilisent pour
+  reformater le texte, et les lecteurs d'écran pour le lire.
 - **Sans JavaScript**, tout le contenu reste lisible : aucune information n'est
   cachée derrière une animation.
 - **Mouvement réduit** : si le système le demande, plus rien ne bouge.

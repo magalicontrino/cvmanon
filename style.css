@@ -1387,7 +1387,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   html, body {
     background: #fff !important;
     color: #1c1a1a !important;
-    font-size: 9.5pt !important;
+    font-size: 10pt !important;
     line-height: 1.45 !important;
   }
 
@@ -1454,7 +1454,7 @@ figure.media img[data-zoom] { cursor: zoom-in; }
      troisième colonne. */
   .rows__body, .rows--dated .rows__body { grid-column: 3 !important; }
   .rows__group { margin: .35cm 0 .12cm !important; gap: .3cm !important; }
-  .rows__body { font-size: 8.8pt !important; line-height: 1.4 !important; }
+  .rows__body { font-size: 9.2pt !important; line-height: 1.4 !important; }
   .rows__body .link { display: inline !important; margin: 0 !important; }
   .rows li.is-now .rows__date { color: #1c1a1a !important; }
   .rows li.is-now .rows__date::before { background: #1c1a1a !important; animation: none !important; }
@@ -1463,11 +1463,11 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .grid { grid-template-columns: repeat(5, 1fr) !important; gap: .2cm !important; }
   .tile { padding: .26cm !important; border-radius: 7px !important; gap: .08cm .24cm !important;
           grid-template-columns: .62cm minmax(0, 1fr) !important; }
-  .tile__name { font-size: 8.4pt !important; margin-bottom: .07cm !important; }
-  .tile__desc { font-size: 7.4pt !important; line-height: 1.35 !important; }
-  .tile__body .tag { font-size: 5.8pt !important; margin-bottom: .06cm !important; letter-spacing: .2em !important; }
+  .tile__name { font-size: 9pt !important; margin-bottom: .07cm !important; }
+  .tile__desc { font-size: 8.2pt !important; line-height: 1.35 !important; }
+  .tile__body .tag { font-size: 7pt !important; margin-bottom: .06cm !important; letter-spacing: .16em !important; }
   .tile__star { top: .14cm !important; right: .16cm !important; font-size: 6.5pt !important; }
-  .grid__legend { font-size: 8.2pt !important; margin-bottom: .25cm !important; }
+  .grid__legend { font-size: 8.8pt !important; margin-bottom: .25cm !important; }
   .note { font-size: 9pt !important; margin-top: .35cm !important; padding-left: .4cm !important; }
 
   /* ---- Lieux : les adresses restent, les cadres de plans partent. */
@@ -1486,6 +1486,6 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   .tile, .rows li, .strip__list, .aside, .aside__part, .place, .note, .contact__direct { break-inside: avoid; }
   .chapter__head { break-after: avoid; }
 
-  .foot { margin-top: .4cm !important; padding-top: .25cm !important; font-size: 7.5pt !important; }
+  .foot { margin-top: .4cm !important; padding-top: .25cm !important; font-size: 8pt !important; }
   a { text-decoration: none; }
 }
