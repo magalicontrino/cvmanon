@@ -55,8 +55,12 @@ L'ordre des techniques : 01 taillages · 02 sauces mères · 03 cuissons ·
 08 crèmes · 09 chocolat · 10 mise en place salle · 11 service à l'assiette ·
 12 découpe et flambage · 13 accueil · 14 boissons.
 
-La section **Plats signature** est une liste, pas une grille : elle n'attend pas
-de photos, seulement les petits pictos de `assets/pictos/`.
+La section **Plats signature** est **retirée de la page pour l'instant**. Elle
+n'est pas supprimée : son code est mis de côté dans `_plats-signature.html.retire`,
+et son CSS, ses huit pictos et sa fiche dans `PICTOS.md` sont intacts. Pour la
+remettre, recollez le contenu de ce fichier juste avant le commentaire
+« compétences » dans `index.html`, rendez son point de navigation et son bouton
+d'accueil, et renumérotez les chapitres.
 
 **Prise de vue** — cadrez à l'horizontale, largeur 1600 px environ, lumière du
 jour. Les vignettes sont recadrées au centre : laissez de l'air autour du sujet.

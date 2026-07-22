@@ -1,0 +1,66 @@
+<!-- ══════════════════════════════════════════════════════════ plats signature ═══ -->
+<section id="plats" class="chapter chapter--soft">
+  <header class="chapter__head">
+    <p class="chapter__num" data-reveal>04</p>
+    <h2 class="chapter__title" data-reveal data-delay="1">Plats signature</h2>
+  </header>
+
+  <p class="chapter__lead prose" data-reveal>
+    Ceux que j’aime préparer, et ce qu’ils demandent.
+  </p>
+
+  <!-- Une liste, pas des vignettes : le plat se lit d'un trait, le picto ne
+       fait que le signaler. -->
+  <ul class="dishes">
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-01.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Carbonara traditionnel</span>
+      <span class="dishes__note">Sans crème&nbsp;: un jaune d’œuf, du fromage et le gras du lard. La sauce se lie hors du feu ou elle tourne — le plat qui apprend à sentir la température.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-02.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Vol-au-vent</span>
+      <span class="dishes__note">Feuilletage, volaille pochée, quenelles et champignons. Tout se joue sur la liaison de la sauce&nbsp;: ni trop claire, ni trop épaisse.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-03.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Gratin dauphinois</span>
+      <span class="dishes__note">Des lamelles régulières, de la crème, de l’ail, une râpe de muscade. Pas de fromage&nbsp;: la tenue vient de l’amidon et du temps de cuisson.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-04.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Croquettes aux crevettes grises</span>
+      <span class="dishes__note">Le classique de la maison. Une béchamel serrée, un décorticage patient, une panure qui doit rester croustillante à cœur fondant.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-05.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Croquettes au fromage</span>
+      <span class="dishes__note">La sœur de la précédente, et le duo des deux à la carte. Même appareil, autre équilibre&nbsp;: le fromage veut moins de sel et plus de froid.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-06.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Entrecôte minute et ses sauces</span>
+      <span class="dishes__note">Poivre vert, archiduc, béarnaise, roquefort, estragon, diabolique. Six sauces à tenir prêtes, et une cuisson annoncée à respecter au degré près.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-07.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Mousse au chocolat</span>
+      <span class="dishes__note">Un chocolat noir tempéré, des blancs montés juste à point. Le dessert le plus simple à rater et le plus satisfaisant à réussir.</span>
+    </li>
+
+    <li data-reveal>
+      <img class="dishes__icon" src="assets/pictos/plat-08.svg" alt="" width="512" height="512" />
+      <span class="dishes__name">Dame blanche</span>
+      <span class="dishes__note">Trois boules, un chocolat chaud, une chantilly montée à la commande. Rien à cacher, donc rien à négliger.</span>
+    </li>
+
+  </ul>
+
+</section>
