@@ -103,12 +103,19 @@ Les deux adresses vérifiées :
 
 ---
 
-## 4. Mettre en ligne
+## 4. En ligne
 
-Le dépôt existe déjà. Pour publier avec **GitHub Pages** : dans le dépôt,
-`Settings` → `Pages` → source `Deploy from a branch`, branche `main`, dossier
-`/ (root)`. L'adresse sera `https://magalicontrino.github.io/cvmanon/`. Un
-sous-domaine du type `manon.magalicontrino.com` se branche ensuite par un CNAME.
+Adresse du CV : <https://manonvanbastelaer.magalicontrino.com>
+
+Publié par **GitHub Pages** depuis la branche `main` du dépôt. Le fichier
+`CNAME` à la racine réclame le sous-domaine&nbsp;; c'est lui qui dit à GitHub que
+ce nom mène à ce dépôt. Ne le supprimez pas, sinon le site retombe sur
+`magalicontrino.github.io/cvmanon/`.
+
+Côté DNS, le sous-domaine passe par le wildcard `*.magalicontrino.com` déjà en
+place chez GoDaddy. Un enregistrement explicite serait plus propre&nbsp;:
+type `CNAME`, nom `manonvanbastelaer`, valeur `magalicontrino.github.io` — c'est
+exactement ce que fait déjà `cv.magalicontrino.com`.
 
 Avant de publier : la page rend public le nom complet, la photo, le téléphone et
 l'email d'une mineure, et Google les indexera. Beaucoup de familles préfèrent
