@@ -73,9 +73,14 @@
   --muted:      #919191;
   --rule:       rgba(28, 26, 26, .11);
 
-  /* Noir et blanc, sans exception. Le seul contraste fort de la page est la
-     bande de repères, en aplat d'encre. */
+  /* Noir et blanc pour le texte. La couleur est réservée aux carrés des pictos,
+     une teinte par chapitre : elle sert de repère, pas de décor. Toutes sont
+     assez sombres pour porter un picto blanc. */
   --mark:      #1c1a1a;
+
+  --c-formation:  #e0356f;
+  --c-experience: #5b4bdb;
+  --c-techniques: #0f8f8f;
 
   /* Formes : cartes très arrondies, boutons en gélule. C'est ce qui adoucit
      l'ensemble plus sûrement que la couleur. */
@@ -645,6 +650,12 @@ figure.media img[data-zoom] { cursor: zoom-in; }
   flex: none;
   transition: transform .4s var(--ease);
 }
+
+/* Une teinte par chapitre. On voit à quelle partie du CV on appartient sans
+   remonter au titre. */
+#formation  .badge { background: var(--c-formation); }
+#experience .badge { background: var(--c-experience); }
+#techniques .badge { background: var(--c-techniques); }
 /* Les pictos sont des aplats noirs sur fond transparent : l'inversion les passe
    en blanc sans toucher à la transparence, donc sans second jeu de fichiers. */
 .badge__img { filter: invert(1); display: block; }
